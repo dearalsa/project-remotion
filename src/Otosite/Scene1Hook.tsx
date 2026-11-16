@@ -44,7 +44,7 @@ export const Scene1Hook: React.FC = () => {
         pointerEvents: "none",
       }}
     >
-      {/* 1. Kinetic Typography (Top Center, y ≈ 360px) */}
+      {/* Kinetic Typography */}
       <div
         style={{
           position: "absolute",
@@ -58,7 +58,7 @@ export const Scene1Hook: React.FC = () => {
           zIndex: 10,
         }}
       >
-        {/* Line 1: masih ngandelin */}
+        {/* Line 1: Masih Ngandelin */}
         <div
           style={{
             fontSize: 65,
@@ -88,7 +88,7 @@ export const Scene1Hook: React.FC = () => {
           </span>
         </div>
 
-        {/* Line 2: medsos doang (Yellow fill + 3.5px black outline matching Referensi Otosite.mp4) */}
+        {/* Line 2: MEDSOS DOANG */}
         <div
           style={{
             fontSize: 100,
@@ -169,7 +169,7 @@ export const Scene1Hook: React.FC = () => {
         </div>
       </div>
 
-      {/* 2. Floating Social Media Icons (Direct from Referensi Otosite.mp4) */}
+      {/* Floating Social Media Icons */}
       {/* Left: TikTok Icon */}
       <div
         style={{
@@ -233,7 +233,7 @@ export const Scene1Hook: React.FC = () => {
         />
       </div>
 
-      {/* 3. Character 1 (Thinking) Standing Centered on Floor with Drop Shadow */}
+      {/* Character 1 (Thinking) Standing Centered on Floor with Drop Shadow */}
       <div
         style={{
           position: "absolute",

@@ -4,6 +4,8 @@ import { Logo } from "./HelloWorld/Logo";
 import { Title } from "./HelloWorld/Title";
 import { TOTAL_DURATION, VIDEO_FPS, VIDEO_HEIGHT, VIDEO_WIDTH } from "./Otosite/constants";
 import { OtositeReels } from "./Otosite/OtositeReels";
+import { TOTAL_DURATION as FOLLOWUP_DURATION } from "./OtositeFollowUp/constants";
+import { OtositeFollowUpReels } from "./OtositeFollowUp/OtositeFollowUpReels";
 
 // Each <Composition> is an entry in the sidebar!
 
@@ -18,6 +20,16 @@ export const RemotionRoot: React.FC = () => {
         fps={VIDEO_FPS}
         width={VIDEO_WIDTH}
         height={VIDEO_HEIGHT}
+      />
+
+      {/* New Follow-Up Education Reels Composition */}
+      <Composition
+        id="OtositeFollowUpReels"
+        component={OtositeFollowUpReels}
+        durationInFrames={FOLLOWUP_DURATION}
+        fps={30}
+        width={1080}
+        height={1920}
       />
 
       {/* Preserved Original Compositions */}

@@ -1,0 +1,254 @@
+{
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "totalDuration": 1015,
+  "voEndFrame": 958,
+  "holdDurationFrames": 57,
+  "safeArea": {
+    "top": 262,
+    "bottom": 1562,
+    "left": 60,
+    "right": 1020,
+    "contentHeight": 1300,
+    "contentWidth": 960
+  },
+  "scenes": {
+    "scene1": {
+      "startFrame": 0,
+      "duration": 174,
+      "endFrame": 174,
+      "triggers": {
+        "character5Enter": 6,
+        "chatBubble1": 16,
+        "chatReadIndicator": 74,
+        "character6Enter": 98,
+        "punchImpact": 134,
+        "sceneExitSlide": 162
+      },
+      "textCues": {
+        "line1": [
+          { "word": "Follow-Up", "frame": 10 },
+          { "word": "Customer", "frame": 22 },
+          { "word": "Mobil", "frame": 40 }
+        ],
+        "line2": [
+          { "word": "Cuma", "frame": 59, "italic": true },
+          { "word": "Di-Read", "frame": 77, "highlight": true, "highlightType": "yellow", "fontSize": 80 },
+          { "word": "Doang?", "frame": 84, "highlight": true, "highlightType": "yellow", "fontSize": 80 }
+        ],
+        "part2Line1": [
+          { "word": "Atau", "frame": 103 },
+          { "word": "Dibalas", "frame": 118 },
+          { "word": "Tapi", "frame": 128 }
+        ],
+        "part2Line2": [
+          { "word": "Ujungnya", "frame": 134, "highlight": true, "highlightType": "red", "fontSize": 80 },
+          { "word": "Hilang?", "frame": 147, "highlight": true, "highlightType": "red", "fontSize": 85 }
+        ]
+      }
+    },
+    "scene2": {
+      "startFrame": 174,
+      "duration": 208,
+      "endFrame": 382,
+      "triggers": {
+        "cobaUbah": 174,
+        "badgeTips1": 200,
+        "bukaChatLama": 233,
+        "dashboardCascade": 210,
+        "character7Enter": 240,
+        "clockSpin": 242,
+        "tanpaSpam": 316,
+        "followUpTeratur": 364,
+        "sceneExitSlide": 372
+      },
+      "textCues": {
+        "introLine": [
+          { "word": "Coba", "frame": 174 },
+          { "word": "Ubah", "frame": 177 },
+          { "word": "Caranya:", "frame": 181 }
+        ],
+        "actionLine": [
+          { "word": "Buka", "frame": 233 },
+          { "word": "Chat", "frame": 240 },
+          { "word": "Lama", "frame": 253, "highlight": true, "highlightType": "yellow", "fontSize": 75 }
+        ],
+        "needsLine": [
+          { "word": "Cari", "frame": 264 },
+          { "word": "Tahu", "frame": 270 },
+          { "word": "Kebutuhannya", "frame": 278 }
+        ],
+        "spamTag": [
+          { "word": "Tanpa", "frame": 316 },
+          { "word": "Spamming", "frame": 324, "highlight": true, "highlightType": "red", "fontSize": 42 }
+        ],
+        "followUpTag": [
+          { "word": "Follow-Up", "frame": 364, "highlight": true, "highlightType": "green", "fontSize": 42 },
+          { "word": "Teratur", "frame": 370, "highlight": true, "highlightType": "green", "fontSize": 42 }
+        ]
+      }
+    },
+    "scene3": {
+      "startFrame": 382,
+      "duration": 122,
+      "endFrame": 504,
+      "triggers": {
+        "badgeTips2": 382,
+        "kirimInfo": 404,
+        "pillPromo": 434,
+        "pillSimulasi": 450,
+        "pillTipe": 466,
+        "character8Enter": 388,
+        "sceneExitSlide": 492
+      },
+      "textCues": {
+        "headlineLine1": [
+          { "word": "Kirim", "frame": 404 },
+          { "word": "Info", "frame": 410 }
+        ],
+        "headlineLine2": [
+          { "word": "Berguna", "frame": 416, "highlight": true, "highlightType": "yellow", "fontSize": 85 }
+        ],
+        "pills": [
+          { "word": "Promo Terbaru", "frame": 434 },
+          { "word": "Simulasi Kredit", "frame": 450 },
+          { "word": "Perbandingan Tipe Mobil", "frame": 466 }
+        ]
+      }
+    },
+    "scene4": {
+      "startFrame": 504,
+      "duration": 162,
+      "endFrame": 666,
+      "triggers": {
+        "badgeTips3": 504,
+        "catatPreferensi": 527,
+        "fieldTipe": 560,
+        "fieldBudget": 582,
+        "fieldRencana": 614,
+        "character9Enter": 510,
+        "sceneExitSlide": 654
+      },
+      "textCues": {
+        "headlineLine1": [
+          { "word": "Catat", "frame": 527 },
+          { "word": "Preferensi", "frame": 535 }
+        ],
+        "headlineLine2": [
+          { "word": "Customer", "frame": 542, "highlight": true, "highlightType": "yellow", "fontSize": 85 }
+        ],
+        "fields": [
+          { "label": "Tipe Mobil Impian", "frame": 560 },
+          { "label": "Budget Customer", "frame": 582 },
+          { "label": "Rencana Beli", "frame": 614 }
+        ]
+      }
+    },
+    "scene5": {
+      "startFrame": 666,
+      "duration": 186,
+      "endFrame": 852,
+      "triggers": {
+        "headlineMau": 673,
+        "headlinePakai": 692,
+        "otositeBrand": 724,
+        "phoneMockup": 690,
+        "featKatalog": 753,
+        "featSimulasi": 786,
+        "featWhatsApp": 815,
+        "character10Enter": 675,
+        "sceneExitSlide": 840
+      },
+      "textCues": {
+        "line1": [
+          { "word": "Mau", "frame": 673 },
+          { "word": "Lebih", "frame": 675 },
+          { "word": "Gampang?", "frame": 680, "italic": true }
+        ],
+        "line2": [
+          { "word": "Pakai", "frame": 692 },
+          { "word": "Website", "frame": 696 },
+          { "word": "Sales", "frame": 700 },
+          { "word": "Mobil", "frame": 708 }
+        ],
+        "brand": [
+          { "word": "Dari", "frame": 717 },
+          { "word": "Otosite", "frame": 724, "highlight": true, "highlightType": "blue", "fontSize": 95 }
+        ],
+        "features": [
+          { "title": "Katalog Lengkap", "frame": 753 },
+          { "title": "Simulasi Kredit", "frame": 786 },
+          { "title": "Terhubung WhatsApp", "frame": 815 }
+        ]
+      }
+    },
+    "scene6": {
+      "startFrame": 852,
+      "duration": 163,
+      "endFrame": 1015,
+      "triggers": {
+        "ctaPart1": 852,
+        "ctaPart2": 915,
+        "brandOtosite": 891,
+        "domainPill": 924,
+        "phoneBadge": 948,
+        "character11Enter": 856,
+        "voEnd": 958,
+        "holdEnd": 1015
+      },
+      "textCues": {
+        "part1Line1": [
+          { "word": "Yuk,", "frame": 852 },
+          { "word": "Tingkatkan", "frame": 854 }
+        ],
+        "part1Line2": [
+          { "word": "Penjualan", "frame": 868, "highlight": true, "highlightType": "yellow", "fontSize": 80 },
+          { "word": "Mobil", "frame": 878, "highlight": true, "highlightType": "yellow", "fontSize": 80 }
+        ],
+        "part1Line3": [
+          { "word": "Dengan", "frame": 885 },
+          { "word": "Otosite!", "frame": 891, "highlight": true, "highlightType": "blue", "fontSize": 75 }
+        ],
+        "part2Line1": [
+          { "word": "Kunjungi", "frame": 915, "fontSize": 50 }
+        ],
+        "part2Domain": [
+          { "word": "otosite.id", "frame": 924, "highlight": true, "highlightType": "blue", "fontSize": 90 }
+        ],
+        "part2Sekarang": [
+          { "word": "Sekarang!", "frame": 941, "highlight": true, "highlightType": "red", "fontSize": 60 }
+        ]
+      }
+    }
+  },
+  "sfxCues": [
+    { "file": "card_pop.wav", "frame": 16, "volume": 0.35 },
+    { "file": "read_doubt.wav", "frame": 74, "volume": 0.40 },
+    { "file": "punch_impact.wav", "frame": 98, "volume": 0.45 },
+    { "file": "swipe_whoosh.wav", "frame": 166, "volume": 0.30 },
+    { "file": "card_pop.wav", "frame": 200, "volume": 0.35 },
+    { "file": "clock_tick.wav", "frame": 242, "volume": 0.30 },
+    { "file": "kinetic_slam.wav", "frame": 316, "volume": 0.45 },
+    { "file": "soft_confirm.wav", "frame": 364, "volume": 0.40 },
+    { "file": "swipe_whoosh.wav", "frame": 374, "volume": 0.30 },
+    { "file": "card_pop.wav", "frame": 382, "volume": 0.35 },
+    { "file": "card_pop.wav", "frame": 434, "volume": 0.35 },
+    { "file": "card_pop.wav", "frame": 450, "volume": 0.35 },
+    { "file": "card_pop.wav", "frame": 466, "volume": 0.35 },
+    { "file": "swipe_whoosh.wav", "frame": 496, "volume": 0.30 },
+    { "file": "card_pop.wav", "frame": 504, "volume": 0.35 },
+    { "file": "pencil_write.wav", "frame": 560, "volume": 0.35 },
+    { "file": "pencil_write.wav", "frame": 582, "volume": 0.35 },
+    { "file": "pencil_write.wav", "frame": 614, "volume": 0.35 },
+    { "file": "swipe_whoosh.wav", "frame": 658, "volume": 0.30 },
+    { "file": "card_pop.wav", "frame": 690, "volume": 0.35 },
+    { "file": "card_pop.wav", "frame": 753, "volume": 0.35 },
+    { "file": "card_pop.wav", "frame": 786, "volume": 0.35 },
+    { "file": "phone_vibrate.wav", "frame": 815, "volume": 0.40 },
+    { "file": "swipe_whoosh.wav", "frame": 844, "volume": 0.30 },
+    { "file": "kinetic_slam.wav", "frame": 868, "volume": 0.45 },
+    { "file": "sparkle_eureka.wav", "frame": 915, "volume": 0.45 },
+    { "file": "incoming_ring.wav", "frame": 948, "volume": 0.18 }
+  ]
+}
