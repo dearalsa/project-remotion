@@ -120,7 +120,6 @@ export const Character: React.FC<CharacterProps> = ({
         />
       </div>
 
-      {/* Realistic Floor Drop Shadow matching Referensi Otosite.mp4 */}
       {showShadow && (
         <div
           style={{

@@ -53,7 +53,7 @@ export const Scene2Problem: React.FC = () => {
         pointerEvents: "none",
       }}
     >
-      {/* 1. Kinetic Headline (Top Center, y ≈ 350px) */}
+      {/* Kinetic Headline */}
       <div
         style={{
           position: "absolute",
@@ -67,7 +67,7 @@ export const Scene2Problem: React.FC = () => {
           zIndex: 10,
         }}
       >
-        {/* Line 1: calon pembeli bisa jadi */}
+        {/* Line 1: Calon Pembeli Bisa Jadi */}
         <div
           style={{
             fontSize: 60,
@@ -118,7 +118,7 @@ export const Scene2Problem: React.FC = () => {
           </span>
         </div>
 
-        {/* Line 2: kurang percaya (Yellow fill + black stroke) */}
+        {/* Line 2: Kurang Percaya */}
         <div
           style={{
             fontSize: 95,
@@ -163,7 +163,7 @@ export const Scene2Problem: React.FC = () => {
         </div>
       </div>
 
-      {/* 2. Trust Meter Card (Center, y ≈ 620px) */}
+      {/* Trust Meter Card */}
       <div
         style={{
           position: "absolute",
@@ -210,8 +210,8 @@ export const Scene2Problem: React.FC = () => {
                 fontSize: 34,
                 fontWeight: 300,
                 letterSpacing: -3,
-                color: barColor, // Warna teks ikut berubah jadi merah saat drop
-                fontVariantNumeric: "tabular-nums", // Menjaga posisi angka agar tidak lompat-lompat
+                color: barColor, 
+                fontVariantNumeric: "tabular-nums", 
                 lineHeight: 1,
               }}
             >
@@ -242,7 +242,7 @@ export const Scene2Problem: React.FC = () => {
         </div>
       </div>
 
-      {/* 3. Character 2 (Concerned/Walking) with Drop Shadow */}
+      {/* Character 2 (Concerned/Walking) with Drop Shadow */}
       <div
         style={{
           position: "absolute",
@@ -256,7 +256,7 @@ export const Scene2Problem: React.FC = () => {
           transform: "scale(1.3)"
         }}
       >
-        {/* Thought Bubble with Question Mark */}
+        {/* Thought bubble above head */}
         <div
           style={{
             position: "absolute",

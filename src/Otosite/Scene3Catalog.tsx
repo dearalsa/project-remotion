@@ -10,7 +10,7 @@ export const Scene3Catalog: React.FC = () => {
   // Konfigurasi spring super lambat & halus (Slow & Smooth)
   const slowSpringConfig = { damping: 18, mass: 1.3, stiffness: 60 };
 
-  // 1. Word-by-word animations (Jeda diperlebar & gerakan jauh lebih pelan)
+  // Word-by-word animations 
   const wYuk = spring({ frame: frame - 2, fps, config: slowSpringConfig });
   const wPunya = spring({ frame: frame - 12, fps, config: slowSpringConfig });
   const wWebsite = spring({ frame: frame - 22, fps, config: slowSpringConfig });
@@ -19,7 +19,7 @@ export const Scene3Catalog: React.FC = () => {
   // Baris kedua muncul perlahan kata demi kata
   const subWords = ["Biar", "customer", "gampang", "cek :"];
 
-  // 2. Phone Mockup entrance & auto-scroll website yang sangat pelan
+  // Phone Mockup entrance & auto-scroll website yang sangat pelan
   const phoneSpring = spring({
     frame: frame - 20,
     fps,
@@ -31,7 +31,7 @@ export const Scene3Catalog: React.FC = () => {
   });
   void siteScrollY;
 
-  // 3. Animasi kursor di dalam layar HP (Gerakan diperhalus & diperlambat)
+  // Animasi kursor di dalam layar HP (Gerakan diperhalus & diperlambat)
   const cursorSpring = spring({ frame: frame - 35, fps, config: slowSpringConfig });
   const cursorX = interpolate(frame, [35, 85, 130], [80, 190, 130], {
     extrapolateLeft: "clamp",
@@ -43,7 +43,7 @@ export const Scene3Catalog: React.FC = () => {
   });
   const cursorClick = interpolate(Math.sin((frame / 18) * Math.PI), [-1, 1], [0.94, 1.06]);
 
-  // 4. Tiga Pill Buttons (Muncul perlahan dengan ayunan lembut)
+  // Tiga Pill Buttons (Muncul perlahan dengan ayunan lembut)
   const pillTipe = spring({
     frame: frame - 72,
     fps,
@@ -60,7 +60,7 @@ export const Scene3Catalog: React.FC = () => {
     config: { damping: 16, mass: 1.3, stiffness: 65 },
   });
 
-  // 5. Outro transition (local frames 134 to 146)
+  // Outro transition 
   const sceneExit = interpolate(frame, [134, 146], [1, 0], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
@@ -86,7 +86,7 @@ export const Scene3Catalog: React.FC = () => {
         pointerEvents: "none",
       }}
     >
-      {/* BAGIAN ATAS: Headline dengan Animasi Kata demi Kata yang Lambat & Halus */}
+      {/* Headline dengan Animasi Kata demi Kata yang Lambat & Halus */}
       <div
         style={{
           width: "100%",
@@ -193,7 +193,6 @@ export const Scene3Catalog: React.FC = () => {
         </div>
       </div>
 
-      {/* BAGIAN TENGAH: Kiri (3 Pill Buttons Vertikal) & Kanan (HP Miring) */}
       <div
         style={{
           display: "flex",
@@ -207,7 +206,7 @@ export const Scene3Catalog: React.FC = () => {
           padding: "0 10px",
         }}
       >
-        {/* KIRI: 3 Pill Buttons Pop-Up Lambat */}
+        {/* Pill Buttons Pop-Up Lambat */}
         <div
           style={{
           display: "flex",
@@ -218,7 +217,7 @@ export const Scene3Catalog: React.FC = () => {
           transform: "translateY(-100px)",
           }}
         >
-          {/* Button 1: Tipe */}
+          {/* Button 1: Tipe Mobil */}
           <div
             style={{
               backgroundColor: "#f7c25d",
@@ -279,7 +278,7 @@ export const Scene3Catalog: React.FC = () => {
           </div>
         </div>
 
-        {/* KANAN: Mockup HP Miring (Tilted Phone) berisi Website Scroll */}
+        {/* Mockup HP Miring (Tilted Phone) berisi Website Scroll */}
         <div
           style={{
             width: "48%",

@@ -1,12 +1,6 @@
 import React from "react";
 import { AbsoluteFill, Loop, staticFile, Video } from "remotion";
 
-/**
- * BrandingOverlay renders the authentic footage from footer otosite.mp4
- * clipped precisely to the top Otosite logo pill and bottom www.otosite.id footer pill.
- * This guarantees 100% transparent overlay over the full-screen grid background
- * with ZERO black bars or borders!
- */
 export const BrandingOverlay: React.FC = () => {
   return (
     <AbsoluteFill
@@ -16,7 +10,7 @@ export const BrandingOverlay: React.FC = () => {
       }}
     >
       <Loop durationInFrames={442}>
-        {/* 1. Top Logo Pill (Top-Left) */}
+        {/* Top Logo Pill (Top-Left) */}
         <div
           style={{
             position: "absolute",
@@ -43,7 +37,7 @@ export const BrandingOverlay: React.FC = () => {
           />
         </div>
 
-        {/* 2. Bottom Footer Pill (Centered at Bottom) */}
+        {/* Bottom Footer Pill (Centered at Bottom) */}
         <div
           style={{
             position: "absolute",
