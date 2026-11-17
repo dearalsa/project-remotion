@@ -1,3 +1,4 @@
+
 import React from "react";
 import { AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
 import { Character } from "./Character";
@@ -6,6 +7,7 @@ import {
   COLOR_CARD_BG,
   COLOR_DARK,
   COLOR_GRAY,
+  COLOR_RED,
   COLOR_YELLOW,
   FONT_FAMILY,
   SAFE_LEFT,
@@ -71,6 +73,19 @@ export const Scene6ClosingCTA: React.FC = () => {
     config: { damping: 12, mass: 0.5 },
   });
 
+  // Lamp glow animation
+  const lampGlowSpring = spring({
+    frame: frame - fChar11,
+    fps,
+    config: { damping: 14, mass: 0.5 },
+  });
+
+  const lampPulse = interpolate(
+    Math.sin((frame / 12) * Math.PI),
+    [-1, 1],
+    [0.88, 1.12]
+  );
+
   // Subtle breathing pulse for hold phase (frame >= 106)
   const breathing = interpolate(Math.sin((frame / 15) * Math.PI), [-1, 1], [0.985, 1.015]);
 
@@ -91,13 +106,12 @@ export const Scene6ClosingCTA: React.FC = () => {
         }}
       >
         {!isPart2 ? (
-          /* PART 6A: Yuk Tingkatkan Penjualan Mobil Kamu Dengan Otosite! */
           <>
             {/* Top Typography Header */}
             <div
               style={{
                 position: "absolute",
-                top: 40,
+                top: 200,
                 left: 0,
                 right: 0,
                 display: "flex",
@@ -107,7 +121,7 @@ export const Scene6ClosingCTA: React.FC = () => {
                 zIndex: 10,
               }}
             >
-              {/* Line 1: Yuk, Tingkatkan */}
+              {/* Line 1: Follow Up Pintar */}
               <div
                 style={{
                   display: "flex",
@@ -115,20 +129,35 @@ export const Scene6ClosingCTA: React.FC = () => {
                   alignItems: "center",
                   gap: 12,
                   marginBottom: 14,
-                  fontSize: 56,
-                  fontWeight: 800,
+                  fontSize: 70,
+                  fontWeight: 700,
                   color: COLOR_DARK,
-                  letterSpacing: -2,
+                  letterSpacing: -5,
                 }}
               >
                 <span
                   style={{
                     display: "inline-block",
+                    fontStyle: "italic",
+                    color: "#1800ac",
+                    textDecoration: "underline",
                     opacity: frame >= 0 ? wYuk : 0,
                     transform: `translateY(${interpolate(wYuk, [0, 1], [20, 0])}px)`,
                   }}
                 >
-                  Yuk,
+                  Follow Up
+                </span>
+                <span
+                  style={{
+                    display: "inline-block",
+                    fontStyle: "italic",
+                    color: "#1800ac",
+                    textDecoration: "underline",
+                    opacity: frame >= 2 ? wTingkatkan : 0,
+                    transform: `translateY(${interpolate(wTingkatkan, [0, 1], [20, 0])}px)`,
+                  }}
+                >
+                  Pintar 
                 </span>
                 <span
                   style={{
@@ -137,11 +166,11 @@ export const Scene6ClosingCTA: React.FC = () => {
                     transform: `translateY(${interpolate(wTingkatkan, [0, 1], [20, 0])}px)`,
                   }}
                 >
-                  Tingkatkan
+                  Buat
                 </span>
               </div>
 
-              {/* Line 2 (Punch): Penjualan Mobil */}
+              {/* Line 2: Closing Lancar */}
               <div
                 style={{
                   display: "flex",
@@ -154,92 +183,91 @@ export const Scene6ClosingCTA: React.FC = () => {
                 <span
                   style={{
                     display: "inline-block",
-                    fontSize: 80,
-                    fontWeight: 950,
-                    color: COLOR_YELLOW,
-                    WebkitTextStroke: "3.5px #000000",
+                    fontSize: 90,
+                    fontWeight: 700,
+                    color: COLOR_RED,
+                    textDecoration: "underline",
+                    fontStyle: "italic",
                     paintOrder: "stroke fill",
-                    filter: "drop-shadow(0 6px 0 #000000)",
-                    letterSpacing: -2,
+                    letterSpacing: -5,
                     opacity: frame >= 16 ? wPenjualan : 0,
                     transform: `scale(${interpolate(wPenjualan, [0, 1], [0.75, 1])}) translateY(${interpolate(wPenjualan, [0, 1], [28, 0])}px)`,
                   }}
                 >
-                  Penjualan
+                  Closing
                 </span>
                 <span
                   style={{
                     display: "inline-block",
                     fontSize: 80,
-                    fontWeight: 950,
-                    color: COLOR_YELLOW,
-                    WebkitTextStroke: "3.5px #000000",
+                    fontWeight: 700,
+                    textDecoration: "underline",
+                    fontStyle: "italic",
+                    color: COLOR_RED,
                     paintOrder: "stroke fill",
-                    filter: "drop-shadow(0 6px 0 #000000)",
-                    letterSpacing: -2,
+                    letterSpacing: -5,
                     opacity: frame >= 26 ? wMobil : 0,
                     transform: `scale(${interpolate(wMobil, [0, 1], [0.75, 1])}) translateY(${interpolate(wMobil, [0, 1], [28, 0])}px)`,
                   }}
                 >
-                  Mobil
-                </span>
-              </div>
-
-              {/* Line 3: Dengan Otosite! */}
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  gap: 16,
-                }}
-              >
-                <span
-                  style={{
-                    display: "inline-block",
-                    fontSize: 55,
-                    fontWeight: 800,
-                    color: COLOR_DARK,
-                    letterSpacing: -2,
-                    opacity: frame >= 33 ? wDengan : 0,
-                    transform: `translateY(${interpolate(wDengan, [0, 1], [20, 0])}px)`,
-                  }}
-                >
-                  Dengan
-                </span>
-                <span
-                  style={{
-                    display: "inline-block",
-                    fontSize: 75,
-                    fontWeight: 950,
-                    fontStyle: "italic",
-                    color: "#1800ac",
-                    letterSpacing: -2,
-                    opacity: frame >= 39 ? wOtositeCta : 0,
-                    transform: `scale(${interpolate(wOtositeCta, [0, 1], [0.75, 1])}) translateY(${interpolate(wOtositeCta, [0, 1], [28, 0])}px)`,
-                  }}
-                >
-                  Otosite!
+                  Lancar
                 </span>
               </div>
             </div>
 
+            {/* Golden Lamp Glow */}
+            <div
+              style={{
+                position: "absolute",
+                top: 450,
+                right: 150,
+                width: 240,
+                height: 240,
+                borderRadius: "50%",
+                background:
+                  "radial-gradient(circle, rgba(255, 221, 80, 0.55) 0%, rgba(255, 205, 50, 0.25) 35%, rgba(255, 205, 50, 0.08) 60%, transparent 75%)",
+                filter: "blur(12px)",
+                opacity: lampGlowSpring * 0.9,
+                transform: `scale(${lampPulse})`,
+                pointerEvents: "none",
+                zIndex: 0,
+              }}
+            />
+
+            {/* Small Light Rays */}
+            <div
+              style={{
+                position: "absolute",
+                top: 650,
+                right: -90,
+                width: 180,
+                height: 180,
+                borderRadius: "50%",
+                background:
+                  "repeating-conic-gradient(from 0deg, rgba(255, 210, 60, 0.22) 0deg 3deg, transparent 3deg 30deg)",
+                maskImage:
+                  "radial-gradient(circle, transparent 25%, black 70%, transparent 100%)",
+                opacity: lampGlowSpring * 0.65,
+                transform: `rotate(${frame * 0.15}deg) scale(${lampPulse})`,
+                pointerEvents: "none",
+                zIndex: 0,
+              }}
+            />
+
             {/* Character 11 (Center Proud) */}
             <Character
               characterNumber={11}
-              scale={1.05}
+              scale={1.80}
               entryProgress={enter11}
               poseVariant="eureka"
               style={{
-                top: 460,
+                top: 720,
                 left: 310,
               }}
             />
           </>
         ) : (
-          /* PART 6B: Kunjungi otosite.id Sekarang! + Phone Contact */
           <>
-            {/* Main CTA Card */}
             <div
               style={{
                 position: "absolute",
@@ -257,43 +285,45 @@ export const Scene6ClosingCTA: React.FC = () => {
                 zIndex: 10,
               }}
             >
-              {/* Small Headline: Kunjungi */}
-              <div style={{ marginBottom: 12 }}>
-                <span
-                  style={{
-                    display: "inline-block",
-                    fontSize: 48,
-                    fontWeight: 700,
-                    color: COLOR_GRAY,
-                    letterSpacing: -1,
-                    opacity: frame >= 63 ? wKunjungi : 0,
-                    transform: `translateY(${interpolate(wKunjungi, [0, 1], [18, 0])}px)`,
-                  }}
-                >
-                  Kunjungi
-                </span>
-              </div>
-
-              {/* Huge Brand Website: otosite.id */}
+              {/* Small Headline: Hubungi Otosite */}
               <div
                 style={{
-                  marginBottom: 16,
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  gap: 16,
+                  marginBottom: 12,
+                  whiteSpace: "nowrap",
                 }}
               >
                 <span
                   style={{
                     display: "inline-block",
-                    fontSize: 90,
-                    fontWeight: 950,
-                    fontStyle: "italic",
-                    color: "#1800ac",
-                    letterSpacing: -4,
-                    textDecoration: "underline",
-                    opacity: frame >= 72 ? wDomain : 0,
-                    transform: `scale(${interpolate(domainSpring, [0, 1], [0.8, 1]) * interpolate(wDomain, [0, 1], [0.75, 1])}) translateY(${interpolate(wDomain, [0, 1], [24, 0])}px)`,
+                    fontSize: 60,
+                    fontWeight: 700,
+                    color: COLOR_DARK,
+                    letterSpacing: -5,
+                    opacity: frame >= 63 ? wKunjungi : 0,
+                    transform: `translateY(${interpolate(wKunjungi, [0, 1], [18, 0])}px)`,
                   }}
                 >
-                  otosite.id
+                  Hubungi
+                </span>
+
+                <span
+                  style={{
+                    display: "inline-block",
+                    fontSize: 80,
+                    fontWeight: 700,
+                    color: COLOR_RED,
+                    fontStyle: "italic",
+                    letterSpacing: -5,
+                    opacity: frame >= 63 ? wKunjungi : 0,
+                    transform: `translateY(${interpolate(wKunjungi, [0, 1], [18, 0])}px)`,
+                  }}
+                >
+                  Otosite
                 </span>
               </div>
 
@@ -303,10 +333,9 @@ export const Scene6ClosingCTA: React.FC = () => {
                   style={{
                     display: "inline-block",
                     fontSize: 60,
-                    fontWeight: 950,
-                    fontStyle: "italic",
-                    color: "#FF3133",
-                    letterSpacing: -2,
+                    fontWeight: 700,
+                    color: COLOR_DARK,
+                    letterSpacing: -5,
                     opacity: frame >= 89 ? wSekarang : 0,
                     transform: `scale(${interpolate(wSekarang, [0, 1], [0.8, 1])}) translateY(${interpolate(wSekarang, [0, 1], [20, 0])}px)`,
                   }}
@@ -339,11 +368,11 @@ export const Scene6ClosingCTA: React.FC = () => {
                   boxShadow: "0 10px 24px rgba(16, 185, 129, 0.12)",
                 }}
               >
-                <span style={{ fontSize: 32 }}>💬</span>
+                <span style={{ fontSize: 35 }}>☎️</span>
                 <span
                   style={{
                     fontSize: 34,
-                    fontWeight: 900,
+                    fontWeight: 800,
                     color: COLOR_DARK,
                     letterSpacing: -0.5,
                   }}
@@ -353,15 +382,15 @@ export const Scene6ClosingCTA: React.FC = () => {
               </div>
             </div>
 
-            {/* Character 11 (Standing next to CTA Card) */}
+            {/* Character 13 (Standing next to CTA Card) */}
             <Character
-              characterNumber={11}
-              scale={0.92}
+              characterNumber={13}
+              scale={1.40}
               entryProgress={1}
               poseVariant="idle"
               style={{
-                top: 730,
-                left: 350,
+                top: 770,
+                left: 270,
               }}
             />
           </>
