@@ -1,5 +1,5 @@
 import React from "react";
-import { AbsoluteFill, Img, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
+import { AbsoluteFill, OffthreadVideo, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { Character } from "./Character";
 import {
   COLOR_BORDER,
@@ -33,21 +33,23 @@ export const Scene5OtositeWeb: React.FC = () => {
     config: { damping: 14, mass: 0.5 },
   });
 
-  // Word-by-word kinetic typography springs - synced to voiceover rhythm
-  // Line 1: Mau Lebih Gampang?
+  // Tips 4 badge spring
+  const badgeTips4Spring = spring({
+    frame,
+    fps,
+    config: { damping: 12, mass: 0.5 },
+  });
+
+  // Word-by-word kinetic typography springs
   const wMau = spring({ frame: frame - 7, fps, config: { damping: 14, mass: 0.5 } });
   const wLebih = spring({ frame: frame - 9, fps, config: { damping: 14, mass: 0.5 } });
   const wGampang = spring({ frame: frame - 14, fps, config: { damping: 14, mass: 0.5 } });
-
-  // Line 2: Pakai Website Sales Mobil
-  const wPakai = spring({ frame: frame - 26, fps, config: { damping: 14, mass: 0.5 } });
-  const wWebsite = spring({ frame: frame - 30, fps, config: { damping: 14, mass: 0.5 } });
-  const wSales = spring({ frame: frame - 34, fps, config: { damping: 14, mass: 0.5 } });
-  const wMobil = spring({ frame: frame - 42, fps, config: { damping: 14, mass: 0.5 } });
-
-  // Line 3: Dari Otosite
-  const wDari = spring({ frame: frame - 51, fps, config: { damping: 14, mass: 0.5 } });
-  const wOtosite = spring({ frame: frame - 58, fps, config: { damping: 11, mass: 0.5 } });
+  const wPakai = spring({ frame: frame - 18, fps, config: { damping: 14, mass: 0.5 } });
+  const wWebsite = spring({ frame: frame - 22, fps, config: { damping: 11, mass: 0.5 } });
+  const wSales = spring({ frame: frame - 30, fps, config: { damping: 14, mass: 0.5 } });
+  const wMobil = spring({ frame: frame - 34, fps, config: { damping: 14, mass: 0.5 } });
+  const wDari = spring({ frame: frame - 38, fps, config: { damping: 14, mass: 0.5 } });
+  const wOtosite = spring({ frame: frame - 42, fps, config: { damping: 11, mass: 0.5 } });
 
   // Phone Mockup spring
   const phoneSpring = spring({
@@ -93,7 +95,7 @@ export const Scene5OtositeWeb: React.FC = () => {
         <div
           style={{
             position: "absolute",
-            top: 25,
+            top: 50,
             left: 0,
             right: 0,
             display: "flex",
@@ -103,18 +105,40 @@ export const Scene5OtositeWeb: React.FC = () => {
             zIndex: 10,
           }}
         >
-          {/* Line 1: Mau Lebih Gampang? */}
+          {/* Badge Tips 4 */}
+          <div style={{ marginBottom: 10 }}>
+            <div
+              style={{
+                display: "inline-block",
+                backgroundColor: COLOR_YELLOW,
+                color: COLOR_DARK,
+                fontWeight: 700,
+                fontSize: 50,
+                padding: "20px 80px",
+                borderRadius: 50,
+                border: "2.5px solid #000000",
+                boxShadow: "0 6px 0 #000000",
+                transform: `scale(${interpolate(badgeTips4Spring, [0, 1], [0.75, 1])}) translateY(${interpolate(badgeTips4Spring, [0, 1], [20, 0])}px)`,
+                opacity: badgeTips4Spring,
+                letterSpacing: -2,
+              }}
+            >
+              Tips 4
+            </div>
+          </div>
+
+          {/* Line 1: Pakai Website Sales dari Otosite */}
           <div
             style={{
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
               gap: 12,
-              marginBottom: 12,
-              fontSize: 52,
-              fontWeight: 700,
+              marginBottom: 8,
+              marginTop: 25,
+              fontSize: 60,
               color: COLOR_DARK,
-              letterSpacing: -2,
+              letterSpacing: -5,
             }}
           >
             <span
@@ -124,7 +148,7 @@ export const Scene5OtositeWeb: React.FC = () => {
                 transform: `translateY(${interpolate(wMau, [0, 1], [20, 0])}px)`,
               }}
             >
-              Mau
+              Pakai
             </span>
             <span
               style={{
@@ -133,57 +157,13 @@ export const Scene5OtositeWeb: React.FC = () => {
                 transform: `translateY(${interpolate(wLebih, [0, 1], [20, 0])}px)`,
               }}
             >
-              Lebih
-            </span>
-            <span
-              style={{
-                display: "inline-block",
-                fontStyle: "italic",
-                opacity: frame >= 14 ? wGampang : 0,
-                transform: `translateY(${interpolate(wGampang, [0, 1], [20, 0])}px)`,
-              }}
-            >
-              Gampang?
-            </span>
-          </div>
-
-          {/* Line 2: Pakai Website Sales Mobil */}
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              gap: 12,
-              marginBottom: 12,
-              fontSize: 56,
-              fontWeight: 800,
-              color: COLOR_DARK,
-              letterSpacing: -2,
-            }}
-          >
-            <span
-              style={{
-                display: "inline-block",
-                opacity: frame >= 26 ? wPakai : 0,
-                transform: `translateY(${interpolate(wPakai, [0, 1], [20, 0])}px)`,
-              }}
-            >
-              Pakai
-            </span>
-            <span
-              style={{
-                display: "inline-block",
-                opacity: frame >= 30 ? wWebsite : 0,
-                transform: `translateY(${interpolate(wWebsite, [0, 1], [20, 0])}px)`,
-              }}
-            >
               Website
             </span>
             <span
               style={{
                 display: "inline-block",
-                opacity: frame >= 34 ? wSales : 0,
-                transform: `translateY(${interpolate(wSales, [0, 1], [20, 0])}px)`,
+                opacity: frame >= 14 ? wGampang : 0,
+                transform: `translateY(${interpolate(wGampang, [0, 1], [20, 0])}px)`,
               }}
             >
               Sales
@@ -191,46 +171,23 @@ export const Scene5OtositeWeb: React.FC = () => {
             <span
               style={{
                 display: "inline-block",
-                opacity: frame >= 42 ? wMobil : 0,
-                transform: `translateY(${interpolate(wMobil, [0, 1], [20, 0])}px)`,
+                opacity: frame >= 18 ? wPakai : 0,
+                transform: `translateY(${interpolate(wPakai, [0, 1], [20, 0])}px)`,
               }}
             >
-              Mobil
-            </span>
-          </div>
-
-          {/* Line 3 (Brand Hero): Dari Otosite */}
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              gap: 16,
-            }}
-          >
-            <span
-              style={{
-                display: "inline-block",
-                fontSize: 60,
-                fontWeight: 800,
-                color: COLOR_DARK,
-                letterSpacing: -2,
-                opacity: frame >= 51 ? wDari : 0,
-                transform: `translateY(${interpolate(wDari, [0, 1], [20, 0])}px)`,
-              }}
-            >
-              Dari
+              dari
             </span>
             <span
               style={{
                 display: "inline-block",
-                fontSize: 95,
+                fontSize: 70,
                 fontWeight: 950,
                 fontStyle: "italic",
+                textDecoration: "underline",
                 color: "#1800ac",
-                letterSpacing: -3,
-                opacity: frame >= 58 ? wOtosite : 0,
-                transform: `scale(${interpolate(wOtosite, [0, 1], [0.75, 1])}) translateY(${interpolate(wOtosite, [0, 1], [28, 0])}px)`,
+                letterSpacing: -5,
+                opacity: frame >= 22 ? wWebsite : 0,
+                transform: `scale(${interpolate(wWebsite, [0, 1], [0.75, 1])}) translateY(${interpolate(wWebsite, [0, 1], [28, 0])}px)`,
               }}
             >
               Otosite
@@ -242,7 +199,7 @@ export const Scene5OtositeWeb: React.FC = () => {
         <div
           style={{
             position: "absolute",
-            top: 310,
+            top: 350,
             right: 40,
             width: 440,
             height: 680,
@@ -285,33 +242,49 @@ export const Scene5OtositeWeb: React.FC = () => {
                 fontWeight: 600,
               }}
             >
-              🔒 salesmobil.otosite.id
+              🔒 otosite.id
             </div>
           </div>
 
-          {/* Website Image */}
-          <div style={{ position: "relative", width: "100%", height: 626, overflow: "hidden" }}>
-            <Img
-              src={staticFile("assets/Website Otosite.png")}
-              style={{
-                width: "100%",
-                height: "auto",
-                transform: `translateY(${interpolate(frame, [fPhone, fPhone + 90], [0, -120], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })}px)`,
-              }}
-            />
-          </div>
+         {/* Website Video */}
+        <div
+          style={{
+            position: "relative",
+            width: "100%",
+            height: 626,
+            overflow: "hidden",
+          }}
+        >
+          <OffthreadVideo
+            src={staticFile("assets/Video Scroll Otosite.mp4")}
+            muted
+            style={{
+              width: "100%",
+              height: "auto",
+              transform: `translateY(${interpolate(
+                frame,
+                [fPhone, fPhone + 90],
+                [0, -120],
+                {
+                  extrapolateLeft: "clamp",
+                  extrapolateRight: "clamp",
+                }
+              )}px)`,
+            }}
+          />
+        </div>
         </div>
 
         {/* Left Side: 3 Feature Badges Floating */}
         <div
           style={{
             position: "absolute",
-            top: 340,
+            top: 360,
             left: 40,
             width: 400,
             display: "flex",
             flexDirection: "column",
-            gap: 24,
+            gap: 35,
             zIndex: 10,
           }}
         >
@@ -328,16 +301,16 @@ export const Scene5OtositeWeb: React.FC = () => {
               display: "flex",
               alignItems: "center",
               gap: 14,
+              letterSpacing: -2,
             }}
           >
             <div style={{ fontSize: 32 }}>🚗</div>
             <div>
-              <div style={{ fontSize: 22, fontWeight: 900, color: COLOR_DARK }}>Katalog Lengkap</div>
-              <div style={{ fontSize: 14, color: COLOR_GRAY, marginTop: 2 }}>Spesifikasi, foto & warna</div>
+              <div style={{ fontSize: 27, color: COLOR_DARK }}>Katalog Lengkap</div>
             </div>
           </div>
 
-          {/* Feature 2: Form Simulasi Kredit */}
+          {/* Feature 2: Promo */}
           <div
             style={{
               transform: `scale(${interpolate(feat2Spring, [0, 1], [0.8, 1])}) translateY(${interpolate(feat2Spring, [0, 1], [30, 0])}px)`,
@@ -350,12 +323,12 @@ export const Scene5OtositeWeb: React.FC = () => {
               display: "flex",
               alignItems: "center",
               gap: 14,
+              letterSpacing: -2,
             }}
           >
-            <div style={{ fontSize: 32 }}>🧮</div>
+            <div style={{ fontSize: 32 }}>🏷️</div>
             <div>
-              <div style={{ fontSize: 22, fontWeight: 900, color: COLOR_DARK }}>Simulasi Kredit</div>
-              <div style={{ fontSize: 14, color: COLOR_GRAY, marginTop: 2 }}>Hitung DP & cicilan otomatis</div>
+              <div style={{ fontSize: 27, color: COLOR_DARK }}>Cek Promo Kapan Aja</div>
             </div>
           </div>
 
@@ -371,26 +344,25 @@ export const Scene5OtositeWeb: React.FC = () => {
               boxShadow: "0 10px 24px rgba(16, 185, 129, 0.08)",
               display: "flex",
               alignItems: "center",
+              letterSpacing: -2,
               gap: 14,
             }}
           >
             <div style={{ fontSize: 32 }}>💬</div>
             <div>
-              <div style={{ fontSize: 22, fontWeight: 900, color: "#10B981" }}>Langsung Ke WhatsApp</div>
-              <div style={{ fontSize: 14, color: COLOR_DARK, marginTop: 2 }}>Prospek masuk langsung ke HP</div>
+              <div style={{ fontSize: 27, color: "#10B981" }}>Terhubung Langsung Dengan WhatsApp</div>
             </div>
           </div>
         </div>
 
-        {/* Character 10 (Confident / Thumbs Up, Bottom Left) */}
+        {/* Character 10 */}
         <Character
           characterNumber={10}
-          scale={0.88}
+          scale={1.2}
           entryProgress={enter10}
           poseVariant="speaking"
           style={{
-            top: 710,
-            left: 80,
+            top: 770,
           }}
         />
       </div>
