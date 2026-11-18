@@ -20190,7 +20190,7 @@ if (true) {
 
 
 },
-8585(__unused_rspack_module, __unused_rspack___webpack_exports__, __webpack_require__) {
+6522(__unused_rspack_module, __unused_rspack___webpack_exports__, __webpack_require__) {
 
 // EXTERNAL MODULE: ./node_modules/remotion/dist/esm/index.mjs
 var esm = __webpack_require__(3947);
@@ -20834,12 +20834,7 @@ const Background = ()=>{
 
 
 
-/**
- * BrandingOverlay renders the authentic footage from footer otosite.mp4
- * clipped precisely to the top Otosite logo pill and bottom www.otosite.id footer pill.
- * This guarantees 100% transparent overlay over the full-screen grid background
- * with ZERO black bars or borders!
- */ const BrandingOverlay = ()=>{
+const BrandingOverlay = ()=>{
     return /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .AbsoluteFill */.H1, {
         style: {
             pointerEvents: "none",
@@ -21253,11 +21248,10 @@ const Scene1Hook = ()=>{
                 children: [
                     /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
                         style: {
-                            fontSize: 48,
-                            fontWeight: 800,
-                            color: "#1E293B",
-                            letterSpacing: -0.5,
-                            marginBottom: 6
+                            fontSize: 65,
+                            color: "#000000",
+                            letterSpacing: -5,
+                            marginBottom: 30
                         },
                         children: [
                             /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
@@ -21273,7 +21267,7 @@ const Scene1Hook = ()=>{
                                         0
                                     ])}px)`
                                 },
-                                children: "masih"
+                                children: "Masih"
                             }),
                             /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
                                 style: {
@@ -21287,20 +21281,19 @@ const Scene1Hook = ()=>{
                                         0
                                     ])}px)`
                                 },
-                                children: "ngandelin"
+                                children: "Ngandelin"
                             })
                         ]
                     }),
                     /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
                         style: {
-                            fontSize: 86,
+                            fontSize: 100,
                             fontWeight: 950,
                             lineHeight: 1.1,
-                            letterSpacing: -0.5,
                             display: "flex",
                             justifyContent: "center",
                             gap: 16,
-                            marginBottom: 8
+                            marginBottom: 30
                         },
                         children: [
                             /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
@@ -21308,6 +21301,7 @@ const Scene1Hook = ()=>{
                                     display: "inline-block",
                                     color: "#FFD33C",
                                     WebkitTextStroke: "3.5px #000000",
+                                    paintOrder: "stroke fill",
                                     filter: "drop-shadow(0 6px 0 #000000)",
                                     transform: `scale(${(0,esm/* .interpolate */.GW)(wMedsos, [
                                         0,
@@ -21324,13 +21318,14 @@ const Scene1Hook = ()=>{
                                     ])}px)`,
                                     opacity: wMedsos
                                 },
-                                children: "medsos"
+                                children: "MEDSOS"
                             }),
                             /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
                                 style: {
                                     display: "inline-block",
                                     color: "#FFD33C",
                                     WebkitTextStroke: "3.5px #000000",
+                                    paintOrder: "stroke fill",
                                     filter: "drop-shadow(0 6px 0 #000000)",
                                     transform: `scale(${(0,esm/* .interpolate */.GW)(wDoang, [
                                         0,
@@ -21347,15 +21342,16 @@ const Scene1Hook = ()=>{
                                     ])}px)`,
                                     opacity: wDoang
                                 },
-                                children: "doang"
+                                children: "DOANG"
                             })
                         ]
                     }),
                     /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
                         style: {
-                            fontSize: 48,
-                            fontWeight: 800,
-                            color: "#1E293B"
+                            fontSize: 50,
+                            color: "#000000",
+                            letterSpacing: -5,
+                            fontStyle: "italic"
                         },
                         children: [
                             /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
@@ -21371,7 +21367,7 @@ const Scene1Hook = ()=>{
                                         0
                                     ])}px)`
                                 },
-                                children: "buat"
+                                children: "Buat"
                             }),
                             /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
                                 style: {
@@ -21386,7 +21382,7 @@ const Scene1Hook = ()=>{
                                         0
                                     ])}px)`
                                 },
-                                children: "jualan"
+                                children: "Jualan"
                             }),
                             /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
                                 style: {
@@ -21406,7 +21402,7 @@ const Scene1Hook = ()=>{
                                         0
                                     ])}px)`
                                 },
-                                children: "mobil?"
+                                children: "Mobil?"
                             })
                         ]
                     })
@@ -21484,13 +21480,14 @@ const Scene1Hook = ()=>{
             /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
                 style: {
                     position: "absolute",
-                    bottom: 370,
+                    bottom: 460,
                     left: 0,
                     right: 0,
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
-                    zIndex: 5
+                    zIndex: 5,
+                    transform: "scale(1.3)"
                 },
                 children: [
                     /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
@@ -21946,7 +21943,7 @@ const Scene3Catalog = ()=>{
         mass: 1.3,
         stiffness: 60
     };
-    // 1. Word-by-word animations (Jeda diperlebar & gerakan jauh lebih pelan)
+    // Word-by-word animations 
     const wYuk = (0,esm/* .spring */.oz)({
         frame: frame - 2,
         fps,
@@ -21974,7 +21971,7 @@ const Scene3Catalog = ()=>{
         "gampang",
         "cek :"
     ];
-    // 2. Phone Mockup entrance & auto-scroll website yang sangat pelan
+    // Phone Mockup entrance & auto-scroll website yang sangat pelan
     const phoneSpring = (0,esm/* .spring */.oz)({
         frame: frame - 20,
         fps,
@@ -21995,7 +21992,7 @@ const Scene3Catalog = ()=>{
         extrapolateRight: "clamp"
     });
     void siteScrollY;
-    // 3. Animasi kursor di dalam layar HP (Gerakan diperhalus & diperlambat)
+    // Animasi kursor di dalam layar HP (Gerakan diperhalus & diperlambat)
     const cursorSpring = (0,esm/* .spring */.oz)({
         frame: frame - 35,
         fps,
@@ -22032,7 +22029,7 @@ const Scene3Catalog = ()=>{
         0.94,
         1.06
     ]);
-    // 4. Tiga Pill Buttons (Muncul perlahan dengan ayunan lembut)
+    // Tiga Pill Buttons (Muncul perlahan dengan ayunan lembut)
     const pillTipe = (0,esm/* .spring */.oz)({
         frame: frame - 72,
         fps,
@@ -22060,7 +22057,7 @@ const Scene3Catalog = ()=>{
             stiffness: 65
         }
     });
-    // 5. Outro transition (local frames 134 to 146)
+    // Outro transition 
     const sceneExit = (0,esm/* .interpolate */.GW)(frame, [
         134,
         146
@@ -22434,7 +22431,7 @@ const Scene3Catalog = ()=>{
 const Scene4SEO = ()=>{
     const frame = (0,esm/* .useCurrentFrame */.UC)();
     const { fps } = (0,esm/* .useVideoConfig */.Bk)();
-    // 1. SEO Text Punch on local frame 18
+    // SEO Text Punch on local frame 18
     const seoPunch = (0,esm/* .spring */.oz)({
         frame: frame - 18,
         fps,
@@ -22444,7 +22441,7 @@ const Scene4SEO = ()=>{
             stiffness: 160
         }
     });
-    // 2. Moving Hand-Drawn Circle Animation around "SEO"
+    // Moving Hand-Drawn Circle Animation around "SEO"
     // Smooth progressive stroke drawing (local frames 22 to 44)
     const circleDraw = (0,esm/* .interpolate */.GW)(frame, [
         22,
@@ -22457,7 +22454,7 @@ const Scene4SEO = ()=>{
         extrapolateRight: "clamp",
         easing: (t)=>t * (2 - t)
     });
-    // 3. Google Search Bar Entrance (local frame 28)
+    // Google Search Bar Entrance
     const searchBarSpring = (0,esm/* .spring */.oz)({
         frame: frame - 28,
         fps,
@@ -22466,8 +22463,8 @@ const Scene4SEO = ()=>{
             mass: 0.6
         }
     });
-    // 4. Typing Animation: "website sales mobil" (local frames 34 to 58)
-    const searchQuery = "website sales mobil";
+    // Typing Animation: "Website Sales Mobil"
+    const searchQuery = "Website Sales Mobil";
     const typingProgress = (0,esm/* .interpolate */.GW)(frame, [
         34,
         58
@@ -22480,8 +22477,8 @@ const Scene4SEO = ()=>{
     });
     const currentTyped = searchQuery.slice(0, Math.round(typingProgress));
     const showCursor = Math.floor(frame / 6) % 2 === 0 && frame < 66;
-    // 5. Hand Cursor Animation & Click on the Search Button (local frames 56 to 78)
-    // Hand moves toward the search button (x ≈ 895, y ≈ 537)
+    // Hand Cursor Animation & Click on the Search Button (local frames 56 to 78)
+    // Hand moves toward the search button
     const handX = (0,esm/* .interpolate */.GW)(frame, [
         56,
         64
@@ -22552,7 +22549,7 @@ const Scene4SEO = ()=>{
         extrapolateLeft: "clamp",
         extrapolateRight: "clamp"
     });
-    // 6. Search Results & yourwebsite.id Appearance Immediately After Click (frame 68)
+    // Search Results & yourwebsite.id Appearance Immediately After Click (frame 68)
     const resultsAppear = (0,esm/* .spring */.oz)({
         frame: frame - 68,
         fps,
@@ -22562,7 +22559,7 @@ const Scene4SEO = ()=>{
             stiffness: 150
         }
     });
-    // 7. Website Card Ascension from rank 3 to rank 1 (local frames 74 to 98)
+    // Website Card Ascension from rank 3 to rank 1 (local frames 74 to 98)
     const riseSpring = (0,esm/* .spring */.oz)({
         frame: frame - 74,
         fps,
@@ -22592,7 +22589,7 @@ const Scene4SEO = ()=>{
         120,
         240
     ]);
-    // 8. Bottom text entrance (local frame 85)
+    // Bottom text entrance (local frame 85)
     const wBottom = (0,esm/* .spring */.oz)({
         frame: frame - 85,
         fps,
@@ -22601,7 +22598,7 @@ const Scene4SEO = ()=>{
             mass: 0.5
         }
     });
-    // 9. Smooth Outro transition (local frames 130 to 141)
+    // Smooth Outro transition (local frames 130 to 141)
     const sceneExit = (0,esm/* .interpolate */.GW)(frame, [
         130,
         141
@@ -22685,7 +22682,7 @@ const Scene4SEO = ()=>{
                             },
                             viewBox: "0 0 360 190",
                             children: /*#__PURE__*/ (0,jsx_runtime.jsx)("path", {
-                                d: "M 175 28 C 95 24 35 60 38 102 C 41 146 105 168 185 166 C 265 164 335 138 332 96 C 329 50 258 24 175 26 C 120 28 68 46 52 74",
+                                d: "M 180 5\n            C 75 2 5 48 5 102\n            C 5 165 95 188 185 188\n            C 280 188 355 155 355 98\n            C 355 40 275 2 180 5\n            C 105 8 35 35 12 75",
                                 fill: "none",
                                 stroke: "#FF3133",
                                 strokeWidth: 6,
@@ -22762,9 +22759,8 @@ const Scene4SEO = ()=>{
                         style: {
                             flex: 1,
                             fontSize: 32,
-                            fontWeight: 600,
-                            color: "#1E293B",
-                            letterSpacing: -0.5
+                            letterSpacing: -2,
+                            color: "#000000"
                         },
                         children: [
                             /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
@@ -22973,31 +22969,20 @@ const Scene4SEO = ()=>{
                                         },
                                         children: "\uD83C\uDF10"
                                     }),
-                                    /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
                                         style: {
                                             display: "flex",
                                             flexDirection: "column",
                                             gap: 3
                                         },
-                                        children: [
-                                            /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
-                                                style: {
-                                                    fontSize: 24,
-                                                    fontWeight: 700,
-                                                    color: "#1842B6",
-                                                    letterSpacing: -0.5
-                                                },
-                                                children: "yourwebsite.id"
-                                            }),
-                                            /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
-                                                style: {
-                                                    fontSize: 15,
-                                                    fontWeight: 500,
-                                                    color: "#64748B"
-                                                },
-                                                children: "Website Katalog & Sales Mobil Resmi"
-                                            })
-                                        ]
+                                        children: /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                            style: {
+                                                fontSize: 24,
+                                                color: "#000000",
+                                                letterSpacing: -2
+                                            },
+                                            children: "yourwebsite.id"
+                                        })
                                     })
                                 ]
                             }),
@@ -23005,7 +22990,7 @@ const Scene4SEO = ()=>{
                                 style: {
                                     fontSize: 36,
                                     fontWeight: 800,
-                                    color: "#FF3133",
+                                    color: "#000000",
                                     letterSpacing: -2,
                                     transform: `translateX(${Math.sin(frame / 5) * 4}px)`
                                 },
@@ -23018,7 +23003,7 @@ const Scene4SEO = ()=>{
             /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
                 style: {
                     position: "absolute",
-                    bottom: 470,
+                    bottom: 600,
                     right: 180,
                     display: "flex",
                     alignItems: "center",
@@ -23030,28 +23015,31 @@ const Scene4SEO = ()=>{
                 children: [
                     /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
                         style: {
-                            fontSize: 38,
+                            fontSize: 40,
                             fontWeight: 600,
-                            color: "#1E293B"
+                            color: "#000000",
+                            letterSpacing: -2
                         },
-                        children: "lewat"
+                        children: "Lewat"
                     }),
                     /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
                         style: {
-                            fontSize: 44,
+                            fontSize: 75,
                             fontWeight: 700,
-                            color: "#1842B6",
+                            color: "#FF3133",
+                            fontStyle: "italic",
                             letterSpacing: -1
                         },
-                        children: "google"
+                        children: "Google"
                     }),
                     /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
                         style: {
                             fontSize: 42,
                             fontWeight: 700,
-                            color: "#FF3133"
+                            color: "#000000",
+                            letterSpacing: -2
                         },
-                        children: "loh!"
+                        children: "  Loh!"
                     })
                 ]
             }),
@@ -23059,7 +23047,7 @@ const Scene4SEO = ()=>{
                 style: {
                     position: "absolute",
                     bottom: 370,
-                    left: 90,
+                    left: 80,
                     zIndex: 6
                 },
                 children: /*#__PURE__*/ (0,jsx_runtime.jsx)(Character, {
@@ -23172,13 +23160,14 @@ const Scene5CTA = ()=>{
                     children: [
                         /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
                             style: {
-                                backgroundColor: "rgba(255, 49, 51, 0.12)",
-                                color: "#FF3133",
-                                fontSize: 34,
-                                fontWeight: 900,
+                                color: "#1800ac",
+                                fontSize: 130,
+                                fontStyle: "italic",
+                                fontWeight: 700,
+                                letterSpacing: -5,
                                 padding: "6px 24px",
                                 borderRadius: 16,
-                                marginBottom: 10,
+                                marginBottom: 35,
                                 transform: `scale(${(0,esm/* .interpolate */.GW)(wUpgrade, [
                                     0,
                                     1
@@ -23188,15 +23177,14 @@ const Scene5CTA = ()=>{
                                 ])})`,
                                 opacity: wUpgrade
                             },
-                            children: "upgrade"
+                            children: "Upgrade"
                         }),
                         /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
                             style: {
-                                fontSize: 56,
-                                fontWeight: 900,
-                                color: "#1E293B",
-                                letterSpacing: -0.5,
-                                marginBottom: 4
+                                fontSize: 65,
+                                color: "#000000",
+                                letterSpacing: -5,
+                                marginBottom: 35
                             },
                             children: [
                                 /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
@@ -23212,7 +23200,7 @@ const Scene5CTA = ()=>{
                                             0
                                         ])}px)`
                                     },
-                                    children: "cara"
+                                    children: "Cara"
                                 }),
                                 /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
                                     style: {
@@ -23226,15 +23214,15 @@ const Scene5CTA = ()=>{
                                             0
                                         ])}px)`
                                     },
-                                    children: "jualanmu"
+                                    children: "Jualanmu"
                                 })
                             ]
                         }),
                         /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
                             style: {
-                                fontSize: 42,
-                                fontWeight: 800,
-                                color: "#64748B",
+                                fontSize: 65,
+                                letterSpacing: -5,
+                                color: "#000000",
                                 opacity: wSekarang,
                                 transform: `translateY(${(0,esm/* .interpolate */.GW)(wSekarang, [
                                     0,
@@ -23244,17 +23232,17 @@ const Scene5CTA = ()=>{
                                     0
                                 ])}px)`
                             },
-                            children: "sekarang"
+                            children: "Sekarang"
                         })
                     ]
                 }) : /* Part 2: bikin website sales mobil */ /*#__PURE__*/ (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
                     children: [
                         /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
                             style: {
-                                fontSize: 54,
-                                fontWeight: 900,
-                                color: "#1E293B",
-                                marginBottom: 8,
+                                fontSize: 75,
+                                letterSpacing: -5,
+                                color: "#000000",
+                                marginBottom: 20,
                                 opacity: wBikin,
                                 transform: `scale(${(0,esm/* .interpolate */.GW)(wBikin, [
                                     0,
@@ -23270,16 +23258,16 @@ const Scene5CTA = ()=>{
                                     0
                                 ])}px)`
                             },
-                            children: "bikin website"
+                            children: "Bikin Website"
                         }),
                         /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
                             style: {
-                                fontSize: 66,
-                                fontWeight: 950,
-                                color: "#FFD33C",
-                                WebkitTextStroke: "3px #000000",
+                                fontSize: 100,
+                                letterSpacing: -5,
+                                fontStyle: "italic",
+                                textDecoration: "underline",
+                                color: "#ff3133",
                                 paintOrder: "stroke fill",
-                                filter: "drop-shadow(0 6px 0 #000000)",
                                 opacity: wSales,
                                 transform: `scale(${(0,esm/* .interpolate */.GW)(wSales, [
                                     0,
@@ -23295,7 +23283,7 @@ const Scene5CTA = ()=>{
                                     0
                                 ])}px)`
                             },
-                            children: "sales mobil"
+                            children: "Sales Mobil"
                         })
                     ]
                 })
@@ -23303,13 +23291,14 @@ const Scene5CTA = ()=>{
             !isEnding && /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
                 style: {
                     position: "absolute",
-                    bottom: 370,
+                    bottom: 550,
                     left: 0,
                     right: 0,
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
-                    zIndex: 5
+                    zIndex: 5,
+                    transform: "scale(1.3)"
                 },
                 children: /*#__PURE__*/ (0,jsx_runtime.jsx)(Character, {
                     id: 4,
@@ -23354,7 +23343,7 @@ const Scene5CTA = ()=>{
                         ])}px)`,
                         opacity: endingSpring
                     },
-                    children: "UPGARDE BERSAMA OTOSITE"
+                    children: "UPGRADE BERSAMA OTOSITE"
                 })
             })
         ]
@@ -23419,7 +23408,8353 @@ const OtositeReels = ()=>{
     });
 };
 
+;// CONCATENATED MODULE: ./src/OtositeFollowUp/timingData.json
+var timingData_namespaceObject = /*#__PURE__*/JSON.parse('{"fps":30,"width":1080,"height":1920,"totalDuration":1015,"voEndFrame":958,"holdDurationFrames":57,"safeArea":{"top":262,"bottom":1562,"left":60,"right":1020,"contentHeight":1300,"contentWidth":960},"scenes":{"scene1":{"startFrame":0,"duration":174,"endFrame":174,"triggers":{"character5Enter":6,"chatBubble1":16,"chatReadIndicator":74,"character6Enter":98,"punchImpact":134,"sceneExitSlide":162},"textCues":{"line1":[{"word":"Follow-Up","frame":10},{"word":"Customer","frame":22},{"word":"Mobil","frame":40}],"line2":[{"word":"Cuma","frame":59,"italic":true},{"word":"Di-Read","frame":77,"highlight":true,"highlightType":"yellow","fontSize":80},{"word":"Doang?","frame":84,"highlight":true,"highlightType":"yellow","fontSize":80}],"part2Line1":[{"word":"Atau","frame":103},{"word":"Dibalas","frame":118},{"word":"Tapi","frame":128}],"part2Line2":[{"word":"Ujungnya","frame":134,"highlight":true,"highlightType":"red","fontSize":80},{"word":"Hilang?","frame":147,"highlight":true,"highlightType":"red","fontSize":85}]}},"scene2":{"startFrame":174,"duration":208,"endFrame":382,"triggers":{"cobaUbah":174,"badgeTips1":200,"bukaChatLama":233,"dashboardCascade":210,"character7Enter":240,"clockSpin":242,"tanpaSpam":316,"followUpTeratur":364,"sceneExitSlide":372},"textCues":{"introLine":[{"word":"Coba","frame":174},{"word":"Ubah","frame":177},{"word":"Caranya:","frame":181}],"actionLine":[{"word":"Buka","frame":233},{"word":"Chat","frame":240},{"word":"Lama","frame":253,"highlight":true,"highlightType":"yellow","fontSize":75}],"needsLine":[{"word":"Cari","frame":264},{"word":"Tahu","frame":270},{"word":"Kebutuhannya","frame":278}],"spamTag":[{"word":"Tanpa","frame":316},{"word":"Spamming","frame":324,"highlight":true,"highlightType":"red","fontSize":42}],"followUpTag":[{"word":"Follow-Up","frame":364,"highlight":true,"highlightType":"green","fontSize":42},{"word":"Teratur","frame":370,"highlight":true,"highlightType":"green","fontSize":42}]}},"scene3":{"startFrame":382,"duration":122,"endFrame":504,"triggers":{"badgeTips2":382,"kirimInfo":404,"pillPromo":434,"pillSimulasi":450,"pillTipe":466,"character8Enter":388,"sceneExitSlide":492},"textCues":{"headlineLine1":[{"word":"Kirim","frame":404},{"word":"Info","frame":410}],"headlineLine2":[{"word":"Berguna","frame":416,"highlight":true,"highlightType":"yellow","fontSize":85}],"pills":[{"word":"Promo Terbaru","frame":434},{"word":"Simulasi Kredit","frame":450},{"word":"Perbandingan Tipe Mobil","frame":466}]}},"scene4":{"startFrame":504,"duration":162,"endFrame":666,"triggers":{"badgeTips3":504,"catatPreferensi":527,"fieldTipe":560,"fieldBudget":582,"fieldRencana":614,"character9Enter":510,"sceneExitSlide":654},"textCues":{"headlineLine1":[{"word":"Catat","frame":527},{"word":"Preferensi","frame":535}],"headlineLine2":[{"word":"Customer","frame":542,"highlight":true,"highlightType":"yellow","fontSize":85}],"fields":[{"label":"Tipe Mobil Impian","frame":560},{"label":"Budget Customer","frame":582},{"label":"Rencana Beli","frame":614}]}},"scene5":{"startFrame":666,"duration":186,"endFrame":852,"triggers":{"headlineMau":673,"headlinePakai":692,"otositeBrand":724,"phoneMockup":690,"featKatalog":753,"featSimulasi":786,"featWhatsApp":815,"character10Enter":675,"sceneExitSlide":840},"textCues":{"line1":[{"word":"Mau","frame":673},{"word":"Lebih","frame":675},{"word":"Gampang?","frame":680,"italic":true}],"line2":[{"word":"Pakai","frame":692},{"word":"Website","frame":696},{"word":"Sales","frame":700},{"word":"Mobil","frame":708}],"brand":[{"word":"Dari","frame":717},{"word":"Otosite","frame":724,"highlight":true,"highlightType":"blue","fontSize":95}],"features":[{"title":"Katalog Lengkap","frame":753},{"title":"Simulasi Kredit","frame":786},{"title":"Terhubung WhatsApp","frame":815}]}},"scene6":{"startFrame":852,"duration":163,"endFrame":1015,"triggers":{"ctaPart1":852,"ctaPart2":915,"brandOtosite":891,"domainPill":924,"phoneBadge":948,"character11Enter":856,"voEnd":958,"holdEnd":1015},"textCues":{"part1Line1":[{"word":"Yuk,","frame":852},{"word":"Tingkatkan","frame":854}],"part1Line2":[{"word":"Penjualan","frame":868,"highlight":true,"highlightType":"yellow","fontSize":80},{"word":"Mobil","frame":878,"highlight":true,"highlightType":"yellow","fontSize":80}],"part1Line3":[{"word":"Dengan","frame":885},{"word":"Otosite!","frame":891,"highlight":true,"highlightType":"blue","fontSize":75}],"part2Line1":[{"word":"Kunjungi","frame":915,"fontSize":50}],"part2Domain":[{"word":"otosite.id","frame":924,"highlight":true,"highlightType":"blue","fontSize":90}],"part2Sekarang":[{"word":"Sekarang!","frame":941,"highlight":true,"highlightType":"red","fontSize":60}]}}},"sfxCues":[{"file":"card_pop.wav","frame":16,"volume":0.35},{"file":"read_doubt.wav","frame":74,"volume":0.40},{"file":"punch_impact.wav","frame":98,"volume":0.45},{"file":"swipe_whoosh.wav","frame":166,"volume":0.30},{"file":"card_pop.wav","frame":200,"volume":0.35},{"file":"clock_tick.wav","frame":242,"volume":0.30},{"file":"kinetic_slam.wav","frame":316,"volume":0.45},{"file":"soft_confirm.wav","frame":364,"volume":0.40},{"file":"swipe_whoosh.wav","frame":374,"volume":0.30},{"file":"card_pop.wav","frame":382,"volume":0.35},{"file":"card_pop.wav","frame":434,"volume":0.35},{"file":"card_pop.wav","frame":450,"volume":0.35},{"file":"card_pop.wav","frame":466,"volume":0.35},{"file":"swipe_whoosh.wav","frame":496,"volume":0.30},{"file":"card_pop.wav","frame":504,"volume":0.35},{"file":"pencil_write.wav","frame":560,"volume":0.35},{"file":"pencil_write.wav","frame":582,"volume":0.35},{"file":"pencil_write.wav","frame":614,"volume":0.35},{"file":"swipe_whoosh.wav","frame":658,"volume":0.30},{"file":"card_pop.wav","frame":690,"volume":0.35},{"file":"card_pop.wav","frame":753,"volume":0.35},{"file":"card_pop.wav","frame":786,"volume":0.35},{"file":"phone_vibrate.wav","frame":815,"volume":0.40},{"file":"swipe_whoosh.wav","frame":844,"volume":0.30},{"file":"kinetic_slam.wav","frame":868,"volume":0.45},{"file":"sparkle_eureka.wav","frame":915,"volume":0.45},{"file":"incoming_ring.wav","frame":948,"volume":0.18}]}')
+;// CONCATENATED MODULE: ./src/OtositeFollowUp/constants.ts
+
+const constants_VIDEO_WIDTH = timingData_namespaceObject.width;
+const constants_VIDEO_HEIGHT = timingData_namespaceObject.height;
+const constants_VIDEO_FPS = timingData_namespaceObject.fps;
+const constants_TOTAL_DURATION = timingData_namespaceObject.totalDuration;
+// Strict Content Area (Between Top Logo Y=262 and Bottom Footer Y=1562)
+const constants_SAFE_TOP = timingData_namespaceObject.safeArea.top; // 262 px
+const constants_SAFE_BOTTOM = timingData_namespaceObject.safeArea.bottom; // 1562 px
+const SAFE_LEFT = timingData_namespaceObject.safeArea.left; // 60 px
+const SAFE_RIGHT = timingData_namespaceObject.safeArea.right; // 1020 px
+const CONTENT_HEIGHT = timingData_namespaceObject.safeArea.contentHeight; // 1300 px
+const CONTENT_WIDTH = timingData_namespaceObject.safeArea.contentWidth; // 960 px
+// Color Palette (Strictly Yellow, Red, Dark, White + Green for checkmarks)
+const COLOR_YELLOW = "#FFD33C";
+const COLOR_RED = "#FF3133";
+const COLOR_DARK = "#1A1A1A";
+const COLOR_GRAY = "#64748B";
+const COLOR_LIGHT_BG = "#F8FAFC";
+const COLOR_CARD_BG = "#FFFFFF";
+const COLOR_GREEN = "#10B981"; // permitted only for tiny positive checkmark
+const COLOR_BORDER = "#1A1A1A";
+const constants_FONT_FAMILY = "Montserrat, sans-serif";
+
+
+;// CONCATENATED MODULE: ./src/OtositeFollowUp/AudioTracks.tsx
+
+
+
+
+const AudioTracks_AudioTracks = ()=>{
+    const currentFrame = (0,esm/* .useCurrentFrame */.UC)();
+    return /*#__PURE__*/ (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+        children: [
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Audio */.fP, {
+                src: (0,esm/* .staticFile */.dQ)("assets/voice over(2).wav"),
+                volume: 1.0
+            }),
+            timingData_namespaceObject.sfxCues.map((cue, idx)=>{
+                // Special dynamic volume handling for incoming_ring in Scene 6B:
+                // Lower (0.15) while VO is speaking, rises slightly (0.24) after VO ends (frame 1187)
+                let volume = cue.volume;
+                if (cue.file === "incoming_ring.wav" && currentFrame >= 958) {
+                    volume = 0.24;
+                }
+                return /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Sequence */.gd, {
+                    from: cue.frame,
+                    children: /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Audio */.fP, {
+                        src: (0,esm/* .staticFile */.dQ)(`assets/followup-sfx/${cue.file}`),
+                        volume: volume
+                    })
+                }, `sfx-${idx}-${cue.file}`);
+            })
+        ]
+    });
+};
+
+;// CONCATENATED MODULE: ./src/OtositeFollowUp/Character.tsx
+
+
+
+const Character_Character = ({ characterNumber, scale = 1, flipX = false, style, entryProgress = 1, poseVariant = "idle" })=>{
+    const frame = (0,esm/* .useCurrentFrame */.UC)();
+    // Gentle breathing / floating sinusoidal loop (duration 40 frames)
+    const floatY = Math.sin(frame / 40 * Math.PI * 2) * 5;
+    const floatRot = Math.sin(frame / 45 * Math.PI * 2) * 1.5;
+    // Specific dynamic nuances per pose variant
+    let extraTransform = "";
+    if (poseVariant === "confused") {
+        // 5.png: subtle questioning tilt
+        const tilt = Math.sin(frame / 20 * Math.PI * 2) * 2.5;
+        extraTransform = `rotate(${tilt}deg)`;
+    } else if (poseVariant === "angry") {
+        // 6.png: comedic jitter shake
+        const shake = Math.sin(frame * 2.5) * 3;
+        extraTransform = `translateX(${shake}px) scaleY(${1 + Math.sin(frame * 3) * 0.03})`;
+    } else if (poseVariant === "pointing") {
+        // 7.png: forward lean
+        extraTransform = `rotate(-2deg)`;
+    } else if (poseVariant === "ok") {
+        // 8.png: rhythmic pulse
+        const pulse = 1 + Math.sin(frame / 25 * Math.PI * 2) * 0.025;
+        extraTransform = `scale(${pulse})`;
+    } else if (poseVariant === "writing") {
+        // 9.png: micro pencil jitter
+        const pencilJitterX = Math.sin(frame * 3.5) * 2;
+        const pencilJitterY = Math.cos(frame * 3.5) * 1.5;
+        extraTransform = `translate(${pencilJitterX}px, ${pencilJitterY}px) rotate(1.5deg)`;
+    } else if (poseVariant === "speaking") {
+        // 10.png: friendly presenter nodding
+        const nod = Math.sin(frame / 18 * Math.PI * 2) * 3;
+        extraTransform = `translateY(${nod}px) rotate(${Math.sin(frame / 24 * Math.PI * 2) * 1.5}deg)`;
+    } else if (poseVariant === "eureka") {
+        // 11.png: celebratory buoyant bounce
+        const hop = Math.abs(Math.sin(frame / 15 * Math.PI)) * -8;
+        extraTransform = `translateY(${hop}px)`;
+    }
+    // Spring entry scaling from 0 to 1 with slight overshoot
+    const currentScale = scale * entryProgress;
+    return /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+        style: {
+            position: "absolute",
+            width: 480,
+            height: 480,
+            transformOrigin: "50% 90%",
+            transform: `translateY(${floatY}px) rotate(${floatRot}deg) scale(${currentScale}) scaleX(${flipX ? -1 : 1}) ${extraTransform}`,
+            pointerEvents: "none",
+            ...style
+        },
+        children: /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Img */.E9, {
+            src: (0,esm/* .staticFile */.dQ)(`assets/character/${characterNumber}.png`),
+            style: {
+                width: "100%",
+                height: "100%",
+                objectFit: "contain"
+            }
+        })
+    });
+};
+
+;// CONCATENATED MODULE: ./src/OtositeFollowUp/Scene1Hook.tsx
+
+
+
+
+
+const Scene1Hook_Scene1Hook = ()=>{
+    const frame = (0,esm/* .useCurrentFrame */.UC)();
+    const { fps } = (0,esm/* .useVideoConfig */.Bk)();
+    const sceneConfig = timingData_namespaceObject.scenes.scene1;
+    const { triggers } = sceneConfig;
+    // Word-by-word Kinetic Typography springs (Part 1A) - synced to voiceover rhythm
+    const wFollowUp = (0,esm/* .spring */.oz)({
+        frame: frame - 10,
+        fps,
+        config: {
+            damping: 14,
+            mass: 0.5
+        }
+    });
+    const wCustomer = (0,esm/* .spring */.oz)({
+        frame: frame - 22,
+        fps,
+        config: {
+            damping: 14,
+            mass: 0.5
+        }
+    });
+    const wMobil = (0,esm/* .spring */.oz)({
+        frame: frame - 40,
+        fps,
+        config: {
+            damping: 14,
+            mass: 0.5
+        }
+    });
+    const wCuma = (0,esm/* .spring */.oz)({
+        frame: frame - 59,
+        fps,
+        config: {
+            damping: 14,
+            mass: 0.5
+        }
+    });
+    const wDiRead = (0,esm/* .spring */.oz)({
+        frame: frame - 77,
+        fps,
+        config: {
+            damping: 11,
+            mass: 0.5
+        }
+    });
+    const wDoang = (0,esm/* .spring */.oz)({
+        frame: frame - 84,
+        fps,
+        config: {
+            damping: 11,
+            mass: 0.5
+        }
+    });
+    // Word-by-word Kinetic Typography springs (Part 1B) - synced to voiceover rhythm
+    const wAtau = (0,esm/* .spring */.oz)({
+        frame: frame - 103,
+        fps,
+        config: {
+            damping: 14,
+            mass: 0.5
+        }
+    });
+    const wDibalas = (0,esm/* .spring */.oz)({
+        frame: frame - 118,
+        fps,
+        config: {
+            damping: 14,
+            mass: 0.5
+        }
+    });
+    const wTapi = (0,esm/* .spring */.oz)({
+        frame: frame - 128,
+        fps,
+        config: {
+            damping: 14,
+            mass: 0.5
+        }
+    });
+    const wUjungnya = (0,esm/* .spring */.oz)({
+        frame: frame - 134,
+        fps,
+        config: {
+            damping: 11,
+            mass: 0.5
+        }
+    });
+    const wHilang = (0,esm/* .spring */.oz)({
+        frame: frame - 147,
+        fps,
+        config: {
+            damping: 11,
+            mass: 0.5
+        }
+    });
+    // Entrance spring for Character 5 (Confused)
+    const enter5 = (0,esm/* .spring */.oz)({
+        frame: frame - triggers.character5Enter,
+        fps,
+        config: {
+            damping: 14,
+            mass: 0.5
+        }
+    });
+    // Animated Floating Smartphone 
+    const phoneEnter = (0,esm/* .spring */.oz)({
+        frame: frame - 6,
+        fps,
+        config: {
+            damping: 13,
+            mass: 0.55
+        }
+    });
+    // Continuous smooth floating bob & gentle tilt
+    const phoneFloatY = Math.sin(frame / 28 * Math.PI * 2) * 8;
+    const phoneTilt = Math.sin(frame / 36 * Math.PI * 2) * 1.5;
+    // Typing indicator (frames 6 to 16) before message pops
+    const showTyping = frame >= 6 && frame < triggers.chatBubble1;
+    const typingDot1 = Math.sin(frame / 6 * Math.PI * 2) * 4;
+    const typingDot2 = Math.sin((frame + 2) / 6 * Math.PI * 2) * 4;
+    const typingDot3 = Math.sin((frame + 4) / 6 * Math.PI * 2) * 4;
+    // WhatsApp Bubble 1 entrance (pops in with punchy spring at frame 16)
+    const bubble1Spring = (0,esm/* .spring */.oz)({
+        frame: frame - triggers.chatBubble1,
+        fps,
+        config: {
+            damping: 11,
+            mass: 0.45
+        }
+    });
+    // Read status indicator trigger at frame 74 ("Di-Read")
+    const isRead = frame >= triggers.chatReadIndicator;
+    const readAlertSpring = (0,esm/* .spring */.oz)({
+        frame: frame - triggers.chatReadIndicator,
+        fps,
+        config: {
+            damping: 10,
+            mass: 0.45
+        }
+    });
+    // Continuous smooth integer bobbing for read alert card (zero sub-pixel blur)
+    const readAlertBob = isRead ? Math.round(Math.sin((frame - triggers.chatReadIndicator) / 8 * Math.PI * 2) * 2.5) : 0;
+    // Checkmark pulse on read
+    const checkmarkScale = isRead ? (0,esm/* .interpolate */.GW)(frame - triggers.chatReadIndicator, [
+        0,
+        4,
+        10
+    ], [
+        1,
+        1.45,
+        1
+    ], {
+        extrapolateRight: "clamp"
+    }) : 1;
+    // Part 1B transition at frame 98 ("Atau Dibalas Tapi Ujungnya Hilang?")
+    const showPart2 = frame >= triggers.character6Enter;
+    // Entrance spring for Character 6 (Angry / Shocked)
+    const enter6 = (0,esm/* .spring */.oz)({
+        frame: frame - triggers.character6Enter,
+        fps,
+        config: {
+            damping: 10,
+            mass: 0.45
+        }
+    });
+    // Incoming customer reply bubble spring at frame 103
+    const replyBubbleSpring = (0,esm/* .spring */.oz)({
+        frame: frame - 103,
+        fps,
+        config: {
+            damping: 11,
+            mass: 0.45
+        }
+    });
+    // Ghosting alert slam card at frame 134 ("Ujungnya Hilang?")
+    const ghostingSpring = (0,esm/* .spring */.oz)({
+        frame: frame - 134,
+        fps,
+        config: {
+            damping: 10,
+            mass: 0.45
+        }
+    });
+    // Continuous energetic ghost float
+    const ghostFloatY = Math.sin(frame / 16 * Math.PI * 2) * 9;
+    const ghostRotate = Math.sin(frame / 22 * Math.PI * 2) * 5;
+    // Phone shake on shock/ghosting (frames 134 to 154)
+    const phoneShockShake = frame >= 134 && frame <= 154 ? Math.sin((frame - 134) * 3) * 3 : 0;
+    // Outro slide out (frames 162 to 174)
+    const sceneExit = (0,esm/* .interpolate */.GW)(frame, [
+        162,
+        174
+    ], [
+        0,
+        -40
+    ], {
+        extrapolateLeft: "clamp",
+        extrapolateRight: "clamp"
+    });
+    const sceneOpacity = (0,esm/* .interpolate */.GW)(frame, [
+        162,
+        174
+    ], [
+        1,
+        0
+    ], {
+        extrapolateLeft: "clamp",
+        extrapolateRight: "clamp"
+    });
+    return /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .AbsoluteFill */.H1, {
+        style: {
+            fontFamily: constants_FONT_FAMILY,
+            opacity: sceneOpacity,
+            transform: `translateY(${sceneExit}px)`,
+            pointerEvents: "none"
+        },
+        children: /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+            style: {
+                position: "absolute",
+                top: constants_SAFE_TOP,
+                left: SAFE_LEFT,
+                width: 960,
+                height: 1300
+            },
+            children: !showPart2 ? /*#__PURE__*/ (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+                children: [
+                    /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                        style: {
+                            position: "absolute",
+                            top: 80,
+                            left: 0,
+                            right: 0,
+                            display: "flex",
+                            flexDirection: "column",
+                            alignItems: "center",
+                            textAlign: "center",
+                            zIndex: 10
+                        },
+                        children: [
+                            /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                                style: {
+                                    display: "flex",
+                                    justifyContent: "center",
+                                    alignItems: "center",
+                                    gap: 14,
+                                    marginBottom: 25,
+                                    fontSize: 57,
+                                    color: COLOR_DARK,
+                                    letterSpacing: -5
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                        style: {
+                                            display: "inline-block",
+                                            opacity: frame >= 10 ? wFollowUp : 0,
+                                            transform: `translateY(${(0,esm/* .interpolate */.GW)(wFollowUp, [
+                                                0,
+                                                1
+                                            ], [
+                                                22,
+                                                0
+                                            ])}px)`
+                                        },
+                                        children: "Follow-Up"
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                        style: {
+                                            display: "inline-block",
+                                            opacity: frame >= 22 ? wCustomer : 0,
+                                            transform: `translateY(${(0,esm/* .interpolate */.GW)(wCustomer, [
+                                                0,
+                                                1
+                                            ], [
+                                                22,
+                                                0
+                                            ])}px)`
+                                        },
+                                        children: "Customer"
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                        style: {
+                                            display: "inline-block",
+                                            opacity: frame >= 40 ? wMobil : 0,
+                                            transform: `translateY(${(0,esm/* .interpolate */.GW)(wMobil, [
+                                                0,
+                                                1
+                                            ], [
+                                                22,
+                                                0
+                                            ])}px)`
+                                        },
+                                        children: "Mobil"
+                                    })
+                                ]
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                                style: {
+                                    display: "flex",
+                                    justifyContent: "center",
+                                    alignItems: "center",
+                                    gap: 20
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                        style: {
+                                            display: "inline-block",
+                                            fontSize: 62,
+                                            color: COLOR_DARK,
+                                            letterSpacing: -5,
+                                            opacity: frame >= 59 ? wCuma : 0,
+                                            transform: `translateY(${(0,esm/* .interpolate */.GW)(wCuma, [
+                                                0,
+                                                1
+                                            ], [
+                                                22,
+                                                0
+                                            ])}px)`
+                                        },
+                                        children: "Cuma"
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                        style: {
+                                            display: "inline-block",
+                                            fontSize: 80,
+                                            fontWeight: 800,
+                                            fontStyle: "italic",
+                                            color: COLOR_RED,
+                                            paintOrder: "stroke fill",
+                                            letterSpacing: -5,
+                                            opacity: frame >= 77 ? wDiRead : 0,
+                                            transform: `scale(${(0,esm/* .interpolate */.GW)(wDiRead, [
+                                                0,
+                                                1
+                                            ], [
+                                                0.75,
+                                                1
+                                            ])}) translateY(${(0,esm/* .interpolate */.GW)(wDiRead, [
+                                                0,
+                                                1
+                                            ], [
+                                                28,
+                                                0
+                                            ])}px)`
+                                        },
+                                        children: "Di-Read"
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                        style: {
+                                            display: "inline-block",
+                                            fontSize: 80,
+                                            color: COLOR_DARK,
+                                            paintOrder: "stroke fill",
+                                            letterSpacing: -5,
+                                            opacity: frame >= 84 ? wDoang : 0,
+                                            transform: `scale(${(0,esm/* .interpolate */.GW)(wDoang, [
+                                                0,
+                                                1
+                                            ], [
+                                                0.75,
+                                                1
+                                            ])}) translateY(${(0,esm/* .interpolate */.GW)(wDoang, [
+                                                0,
+                                                1
+                                            ], [
+                                                28,
+                                                0
+                                            ])}px)`
+                                        },
+                                        children: "Doang?"
+                                    })
+                                ]
+                            })
+                        ]
+                    }),
+                    /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                        style: {
+                            position: "absolute",
+                            top: 350,
+                            left: -250,
+                            transform: "scale(1.8)"
+                        },
+                        children: /*#__PURE__*/ (0,jsx_runtime.jsx)(Character_Character, {
+                            characterNumber: 5,
+                            scale: 0.92,
+                            entryProgress: enter5,
+                            poseVariant: "confused"
+                        })
+                    }),
+                    /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                        style: {
+                            position: "absolute",
+                            top: 380,
+                            right: 50,
+                            width: 500,
+                            height: 720,
+                            backgroundColor: COLOR_CARD_BG,
+                            borderRadius: 36,
+                            border: `3px solid ${COLOR_BORDER}`,
+                            boxShadow: "0 10px 0 rgba(0,0,0,0.08)",
+                            overflow: "hidden",
+                            transform: `scale(${phoneEnter}) translateY(${phoneFloatY}px) rotate(${phoneTilt}deg)`
+                        },
+                        children: [
+                            /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                                style: {
+                                    height: 88,
+                                    backgroundColor: COLOR_DARK,
+                                    padding: "0 24px",
+                                    display: "flex",
+                                    alignItems: "center",
+                                    justifyContent: "space-between",
+                                    color: "#FFFFFF",
+                                    borderBottom: `3px solid ${COLOR_BORDER}`
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                                        style: {
+                                            display: "flex",
+                                            alignItems: "center",
+                                            gap: 14
+                                        },
+                                        children: [
+                                            /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                                style: {
+                                                    width: 50,
+                                                    height: 50,
+                                                    borderRadius: 25,
+                                                    backgroundColor: COLOR_YELLOW,
+                                                    display: "flex",
+                                                    alignItems: "center",
+                                                    justifyContent: "center",
+                                                    color: COLOR_DARK,
+                                                    fontWeight: 900,
+                                                    fontSize: 24,
+                                                    border: "2px solid #000000"
+                                                },
+                                                children: "C"
+                                            }),
+                                            /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                                                children: [
+                                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                                        style: {
+                                                            fontSize: 24,
+                                                            letterSpacing: -1
+                                                        },
+                                                        children: "Customer Mobil"
+                                                    }),
+                                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                                        style: {
+                                                            fontSize: 15,
+                                                            color: "#94A3B8",
+                                                            fontWeight: 700
+                                                        },
+                                                        children: "Online"
+                                                    })
+                                                ]
+                                            })
+                                        ]
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                        style: {
+                                            backgroundColor: "rgba(255,255,255,0.18)",
+                                            border: "2px solid rgba(255,255,255,0.4)",
+                                            padding: "6px 14px",
+                                            borderRadius: 14,
+                                            fontSize: 14
+                                        },
+                                        children: "WhatsApp"
+                                    })
+                                ]
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                                style: {
+                                    padding: 24
+                                },
+                                children: [
+                                    showTyping && /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                                        style: {
+                                            display: "inline-flex",
+                                            alignItems: "center",
+                                            gap: 8,
+                                            backgroundColor: "#E2E8F0",
+                                            padding: "14px 20px",
+                                            borderRadius: "20px 20px 20px 4px",
+                                            marginBottom: 16,
+                                            border: "2px solid #CBD5E1"
+                                        },
+                                        children: [
+                                            /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                                style: {
+                                                    width: 10,
+                                                    height: 10,
+                                                    borderRadius: 5,
+                                                    backgroundColor: COLOR_DARK,
+                                                    transform: `translateY(${typingDot1}px)`
+                                                }
+                                            }),
+                                            /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                                style: {
+                                                    width: 10,
+                                                    height: 10,
+                                                    borderRadius: 5,
+                                                    backgroundColor: COLOR_DARK,
+                                                    transform: `translateY(${typingDot2}px)`
+                                                }
+                                            }),
+                                            /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                                style: {
+                                                    width: 10,
+                                                    height: 10,
+                                                    borderRadius: 5,
+                                                    backgroundColor: COLOR_DARK,
+                                                    transform: `translateY(${typingDot3}px)`
+                                                }
+                                            })
+                                        ]
+                                    }),
+                                    frame >= triggers.chatBubble1 && /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                                        style: {
+                                            transform: `scale(${bubble1Spring})`,
+                                            transformOrigin: "bottom right",
+                                            backgroundColor: "#DCF8C6",
+                                            padding: "20px 22px",
+                                            borderRadius: "24px 24px 4px 24px",
+                                            marginLeft: 20,
+                                            border: "2.5px solid #4ADE80"
+                                        },
+                                        children: [
+                                            /*#__PURE__*/ (0,jsx_runtime.jsx)("p", {
+                                                style: {
+                                                    margin: 0,
+                                                    fontSize: 26,
+                                                    color: COLOR_DARK,
+                                                    lineHeight: 1.35,
+                                                    letterSpacing: -2
+                                                },
+                                                children: "Selamat pagi Pak, promo DP minim untuk unit impian bapak masih ready nih \uD83E\uDD29"
+                                            }),
+                                            /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                                                style: {
+                                                    display: "flex",
+                                                    justifyContent: "flex-end",
+                                                    alignItems: "center",
+                                                    gap: 8,
+                                                    marginTop: 10,
+                                                    fontSize: 17,
+                                                    fontWeight: 800
+                                                },
+                                                children: [
+                                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                                        style: {
+                                                            color: COLOR_GRAY
+                                                        },
+                                                        children: "09:15"
+                                                    }),
+                                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                                        style: {
+                                                            transform: `scale(${checkmarkScale})`,
+                                                            display: "inline-block",
+                                                            color: isRead ? "#0284C7" : COLOR_GRAY
+                                                        },
+                                                        children: isRead ? "✓✓ Dibaca" : "✓ Terkirim"
+                                                    })
+                                                ]
+                                            })
+                                        ]
+                                    }),
+                                    isRead && /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                        style: {
+                                            opacity: readAlertSpring,
+                                            transform: `translateY(${Math.round((0,esm/* .interpolate */.GW)(readAlertSpring, [
+                                                0,
+                                                1
+                                            ], [
+                                                16,
+                                                0
+                                            ])) + readAlertBob}px)`,
+                                            marginTop: 36,
+                                            textAlign: "center",
+                                            backgroundColor: "#FFFFFF",
+                                            border: "3px solid #FF3133",
+                                            boxShadow: "0 4px 0 #FF3133",
+                                            borderRadius: 20,
+                                            padding: "16px 20px"
+                                        },
+                                        children: /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                            style: {
+                                                fontSize: 26,
+                                                color: COLOR_RED,
+                                                letterSpacing: -2,
+                                                lineHeight: 1.2,
+                                                WebkitFontSmoothing: "antialiased"
+                                            },
+                                            children: "Hanya Dibaca Tanpa Balasan!"
+                                        })
+                                    })
+                                ]
+                            })
+                        ]
+                    })
+                ]
+            }) : /*#__PURE__*/ (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+                children: [
+                    /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                        style: {
+                            position: "absolute",
+                            top: 100,
+                            left: 0,
+                            right: 0,
+                            display: "flex",
+                            flexDirection: "column",
+                            alignItems: "center",
+                            textAlign: "center",
+                            zIndex: 10
+                        },
+                        children: [
+                            /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                                style: {
+                                    display: "flex",
+                                    justifyContent: "center",
+                                    alignItems: "center",
+                                    gap: 14,
+                                    marginBottom: 16,
+                                    fontSize: 65,
+                                    color: COLOR_DARK,
+                                    letterSpacing: -5
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                        style: {
+                                            display: "inline-block",
+                                            opacity: frame >= 103 ? wAtau : 0,
+                                            transform: `translateY(${(0,esm/* .interpolate */.GW)(wAtau, [
+                                                0,
+                                                1
+                                            ], [
+                                                22,
+                                                0
+                                            ])}px)`
+                                        },
+                                        children: "Fix!"
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                        style: {
+                                            display: "inline-block",
+                                            opacity: frame >= 118 ? wDibalas : 0,
+                                            transform: `translateY(${(0,esm/* .interpolate */.GW)(wDibalas, [
+                                                0,
+                                                1
+                                            ], [
+                                                22,
+                                                0
+                                            ])}px)`
+                                        },
+                                        children: "Cara"
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                        style: {
+                                            display: "inline-block",
+                                            opacity: frame >= 128 ? wTapi : 0,
+                                            transform: `translateY(${(0,esm/* .interpolate */.GW)(wTapi, [
+                                                0,
+                                                1
+                                            ], [
+                                                22,
+                                                0
+                                            ])}px)`
+                                        },
+                                        children: "Chat Kamu \uD83E\uDEF5\uD83C\uDFFD"
+                                    })
+                                ]
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                                style: {
+                                    display: "flex",
+                                    justifyContent: "center",
+                                    alignItems: "center",
+                                    gap: 16
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                        style: {
+                                            display: "inline-block",
+                                            fontSize: 80,
+                                            color: COLOR_DARK,
+                                            letterSpacing: -5,
+                                            opacity: frame >= 134 ? wUjungnya : 0,
+                                            transform: `scale(${(0,esm/* .interpolate */.GW)(wUjungnya, [
+                                                0,
+                                                1
+                                            ], [
+                                                0.75,
+                                                1
+                                            ])}) translateY(${(0,esm/* .interpolate */.GW)(wUjungnya, [
+                                                0,
+                                                1
+                                            ], [
+                                                28,
+                                                0
+                                            ])}px)`
+                                        },
+                                        children: "Yang"
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                        style: {
+                                            display: "inline-block",
+                                            fontSize: 90,
+                                            fontWeight: 800,
+                                            fontStyle: "italic",
+                                            textDecoration: "underline",
+                                            color: COLOR_RED,
+                                            letterSpacing: -5,
+                                            opacity: frame >= 147 ? wHilang : 0,
+                                            transform: `scale(${(0,esm/* .interpolate */.GW)(wHilang, [
+                                                0,
+                                                1
+                                            ], [
+                                                0.75,
+                                                1
+                                            ])}) translateY(${(0,esm/* .interpolate */.GW)(wHilang, [
+                                                0,
+                                                1
+                                            ], [
+                                                28,
+                                                0
+                                            ])}px)`
+                                        },
+                                        children: "Salah"
+                                    })
+                                ]
+                            })
+                        ]
+                    }),
+                    /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                        style: {
+                            position: "absolute",
+                            top: 410,
+                            left: -200,
+                            transform: "scale(1.8)"
+                        },
+                        children: /*#__PURE__*/ (0,jsx_runtime.jsx)(Character_Character, {
+                            characterNumber: 6,
+                            scale: 0.92,
+                            entryProgress: enter6,
+                            poseVariant: "angry"
+                        })
+                    }),
+                    /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                        style: {
+                            position: "absolute",
+                            top: 420,
+                            right: 25,
+                            width: 500,
+                            height: 720,
+                            backgroundColor: COLOR_CARD_BG,
+                            borderRadius: 36,
+                            border: `3px solid ${COLOR_BORDER}`,
+                            boxShadow: "0 10px 0 rgba(0,0,0,0.08)",
+                            overflow: "hidden",
+                            transform: `translateX(${phoneShockShake}px) translateY(${phoneFloatY}px) rotate(${phoneTilt}deg)`
+                        },
+                        children: [
+                            /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                                style: {
+                                    height: 88,
+                                    backgroundColor: COLOR_DARK,
+                                    padding: "0 24px",
+                                    display: "flex",
+                                    alignItems: "center",
+                                    justifyContent: "space-between",
+                                    color: "#FFFFFF",
+                                    borderBottom: `3px solid ${COLOR_BORDER}`
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                                        style: {
+                                            display: "flex",
+                                            alignItems: "center",
+                                            gap: 14
+                                        },
+                                        children: [
+                                            /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                                style: {
+                                                    width: 50,
+                                                    height: 50,
+                                                    borderRadius: 25,
+                                                    backgroundColor: COLOR_RED,
+                                                    display: "flex",
+                                                    alignItems: "center",
+                                                    justifyContent: "center",
+                                                    color: "#FFFFFF",
+                                                    fontWeight: 900,
+                                                    fontSize: 24,
+                                                    border: "2px solid #000000"
+                                                },
+                                                children: "C"
+                                            }),
+                                            /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                                                children: [
+                                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                                        style: {
+                                                            fontSize: 24,
+                                                            letterSpacing: -0.4
+                                                        },
+                                                        children: "Customer Mobil"
+                                                    }),
+                                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                                        style: {
+                                                            fontSize: 14,
+                                                            color: "#ffffffb3"
+                                                        },
+                                                        children: "Terakhir Dilihat 3 Hari Lalu"
+                                                    })
+                                                ]
+                                            })
+                                        ]
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                        style: {
+                                            backgroundColor: "rgba(255, 49, 51, 0.25)",
+                                            border: "2px solid #FF3133",
+                                            padding: "6px 14px",
+                                            borderRadius: 14,
+                                            fontSize: 14,
+                                            color: "#FFFFFF"
+                                        },
+                                        children: "Offline"
+                                    })
+                                ]
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                                style: {
+                                    padding: 24
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                                        style: {
+                                            transform: `scale(${replyBubbleSpring})`,
+                                            transformOrigin: "bottom left",
+                                            backgroundColor: "#FFFFFF",
+                                            padding: "20px 22px",
+                                            borderRadius: "24px 24px 24px 4px",
+                                            marginRight: 20,
+                                            border: "2.5px solid #CBD5E1"
+                                        },
+                                        children: [
+                                            /*#__PURE__*/ (0,jsx_runtime.jsx)("p", {
+                                                style: {
+                                                    margin: 0,
+                                                    fontSize: 27,
+                                                    color: COLOR_DARK,
+                                                    lineHeight: 1.35,
+                                                    letterSpacing: -2
+                                                },
+                                                children: "Nanti saya kabari lagi ya mas"
+                                            }),
+                                            /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                                style: {
+                                                    textAlign: "right",
+                                                    marginTop: 8,
+                                                    fontSize: 15,
+                                                    color: COLOR_GRAY,
+                                                    fontWeight: 700
+                                                },
+                                                children: "10:02"
+                                            })
+                                        ]
+                                    }),
+                                    frame >= 134 && /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                                        style: {
+                                            transform: `scale(${ghostingSpring})`,
+                                            transformOrigin: "center center",
+                                            marginTop: 36,
+                                            textAlign: "center",
+                                            backgroundColor: "#FFF5F5",
+                                            border: "3.5px solid #FF3133",
+                                            borderRadius: 24,
+                                            padding: "22px 20px",
+                                            boxShadow: "0 8px 0 #FF3133"
+                                        },
+                                        children: [
+                                            /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                                style: {
+                                                    fontSize: 52,
+                                                    marginBottom: 6,
+                                                    transform: `translateY(${ghostFloatY}px) rotate(${ghostRotate}deg)`,
+                                                    display: "inline-block"
+                                                },
+                                                children: "\uD83D\uDC7B"
+                                            }),
+                                            /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                                style: {
+                                                    fontSize: 30,
+                                                    color: COLOR_RED,
+                                                    letterSpacing: -2
+                                                },
+                                                children: "Customer Hilang!"
+                                            }),
+                                            /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                                style: {
+                                                    fontSize: 20,
+                                                    color: COLOR_DARK,
+                                                    marginTop: 6,
+                                                    letterSpacing: -2
+                                                },
+                                                children: "Dighosting, kayak kamu sama dia"
+                                            })
+                                        ]
+                                    })
+                                ]
+                            })
+                        ]
+                    })
+                ]
+            })
+        })
+    });
+};
+
+;// CONCATENATED MODULE: ./src/OtositeFollowUp/Scene2ChatHistory.tsx
+
+
+
+
+
+const Scene2ChatHistory = ()=>{
+    const frame = (0,esm/* .useCurrentFrame */.UC)();
+    const { fps } = (0,esm/* .useVideoConfig */.Bk)();
+    const sceneConfig = timingData_namespaceObject.scenes.scene2;
+    const { startFrame, triggers } = sceneConfig;
+    // Scene-local frame conversion
+    const fBadgeTips1 = triggers.badgeTips1 - startFrame;
+    const fChar7 = triggers.character7Enter - startFrame;
+    const fTanpaSpam = triggers.tanpaSpam - startFrame;
+    const fFollowUp = triggers.followUpTeratur - startFrame;
+    // Transition between Part 1 and Part 2
+    const transitionStart = 82;
+    const transitionEnd = 102;
+    const part1Opacity = (0,esm/* .interpolate */.GW)(frame, [
+        transitionStart,
+        transitionEnd
+    ], [
+        1,
+        0
+    ], {
+        extrapolateLeft: "clamp",
+        extrapolateRight: "clamp"
+    });
+    const part2Opacity = (0,esm/* .interpolate */.GW)(frame, [
+        transitionStart,
+        transitionEnd
+    ], [
+        0,
+        1
+    ], {
+        extrapolateLeft: "clamp",
+        extrapolateRight: "clamp"
+    });
+    const part1Y = (0,esm/* .interpolate */.GW)(frame, [
+        transitionStart,
+        transitionEnd
+    ], [
+        0,
+        -18
+    ], {
+        extrapolateLeft: "clamp",
+        extrapolateRight: "clamp"
+    });
+    const part2Y = (0,esm/* .interpolate */.GW)(frame, [
+        transitionStart,
+        transitionEnd
+    ], [
+        18,
+        0
+    ], {
+        extrapolateLeft: "clamp",
+        extrapolateRight: "clamp"
+    });
+    // Character entrance
+    const enter12 = (0,esm/* .spring */.oz)({
+        frame: frame - 26,
+        fps,
+        config: {
+            damping: 14,
+            mass: 0.5
+        }
+    });
+    // Tips 1 + Heading entrance together
+    const tips1Intro = (0,esm/* .spring */.oz)({
+        frame: frame - fBadgeTips1,
+        fps,
+        config: {
+            damping: 18,
+            mass: 0.7
+        }
+    });
+    // Chat List entrance
+    const chatListIntro = (0,esm/* .spring */.oz)({
+        frame: frame - 48,
+        fps,
+        config: {
+            damping: 20,
+            mass: 0.8
+        }
+    });
+    // Individual chat entrance - staggered
+    const item1Spring = (0,esm/* .spring */.oz)({
+        frame: frame - 58,
+        fps,
+        config: {
+            damping: 18,
+            mass: 0.7
+        }
+    });
+    const item2Spring = (0,esm/* .spring */.oz)({
+        frame: frame - 68,
+        fps,
+        config: {
+            damping: 18,
+            mass: 0.7
+        }
+    });
+    const item3Spring = (0,esm/* .spring */.oz)({
+        frame: frame - 78,
+        fps,
+        config: {
+            damping: 18,
+            mass: 0.7
+        }
+    });
+    // Part 2 heading
+    const headingIntro = (0,esm/* .spring */.oz)({
+        frame: frame - 90,
+        fps,
+        config: {
+            damping: 18,
+            mass: 0.7
+        }
+    });
+    // Badge dan kartu langsung mengikuti transisi
+    // Semua elemen perbandingan muncul bersamaan
+    const comparisonStart = 92;
+    const comparisonIntro = (0,esm/* .spring */.oz)({
+        frame: frame - comparisonStart,
+        fps,
+        config: {
+            damping: 20,
+            mass: 0.45
+        }
+    });
+    // Outro
+    const sceneExit = (0,esm/* .interpolate */.GW)(frame, [
+        198,
+        208
+    ], [
+        0,
+        -40
+    ], {
+        extrapolateLeft: "clamp",
+        extrapolateRight: "clamp"
+    });
+    const sceneOpacity = (0,esm/* .interpolate */.GW)(frame, [
+        198,
+        208
+    ], [
+        1,
+        0
+    ], {
+        extrapolateLeft: "clamp",
+        extrapolateRight: "clamp"
+    });
+    // Smooth chat item animation
+    const chatItemStyle = (progress)=>({
+            opacity: progress,
+            transform: `translateY(${(0,esm/* .interpolate */.GW)(progress, [
+                0,
+                1
+            ], [
+                22,
+                0
+            ])}px)`
+        });
+    // Shared animation for comparison elements
+    const comparisonStyle = {
+        opacity: comparisonIntro,
+        transform: `translateY(${(0,esm/* .interpolate */.GW)(comparisonIntro, [
+            0,
+            1
+        ], [
+            22,
+            0
+        ])}px)`
+    };
+    return /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .AbsoluteFill */.H1, {
+        style: {
+            fontFamily: constants_FONT_FAMILY,
+            opacity: sceneOpacity,
+            transform: `translateY(${sceneExit}px)`,
+            pointerEvents: "none"
+        },
+        children: /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+            style: {
+                position: "absolute",
+                top: constants_SAFE_TOP,
+                left: SAFE_LEFT,
+                width: 960,
+                height: 1300
+            },
+            children: [
+                /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                    style: {
+                        position: "absolute",
+                        inset: 0,
+                        opacity: part1Opacity,
+                        transform: `translateY(${part1Y}px)`
+                    },
+                    children: [
+                        /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                            style: {
+                                position: "absolute",
+                                top: 150,
+                                left: 0,
+                                right: 0,
+                                display: "flex",
+                                flexDirection: "column",
+                                alignItems: "center",
+                                textAlign: "center",
+                                zIndex: 10
+                            },
+                            children: [
+                                /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                    style: {
+                                        marginBottom: 35
+                                    },
+                                    children: frame >= fBadgeTips1 && /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                        style: {
+                                            display: "inline-block",
+                                            backgroundColor: COLOR_YELLOW,
+                                            color: COLOR_DARK,
+                                            fontWeight: 700,
+                                            fontSize: 50,
+                                            padding: "20px 80px",
+                                            borderRadius: 50,
+                                            border: "2.5px solid #000000",
+                                            boxShadow: "0 6px 0 #000000",
+                                            transform: `translateY(${(0,esm/* .interpolate */.GW)(tips1Intro, [
+                                                0,
+                                                1
+                                            ], [
+                                                35,
+                                                0
+                                            ])}px)`,
+                                            opacity: tips1Intro,
+                                            letterSpacing: -2
+                                        },
+                                        children: "Tips 1"
+                                    })
+                                }),
+                                /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                    style: {
+                                        display: "flex",
+                                        justifyContent: "center",
+                                        alignItems: "center",
+                                        gap: 12,
+                                        marginBottom: 16,
+                                        fontSize: 80,
+                                        fontWeight: 700,
+                                        color: COLOR_DARK,
+                                        letterSpacing: -5,
+                                        fontStyle: "italic"
+                                    },
+                                    children: [
+                                        "Cek",
+                                        "Riwayat",
+                                        "Chat"
+                                    ].map((word)=>/*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                            style: {
+                                                display: "inline-block",
+                                                opacity: tips1Intro,
+                                                transform: `translateY(${(0,esm/* .interpolate */.GW)(tips1Intro, [
+                                                    0,
+                                                    1
+                                                ], [
+                                                    35,
+                                                    0
+                                                ])}px)`
+                                            },
+                                            children: word
+                                        }, word))
+                                })
+                            ]
+                        }),
+                        /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                            style: {
+                                position: "absolute",
+                                top: 550,
+                                left: 50,
+                                width: 500,
+                                backgroundColor: COLOR_CARD_BG,
+                                borderRadius: 28,
+                                border: `2px solid ${COLOR_BORDER}`,
+                                boxShadow: "0 16px 36px rgba(0,0,0,0.06)",
+                                letterSpacing: -1,
+                                padding: "24px 20px",
+                                transform: `translateY(${(0,esm/* .interpolate */.GW)(chatListIntro, [
+                                    0,
+                                    1
+                                ], [
+                                    45,
+                                    0
+                                ])}px) scale(1.2)`,
+                                transformOrigin: "top left",
+                                opacity: chatListIntro
+                            },
+                            children: [
+                                /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                                    style: {
+                                        fontSize: 20,
+                                        color: COLOR_DARK,
+                                        marginBottom: 16,
+                                        display: "flex",
+                                        justifyContent: "space-between"
+                                    },
+                                    children: [
+                                        /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                            children: "Riwayat Chat Lama"
+                                        }),
+                                        /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                            style: {
+                                                fontSize: 14,
+                                                color: COLOR_GRAY
+                                            },
+                                            children: "3 Percakapan"
+                                        })
+                                    ]
+                                }),
+                                /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                                    style: {
+                                        ...chatItemStyle(item1Spring),
+                                        backgroundColor: "#FFFFFF",
+                                        border: "1px solid #E2E8F0",
+                                        borderRadius: 18,
+                                        padding: "14px 18px",
+                                        letterSpacing: -1,
+                                        marginBottom: 12
+                                    },
+                                    children: [
+                                        /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                                            style: {
+                                                display: "flex",
+                                                justifyContent: "space-between",
+                                                marginBottom: 4
+                                            },
+                                            children: [
+                                                /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                                    style: {
+                                                        fontSize: 18
+                                                    },
+                                                    children: "Pak Mahen"
+                                                }),
+                                                /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                                    style: {
+                                                        fontSize: 13,
+                                                        color: COLOR_GRAY
+                                                    },
+                                                    children: "7 hari lalu"
+                                                })
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                            style: {
+                                                fontSize: 15,
+                                                color: COLOR_GRAY
+                                            },
+                                            children: '"Tanya simulasi angsuran 5 tahun"'
+                                        })
+                                    ]
+                                }),
+                                /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                                    style: {
+                                        ...chatItemStyle(item2Spring),
+                                        backgroundColor: "#FFFFFF",
+                                        border: "1px solid #E2E8F0",
+                                        borderRadius: 18,
+                                        letterSpacing: -1,
+                                        padding: "14px 18px",
+                                        marginBottom: 12
+                                    },
+                                    children: [
+                                        /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                                            style: {
+                                                display: "flex",
+                                                justifyContent: "space-between",
+                                                marginBottom: 4
+                                            },
+                                            children: [
+                                                /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                                    style: {
+                                                        fontSize: 18
+                                                    },
+                                                    children: "Ibu Susi"
+                                                }),
+                                                /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                                    style: {
+                                                        fontSize: 13,
+                                                        color: COLOR_GRAY
+                                                    },
+                                                    children: "10 hari lalu"
+                                                })
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                            style: {
+                                                fontSize: 15,
+                                                color: COLOR_GRAY
+                                            },
+                                            children: '"Minat warna putih, ada diskon?"'
+                                        })
+                                    ]
+                                }),
+                                /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                                    style: {
+                                        ...chatItemStyle(item3Spring),
+                                        backgroundColor: "#FFFFFF",
+                                        border: "1px solid #E2E8F0",
+                                        borderRadius: 18,
+                                        letterSpacing: -1,
+                                        padding: "14px 18px"
+                                    },
+                                    children: [
+                                        /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                                            style: {
+                                                display: "flex",
+                                                justifyContent: "space-between",
+                                                marginBottom: 4
+                                            },
+                                            children: [
+                                                /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                                    style: {
+                                                        fontSize: 18
+                                                    },
+                                                    children: "Pak Reno"
+                                                }),
+                                                /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                                    style: {
+                                                        fontSize: 13,
+                                                        color: COLOR_GRAY
+                                                    },
+                                                    children: "14 hari lalu"
+                                                })
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                            style: {
+                                                fontSize: 15,
+                                                color: COLOR_GRAY
+                                            },
+                                            children: '"Rencana ambil bulan depan sih"'
+                                        })
+                                    ]
+                                })
+                            ]
+                        }),
+                        /*#__PURE__*/ (0,jsx_runtime.jsx)("img", {
+                            src: (0,esm/* .staticFile */.dQ)("assets/character/12.png"),
+                            alt: "Character 12",
+                            style: {
+                                position: "absolute",
+                                top: 800,
+                                right: -1,
+                                width: 350,
+                                transform: "scale(1.3)",
+                                height: "auto",
+                                objectFit: "contain",
+                                opacity: enter12
+                            }
+                        })
+                    ]
+                }),
+                /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                    style: {
+                        position: "absolute",
+                        inset: 0,
+                        opacity: part2Opacity,
+                        transform: `translateY(${part2Y}px)`
+                    },
+                    children: [
+                        /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                            style: {
+                                position: "absolute",
+                                top: 120,
+                                left: 0,
+                                right: 0,
+                                display: "flex",
+                                flexDirection: "column",
+                                alignItems: "center",
+                                textAlign: "center",
+                                zIndex: 10
+                            },
+                            children: [
+                                /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                                    style: {
+                                        display: "flex",
+                                        justifyContent: "center",
+                                        alignItems: "center",
+                                        gap: 14,
+                                        marginBottom: 40,
+                                        fontSize: 55,
+                                        color: COLOR_DARK,
+                                        letterSpacing: -5,
+                                        opacity: headingIntro,
+                                        transform: `translateY(${(0,esm/* .interpolate */.GW)(headingIntro, [
+                                            0,
+                                            1
+                                        ], [
+                                            22,
+                                            0
+                                        ])}px)`
+                                    },
+                                    children: [
+                                        /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                            children: "Hubungi"
+                                        }),
+                                        /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                            children: "Di Waktu"
+                                        }),
+                                        /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                            children: "Yang Pas"
+                                        })
+                                    ]
+                                }),
+                                /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                                    style: {
+                                        position: "absolute",
+                                        top: 115,
+                                        left: 40,
+                                        right: 40,
+                                        display: "flex",
+                                        gap: 24,
+                                        justifyContent: "center",
+                                        alignItems: "stretch"
+                                    },
+                                    children: [
+                                        /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                                            style: {
+                                                ...comparisonStyle,
+                                                flex: 1,
+                                                minWidth: 0,
+                                                height: 60,
+                                                boxSizing: "border-box",
+                                                display: "flex",
+                                                gap: 10,
+                                                alignItems: "center",
+                                                justifyContent: "center",
+                                                backgroundColor: "#FEE2E2",
+                                                border: "2px solid #EF4444",
+                                                padding: "35px 12px",
+                                                borderRadius: 20,
+                                                letterSpacing: -2,
+                                                whiteSpace: "nowrap"
+                                            },
+                                            children: [
+                                                /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                                    style: {
+                                                        fontSize: 34,
+                                                        color: COLOR_DARK
+                                                    },
+                                                    children: "Tanpa"
+                                                }),
+                                                /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                                    style: {
+                                                        fontSize: 38,
+                                                        letterSpacing: -2,
+                                                        color: COLOR_RED,
+                                                        fontStyle: "italic"
+                                                    },
+                                                    children: "Spamming"
+                                                })
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                                            style: {
+                                                ...comparisonStyle,
+                                                flex: 1,
+                                                minWidth: 0,
+                                                height: 60,
+                                                boxSizing: "border-box",
+                                                display: "flex",
+                                                gap: 10,
+                                                alignItems: "center",
+                                                justifyContent: "center",
+                                                backgroundColor: "#D1FAE5",
+                                                border: "2px solid #10B981",
+                                                padding: "35px 12px",
+                                                borderRadius: 20,
+                                                letterSpacing: -2,
+                                                whiteSpace: "nowrap"
+                                            },
+                                            children: [
+                                                /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                                    style: {
+                                                        fontSize: 38,
+                                                        fontStyle: "italic",
+                                                        color: "#10B981"
+                                                    },
+                                                    children: "Follow-Up"
+                                                }),
+                                                /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                                    style: {
+                                                        fontSize: 38,
+                                                        letterSpacing: -2,
+                                                        color: "#10B981"
+                                                    },
+                                                    children: "Teratur"
+                                                })
+                                            ]
+                                        })
+                                    ]
+                                })
+                            ]
+                        }),
+                        /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                            style: {
+                                position: "absolute",
+                                top: 345,
+                                left: 40,
+                                right: 40,
+                                display: "flex",
+                                alignItems: "stretch",
+                                gap: 24,
+                                justifyContent: "center"
+                            },
+                            children: [
+                                /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                                    style: {
+                                        ...comparisonStyle,
+                                        flex: 1,
+                                        minWidth: 0,
+                                        minHeight: 245,
+                                        boxSizing: "border-box",
+                                        backgroundColor: "#FFF5F5",
+                                        border: "2px solid #FEB2B2",
+                                        borderRadius: 28,
+                                        padding: "30px 24px",
+                                        boxShadow: "0 14px 30px rgba(255, 49, 51, 0.08)",
+                                        textAlign: "center",
+                                        display: "flex",
+                                        flexDirection: "column",
+                                        alignItems: "center"
+                                    },
+                                    children: [
+                                        /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                            style: {
+                                                fontSize: 48,
+                                                marginBottom: 12
+                                            },
+                                            children: "❌"
+                                        }),
+                                        /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                            style: {
+                                                width: "100%",
+                                                fontSize: 30,
+                                                letterSpacing: -2,
+                                                color: COLOR_RED,
+                                                marginBottom: 12,
+                                                textAlign: "center"
+                                            },
+                                            children: "Spam Broadcast"
+                                        }),
+                                        /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                            style: {
+                                                width: "100%",
+                                                fontSize: 18,
+                                                color: COLOR_DARK,
+                                                lineHeight: 2.5,
+                                                letterSpacing: -1,
+                                                textAlign: "center"
+                                            },
+                                            children: "Kirim promo tiap hari tanpa izin"
+                                        }),
+                                        /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                            style: {
+                                                marginTop: "auto",
+                                                width: "100%",
+                                                boxSizing: "border-box",
+                                                padding: "8px 14px",
+                                                backgroundColor: "rgba(255, 49, 51, 0.12)",
+                                                borderRadius: 12,
+                                                fontSize: 18,
+                                                letterSpacing: -1,
+                                                color: COLOR_RED,
+                                                textAlign: "center"
+                                            },
+                                            children: "Akibat: Kontak Diblokir"
+                                        })
+                                    ]
+                                }),
+                                /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                                    style: {
+                                        ...comparisonStyle,
+                                        flex: 1,
+                                        minWidth: 0,
+                                        minHeight: 245,
+                                        boxSizing: "border-box",
+                                        backgroundColor: "#F0FDF4",
+                                        border: "2px solid #86EFAC",
+                                        borderRadius: 28,
+                                        padding: "30px 24px",
+                                        boxShadow: "0 14px 30px rgba(16, 185, 129, 0.08)",
+                                        textAlign: "center",
+                                        display: "flex",
+                                        flexDirection: "column",
+                                        alignItems: "center"
+                                    },
+                                    children: [
+                                        /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                            style: {
+                                                fontSize: 48,
+                                                marginBottom: 12
+                                            },
+                                            children: "✅"
+                                        }),
+                                        /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                            style: {
+                                                width: "100%",
+                                                fontSize: 30,
+                                                letterSpacing: -2,
+                                                color: "#10B981",
+                                                marginBottom: 12,
+                                                textAlign: "center"
+                                            },
+                                            children: "Follow-Up Teratur"
+                                        }),
+                                        /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                            style: {
+                                                width: "100%",
+                                                fontSize: 18,
+                                                color: COLOR_DARK,
+                                                letterSpacing: -1,
+                                                lineHeight: 1.4,
+                                                textAlign: "center"
+                                            },
+                                            children: "Komunikasi rutin dan ramah"
+                                        }),
+                                        /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                            style: {
+                                                marginTop: "auto",
+                                                width: "100%",
+                                                boxSizing: "border-box",
+                                                padding: "8px 14px",
+                                                backgroundColor: "rgba(16, 185, 129, 0.12)",
+                                                borderRadius: 12,
+                                                fontSize: 18,
+                                                letterSpacing: -1,
+                                                color: "#10B981",
+                                                textAlign: "center"
+                                            },
+                                            children: "Hasil: Hubungan Terjaga"
+                                        })
+                                    ]
+                                })
+                            ]
+                        }),
+                        /*#__PURE__*/ (0,jsx_runtime.jsx)(Character_Character, {
+                            characterNumber: 7,
+                            scale: 1.5,
+                            entryProgress: 1,
+                            poseVariant: "idle",
+                            style: {
+                                top: 810,
+                                left: 300
+                            }
+                        })
+                    ]
+                })
+            ]
+        })
+    });
+};
+
+;// CONCATENATED MODULE: ./src/OtositeFollowUp/Scene3UsefulInfo.tsx
+
+
+
+
+
+const Scene3UsefulInfo = ()=>{
+    const frame = (0,esm/* .useCurrentFrame */.UC)();
+    const { fps } = (0,esm/* .useVideoConfig */.Bk)();
+    const sceneConfig = timingData_namespaceObject.scenes.scene3;
+    const { startFrame, triggers } = sceneConfig;
+    // Scene-local frames
+    const fBadge = triggers.badgeTips2 - startFrame; // 0
+    const fChar8 = triggers.character8Enter - startFrame; // 6
+    const fPromo = triggers.pillPromo - startFrame; // 52
+    const fSimulasi = triggers.pillSimulasi - startFrame; // 68
+    const fTipe = triggers.pillTipe - startFrame; // 84
+    // Character 8 entrance
+    const enter8 = (0,esm/* .spring */.oz)({
+        frame: frame - fChar8,
+        fps,
+        config: {
+            damping: 14,
+            mass: 0.5
+        }
+    });
+    // Tips 2 Badge spring
+    const badgeTips2Spring = (0,esm/* .spring */.oz)({
+        frame: frame - fBadge,
+        fps,
+        config: {
+            damping: 12,
+            mass: 0.5
+        }
+    });
+    // Word-by-word kinetic typography springs - synced to voiceover rhythm
+    const wKirim = (0,esm/* .spring */.oz)({
+        frame: frame - 22,
+        fps,
+        config: {
+            damping: 14,
+            mass: 0.5
+        }
+    });
+    const wInfo = (0,esm/* .spring */.oz)({
+        frame: frame - 28,
+        fps,
+        config: {
+            damping: 14,
+            mass: 0.5
+        }
+    });
+    const wBerguna = (0,esm/* .spring */.oz)({
+        frame: frame - 34,
+        fps,
+        config: {
+            damping: 11,
+            mass: 0.5
+        }
+    });
+    // Pill springs matching Scene3Catalog slowSpringConfig from src/Otosite/
+    const slowSpringConfig = {
+        damping: 16,
+        mass: 1.3,
+        stiffness: 65
+    };
+    const pillPromoSpring = (0,esm/* .spring */.oz)({
+        frame: frame - fPromo,
+        fps,
+        config: slowSpringConfig
+    });
+    const pillSimulasiSpring = (0,esm/* .spring */.oz)({
+        frame: frame - fSimulasi,
+        fps,
+        config: slowSpringConfig
+    });
+    const pillTipeSpring = (0,esm/* .spring */.oz)({
+        frame: frame - fTipe,
+        fps,
+        config: slowSpringConfig
+    });
+    // Outro transition (local frames 112 to 122)
+    const sceneExit = (0,esm/* .interpolate */.GW)(frame, [
+        112,
+        122
+    ], [
+        0,
+        -40
+    ], {
+        extrapolateLeft: "clamp",
+        extrapolateRight: "clamp"
+    });
+    const sceneOpacity = (0,esm/* .interpolate */.GW)(frame, [
+        112,
+        122
+    ], [
+        1,
+        0
+    ], {
+        extrapolateLeft: "clamp",
+        extrapolateRight: "clamp"
+    });
+    return /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .AbsoluteFill */.H1, {
+        style: {
+            fontFamily: constants_FONT_FAMILY,
+            opacity: sceneOpacity,
+            transform: `translateY(${sceneExit}px)`,
+            pointerEvents: "none"
+        },
+        children: /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+            style: {
+                position: "absolute",
+                top: constants_SAFE_TOP,
+                left: SAFE_LEFT,
+                width: 960,
+                height: 1300
+            },
+            children: [
+                /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                    style: {
+                        position: "absolute",
+                        top: 130,
+                        left: 0,
+                        right: 0,
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "center",
+                        textAlign: "center",
+                        zIndex: 10
+                    },
+                    children: [
+                        /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                            style: {
+                                marginBottom: 16
+                            },
+                            children: frame >= fBadge && /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                style: {
+                                    display: "inline-block",
+                                    backgroundColor: COLOR_YELLOW,
+                                    color: COLOR_DARK,
+                                    fontWeight: 700,
+                                    fontSize: 50,
+                                    padding: "20px 80px",
+                                    borderRadius: 50,
+                                    border: "2.5px solid #000000",
+                                    boxShadow: "0 6px 0 #000000",
+                                    transform: `scale(${(0,esm/* .interpolate */.GW)(badgeTips2Spring, [
+                                        0,
+                                        1
+                                    ], [
+                                        0.75,
+                                        1
+                                    ])}) translateY(${(0,esm/* .interpolate */.GW)(badgeTips2Spring, [
+                                        0,
+                                        1
+                                    ], [
+                                        20,
+                                        0
+                                    ])}px)`,
+                                    opacity: badgeTips2Spring,
+                                    letterSpacing: -2
+                                },
+                                children: "Tips 2"
+                            })
+                        }),
+                        /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                            style: {
+                                display: "flex",
+                                justifyContent: "center",
+                                alignItems: "center",
+                                gap: 12,
+                                marginTop: 20,
+                                marginBottom: 16,
+                                fontSize: 80,
+                                fontStyle: "italic",
+                                fontWeight: 700,
+                                color: COLOR_DARK,
+                                letterSpacing: -5
+                            },
+                            children: [
+                                /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                    style: {
+                                        display: "inline-block",
+                                        opacity: frame >= 22 ? wKirim : 0,
+                                        transform: `translateY(${(0,esm/* .interpolate */.GW)(wKirim, [
+                                            0,
+                                            1
+                                        ], [
+                                            20,
+                                            0
+                                        ])}px)`
+                                    },
+                                    children: "Kirim"
+                                }),
+                                /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                    style: {
+                                        display: "inline-block",
+                                        opacity: frame >= 28 ? wInfo : 0,
+                                        transform: `translateY(${(0,esm/* .interpolate */.GW)(wInfo, [
+                                            0,
+                                            1
+                                        ], [
+                                            20,
+                                            0
+                                        ])}px)`
+                                    },
+                                    children: "Info"
+                                }),
+                                /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                    style: {
+                                        display: "inline-block",
+                                        opacity: frame >= 28 ? wInfo : 0,
+                                        transform: `translateY(${(0,esm/* .interpolate */.GW)(wInfo, [
+                                            0,
+                                            1
+                                        ], [
+                                            20,
+                                            0
+                                        ])}px)`
+                                    },
+                                    children: "Berguna"
+                                })
+                            ]
+                        })
+                    ]
+                }),
+                /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                    style: {
+                        position: "absolute",
+                        top: 460,
+                        left: 60,
+                        width: 460,
+                        display: "flex",
+                        flexDirection: "column",
+                        gap: 45,
+                        transform: "scale(1.18)",
+                        transformOrigin: "top left"
+                    },
+                    children: [
+                        /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                            style: {
+                                backgroundColor: "#FFFBEB",
+                                border: `2px solid ${COLOR_BORDER}`,
+                                boxShadow: "0 10px 24px rgba(0,0,0,0.06)",
+                                borderRadius: 24,
+                                padding: "20px 24px",
+                                display: "flex",
+                                alignItems: "center",
+                                gap: 16,
+                                transform: `scale(${(0,esm/* .interpolate */.GW)(pillPromoSpring, [
+                                    0,
+                                    1
+                                ], [
+                                    0.8,
+                                    1
+                                ])}) translateY(${(0,esm/* .interpolate */.GW)(pillPromoSpring, [
+                                    0,
+                                    1
+                                ], [
+                                    30,
+                                    0
+                                ])}px)`,
+                                opacity: pillPromoSpring,
+                                letterSpacing: -1
+                            },
+                            children: [
+                                /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                    style: {
+                                        width: 48,
+                                        height: 48,
+                                        borderRadius: 14,
+                                        backgroundColor: COLOR_YELLOW,
+                                        display: "flex",
+                                        alignItems: "center",
+                                        justifyContent: "center",
+                                        fontSize: 24
+                                    },
+                                    children: "\uD83C\uDFF7️"
+                                }),
+                                /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                                    children: [
+                                        /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                            style: {
+                                                fontSize: 24,
+                                                color: COLOR_DARK,
+                                                letterSpacing: -2
+                                            },
+                                            children: "Promo Terbaru"
+                                        }),
+                                        /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                            style: {
+                                                fontSize: 16,
+                                                color: COLOR_GRAY,
+                                                marginTop: 4
+                                            },
+                                            children: "Diskon DP & Paket Bunga Rendah"
+                                        })
+                                    ]
+                                })
+                            ]
+                        }),
+                        /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                            style: {
+                                backgroundColor: "#EFF6FF",
+                                border: `2px solid ${COLOR_BORDER}`,
+                                boxShadow: "0 10px 24px rgba(0,0,0,0.06)",
+                                borderRadius: 24,
+                                padding: "20px 24px",
+                                display: "flex",
+                                alignItems: "center",
+                                gap: 16,
+                                transform: `scale(${(0,esm/* .interpolate */.GW)(pillSimulasiSpring, [
+                                    0,
+                                    1
+                                ], [
+                                    0.8,
+                                    1
+                                ])}) translateY(${(0,esm/* .interpolate */.GW)(pillSimulasiSpring, [
+                                    0,
+                                    1
+                                ], [
+                                    30,
+                                    0
+                                ])}px)`,
+                                opacity: pillSimulasiSpring
+                            },
+                            children: [
+                                /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                    style: {
+                                        width: 48,
+                                        height: 48,
+                                        borderRadius: 14,
+                                        backgroundColor: "#BFDBFE",
+                                        display: "flex",
+                                        alignItems: "center",
+                                        justifyContent: "center",
+                                        fontSize: 24,
+                                        letterSpacing: -1
+                                    },
+                                    children: "\uD83D\uDCCA"
+                                }),
+                                /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                                    children: [
+                                        /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                            style: {
+                                                fontSize: 24,
+                                                color: COLOR_DARK,
+                                                letterSpacing: -2
+                                            },
+                                            children: "Simulasi Kredit"
+                                        }),
+                                        /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                            style: {
+                                                fontSize: 16,
+                                                color: COLOR_GRAY,
+                                                marginTop: 4
+                                            },
+                                            children: "Rincian Cicilan & Tenor Jelas"
+                                        })
+                                    ]
+                                })
+                            ]
+                        }),
+                        /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                            style: {
+                                backgroundColor: "#ffd13c8c",
+                                border: `2px solid ${COLOR_BORDER}`,
+                                boxShadow: "0 10px 24px rgba(0,0,0,0.06)",
+                                borderRadius: 24,
+                                padding: "20px 24px",
+                                display: "flex",
+                                alignItems: "center",
+                                gap: 16,
+                                transform: `scale(${(0,esm/* .interpolate */.GW)(pillTipeSpring, [
+                                    0,
+                                    1
+                                ], [
+                                    0.8,
+                                    1
+                                ])}) translateY(${(0,esm/* .interpolate */.GW)(pillTipeSpring, [
+                                    0,
+                                    1
+                                ], [
+                                    30,
+                                    0
+                                ])}px)`,
+                                opacity: pillTipeSpring
+                            },
+                            children: [
+                                /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                    style: {
+                                        width: 48,
+                                        height: 48,
+                                        borderRadius: 14,
+                                        backgroundColor: "#d8ab16da",
+                                        display: "flex",
+                                        alignItems: "center",
+                                        justifyContent: "center",
+                                        fontSize: 24,
+                                        letterSpacing: -1
+                                    },
+                                    children: "\uD83D\uDE97"
+                                }),
+                                /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                                    children: [
+                                        /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                            style: {
+                                                fontSize: 24,
+                                                color: COLOR_DARK,
+                                                letterSpacing: -2
+                                            },
+                                            children: "Perbandingan Tipe"
+                                        }),
+                                        /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                            style: {
+                                                fontSize: 16,
+                                                color: COLOR_GRAY,
+                                                marginTop: 4
+                                            },
+                                            children: "Komparasi Fitur Antar Varian"
+                                        })
+                                    ]
+                                })
+                            ]
+                        })
+                    ]
+                }),
+                /*#__PURE__*/ (0,jsx_runtime.jsx)(Character_Character, {
+                    characterNumber: 8,
+                    scale: 1.7,
+                    entryProgress: enter8,
+                    poseVariant: "ok",
+                    style: {
+                        top: 700,
+                        right: -50
+                    }
+                })
+            ]
+        })
+    });
+};
+
+;// CONCATENATED MODULE: ./src/OtositeFollowUp/Scene4CustomerNotes.tsx
+
+
+
+
+
+const Scene4CustomerNotes = ()=>{
+    const frame = (0,esm/* .useCurrentFrame */.UC)();
+    const { fps } = (0,esm/* .useVideoConfig */.Bk)();
+    const sceneConfig = timingData_namespaceObject.scenes.scene4;
+    const { startFrame, triggers } = sceneConfig;
+    // Scene-local frame conversion
+    const fBadge = triggers.badgeTips3 - startFrame;
+    const fChar9 = triggers.character9Enter - startFrame;
+    // Field muncul berurutan dengan jeda singkat
+    const fField1 = triggers.fieldTipe - startFrame;
+    const fField2 = fField1 + 5;
+    const fField3 = fField1 + 10;
+    // Character 9 entrance
+    const enter9 = (0,esm/* .spring */.oz)({
+        frame: frame - fChar9,
+        fps,
+        config: {
+            damping: 14,
+            mass: 0.5
+        }
+    });
+    // Tips 3 Badge spring
+    const badgeTips3Spring = (0,esm/* .spring */.oz)({
+        frame: frame - fBadge,
+        fps,
+        config: {
+            damping: 12,
+            mass: 0.5
+        }
+    });
+    // Word-by-word kinetic typography springs
+    const wCatat = (0,esm/* .spring */.oz)({
+        frame: frame - 23,
+        fps,
+        config: {
+            damping: 14,
+            mass: 0.5
+        }
+    });
+    const wPreferensi = (0,esm/* .spring */.oz)({
+        frame: frame - 31,
+        fps,
+        config: {
+            damping: 14,
+            mass: 0.5
+        }
+    });
+    const wCustomer = (0,esm/* .spring */.oz)({
+        frame: frame - 38,
+        fps,
+        config: {
+            damping: 11,
+            mass: 0.5
+        }
+    });
+    // Customer note card entrance
+    const cardSpring = (0,esm/* .spring */.oz)({
+        frame: frame - fField1,
+        fps,
+        config: {
+            damping: 16,
+            mass: 0.25
+        }
+    });
+    // Note fields springs
+    const field1Spring = (0,esm/* .spring */.oz)({
+        frame: frame - fField1,
+        fps,
+        config: {
+            damping: 16,
+            mass: 0.25
+        }
+    });
+    const field2Spring = (0,esm/* .spring */.oz)({
+        frame: frame - fField2,
+        fps,
+        config: {
+            damping: 16,
+            mass: 0.25
+        }
+    });
+    const field3Spring = (0,esm/* .spring */.oz)({
+        frame: frame - fField3,
+        fps,
+        config: {
+            damping: 16,
+            mass: 0.25
+        }
+    });
+    // Bottom supporting text muncul cepat setelah ketiga field mulai masuk
+    const bottomTextSpring = (0,esm/* .spring */.oz)({
+        frame: frame - (fField1 + 16),
+        fps,
+        config: {
+            damping: 20,
+            mass: 0.2
+        }
+    });
+    // Outro transition
+    const sceneExit = (0,esm/* .interpolate */.GW)(frame, [
+        150,
+        162
+    ], [
+        0,
+        -40
+    ], {
+        extrapolateLeft: "clamp",
+        extrapolateRight: "clamp"
+    });
+    const sceneOpacity = (0,esm/* .interpolate */.GW)(frame, [
+        150,
+        162
+    ], [
+        1,
+        0
+    ], {
+        extrapolateLeft: "clamp",
+        extrapolateRight: "clamp"
+    });
+    return /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .AbsoluteFill */.H1, {
+        style: {
+            fontFamily: constants_FONT_FAMILY,
+            opacity: sceneOpacity,
+            transform: `translateY(${sceneExit}px)`,
+            pointerEvents: "none"
+        },
+        children: /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+            style: {
+                position: "absolute",
+                top: constants_SAFE_TOP,
+                left: SAFE_LEFT,
+                width: 960,
+                height: 1300
+            },
+            children: [
+                /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                    style: {
+                        position: "absolute",
+                        top: 130,
+                        left: 0,
+                        right: 0,
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "center",
+                        textAlign: "center",
+                        zIndex: 10
+                    },
+                    children: [
+                        /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                            style: {
+                                marginBottom: 16
+                            },
+                            children: frame >= fBadge && /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                style: {
+                                    display: "inline-block",
+                                    backgroundColor: COLOR_YELLOW,
+                                    color: COLOR_DARK,
+                                    fontWeight: 700,
+                                    fontSize: 50,
+                                    padding: "20px 80px",
+                                    borderRadius: 50,
+                                    border: "2.5px solid #000000",
+                                    boxShadow: "0 6px 0 #000000",
+                                    transform: `scale(${(0,esm/* .interpolate */.GW)(badgeTips3Spring, [
+                                        0,
+                                        1
+                                    ], [
+                                        0.75,
+                                        1
+                                    ])}) translateY(${(0,esm/* .interpolate */.GW)(badgeTips3Spring, [
+                                        0,
+                                        1
+                                    ], [
+                                        20,
+                                        0
+                                    ])}px)`,
+                                    opacity: badgeTips3Spring,
+                                    letterSpacing: -2
+                                },
+                                children: "Tips 3"
+                            })
+                        }),
+                        /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                            style: {
+                                display: "flex",
+                                justifyContent: "center",
+                                alignItems: "center",
+                                gap: 12,
+                                marginTop: 25,
+                                fontStyle: "italic",
+                                marginBottom: 12,
+                                fontSize: 70,
+                                color: COLOR_DARK,
+                                letterSpacing: -5
+                            },
+                            children: [
+                                /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                    style: {
+                                        display: "inline-block",
+                                        opacity: frame >= 23 ? wCatat : 0,
+                                        transform: `translateY(${(0,esm/* .interpolate */.GW)(wCatat, [
+                                            0,
+                                            1
+                                        ], [
+                                            20,
+                                            0
+                                        ])}px)`
+                                    },
+                                    children: "Catat"
+                                }),
+                                /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                    style: {
+                                        display: "inline-block",
+                                        opacity: frame >= 23 ? wCatat : 0,
+                                        transform: `translateY(${(0,esm/* .interpolate */.GW)(wCatat, [
+                                            0,
+                                            1
+                                        ], [
+                                            20,
+                                            0
+                                        ])}px)`
+                                    },
+                                    children: "Kebutuhan"
+                                }),
+                                /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                    style: {
+                                        display: "inline-block",
+                                        opacity: frame >= 31 ? wPreferensi : 0,
+                                        transform: `translateY(${(0,esm/* .interpolate */.GW)(wPreferensi, [
+                                            0,
+                                            1
+                                        ], [
+                                            20,
+                                            0
+                                        ])}px)`
+                                    },
+                                    children: "Customer"
+                                })
+                            ]
+                        })
+                    ]
+                }),
+                /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                    style: {
+                        position: "absolute",
+                        top: 450,
+                        left: 50,
+                        width: 480,
+                        backgroundColor: COLOR_CARD_BG,
+                        borderRadius: 28,
+                        border: `2px solid ${COLOR_BORDER}`,
+                        boxShadow: "0 16px 36px rgba(0,0,0,0.06)",
+                        padding: "26px 24px",
+                        transform: `scale(${1.18 * (0,esm/* .interpolate */.GW)(cardSpring, [
+                            0,
+                            1
+                        ], [
+                            0.92,
+                            1
+                        ])})`,
+                        transformOrigin: "top left",
+                        opacity: cardSpring
+                    },
+                    children: [
+                        /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                            style: {
+                                display: "flex",
+                                alignItems: "center",
+                                gap: 12,
+                                marginBottom: 20
+                            },
+                            children: [
+                                /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                    style: {
+                                        width: 44,
+                                        height: 44,
+                                        borderRadius: 22,
+                                        backgroundColor: COLOR_YELLOW,
+                                        display: "flex",
+                                        alignItems: "center",
+                                        justifyContent: "center",
+                                        fontSize: 22
+                                    },
+                                    children: "\uD83D\uDCDD"
+                                }),
+                                /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                    children: /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                        style: {
+                                            fontSize: 23,
+                                            color: COLOR_DARK,
+                                            letterSpacing: -2
+                                        },
+                                        children: "Catatan Customer"
+                                    })
+                                })
+                            ]
+                        }),
+                        /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                            style: {
+                                transform: `scale(${(0,esm/* .interpolate */.GW)(field1Spring, [
+                                    0,
+                                    1
+                                ], [
+                                    0.85,
+                                    1
+                                ])})`,
+                                opacity: field1Spring,
+                                backgroundColor: "#FFFFFF",
+                                border: "1.5px solid #E2E8F0",
+                                borderRadius: 18,
+                                padding: "16px 18px",
+                                marginBottom: 14
+                            },
+                            children: [
+                                /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                    style: {
+                                        fontSize: 13,
+                                        color: COLOR_GRAY,
+                                        fontWeight: 700,
+                                        textTransform: "uppercase"
+                                    },
+                                    children: "1. Tipe Mobil Impian"
+                                }),
+                                /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                    style: {
+                                        fontSize: 20,
+                                        color: COLOR_DARK,
+                                        marginTop: 6,
+                                        letterSpacing: -1
+                                    },
+                                    children: "SUV 7-Seater Matic"
+                                })
+                            ]
+                        }),
+                        /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                            style: {
+                                transform: `scale(${(0,esm/* .interpolate */.GW)(field2Spring, [
+                                    0,
+                                    1
+                                ], [
+                                    0.85,
+                                    1
+                                ])})`,
+                                opacity: field2Spring,
+                                backgroundColor: "#FFFFFF",
+                                border: "1.5px solid #E2E8F0",
+                                borderRadius: 18,
+                                padding: "16px 18px",
+                                marginBottom: 14
+                            },
+                            children: [
+                                /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                    style: {
+                                        fontSize: 13,
+                                        color: COLOR_GRAY,
+                                        fontWeight: 700,
+                                        textTransform: "uppercase"
+                                    },
+                                    children: "2. Budget Customer"
+                                }),
+                                /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                    style: {
+                                        fontSize: 20,
+                                        color: COLOR_DARK,
+                                        marginTop: 6,
+                                        letterSpacing: -1
+                                    },
+                                    children: "DP 30 Juta • Angsuran 5 Jutaan"
+                                })
+                            ]
+                        }),
+                        /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                            style: {
+                                transform: `scale(${(0,esm/* .interpolate */.GW)(field3Spring, [
+                                    0,
+                                    1
+                                ], [
+                                    0.85,
+                                    1
+                                ])})`,
+                                opacity: field3Spring,
+                                backgroundColor: "#FFFFFF",
+                                border: "1.5px solid #E2E8F0",
+                                borderRadius: 18,
+                                padding: "16px 18px"
+                            },
+                            children: [
+                                /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                    style: {
+                                        fontSize: 13,
+                                        color: COLOR_GRAY,
+                                        fontWeight: 700,
+                                        textTransform: "uppercase"
+                                    },
+                                    children: "3. Kapan Rencana Beli"
+                                }),
+                                /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                    style: {
+                                        fontSize: 20,
+                                        color: COLOR_DARK,
+                                        marginTop: 6,
+                                        letterSpacing: -1
+                                    },
+                                    children: "Bulan Depan (Akhir Tahun)"
+                                })
+                            ]
+                        })
+                    ]
+                }),
+                /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                    style: {
+                        position: "absolute",
+                        top: 1000,
+                        left: 5,
+                        width: 980,
+                        textAlign: "center",
+                        fontSize: 50,
+                        fontWeight: 700,
+                        letterSpacing: -4,
+                        color: COLOR_DARK,
+                        opacity: bottomTextSpring,
+                        transform: `translateY(${(0,esm/* .interpolate */.GW)(bottomTextSpring, [
+                            0,
+                            1
+                        ], [
+                            18,
+                            0
+                        ])}px)`
+                    },
+                    children: [
+                        "Biar",
+                        " ",
+                        /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                            style: {
+                                fontStyle: "italic",
+                                color: COLOR_RED
+                            },
+                            children: "komunikasi"
+                        }),
+                        " ",
+                        "berikutnya lebih",
+                        " ",
+                        /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                            style: {
+                                fontStyle: "italic",
+                                color: COLOR_RED
+                            },
+                            children: "terarah"
+                        }),
+                        " ",
+                        "dan",
+                        " ",
+                        /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                            style: {
+                                fontStyle: "italic",
+                                color: COLOR_RED
+                            },
+                            children: "personal"
+                        })
+                    ]
+                }),
+                /*#__PURE__*/ (0,jsx_runtime.jsx)(Character_Character, {
+                    characterNumber: 9,
+                    scale: 1.30,
+                    entryProgress: enter9,
+                    poseVariant: "writing",
+                    style: {
+                        top: 510,
+                        right: -70
+                    }
+                })
+            ]
+        })
+    });
+};
+
+;// CONCATENATED MODULE: ./src/OtositeFollowUp/Scene5OtositeWeb.tsx
+
+
+
+
+
+const Scene5OtositeWeb = ()=>{
+    const frame = (0,esm/* .useCurrentFrame */.UC)();
+    const { fps } = (0,esm/* .useVideoConfig */.Bk)();
+    const sceneConfig = timingData_namespaceObject.scenes.scene5;
+    const { startFrame, triggers } = sceneConfig;
+    // Scene-local frame conversion
+    const fChar10 = triggers.character10Enter - startFrame; // 9
+    const fPhone = triggers.phoneMockup - startFrame; // 24
+    const fKatalog = triggers.featKatalog - startFrame; // 87
+    const fSimulasi = triggers.featSimulasi - startFrame; // 120
+    const fWhatsApp = triggers.featWhatsApp - startFrame; // 149
+    // Character 10 entrance
+    const enter10 = (0,esm/* .spring */.oz)({
+        frame: frame - fChar10,
+        fps,
+        config: {
+            damping: 14,
+            mass: 0.5
+        }
+    });
+    // Tips 4 badge spring
+    const badgeTips4Spring = (0,esm/* .spring */.oz)({
+        frame,
+        fps,
+        config: {
+            damping: 12,
+            mass: 0.5
+        }
+    });
+    // Word-by-word kinetic typography springs
+    const wMau = (0,esm/* .spring */.oz)({
+        frame: frame - 7,
+        fps,
+        config: {
+            damping: 14,
+            mass: 0.5
+        }
+    });
+    const wLebih = (0,esm/* .spring */.oz)({
+        frame: frame - 9,
+        fps,
+        config: {
+            damping: 14,
+            mass: 0.5
+        }
+    });
+    const wGampang = (0,esm/* .spring */.oz)({
+        frame: frame - 14,
+        fps,
+        config: {
+            damping: 14,
+            mass: 0.5
+        }
+    });
+    const wPakai = (0,esm/* .spring */.oz)({
+        frame: frame - 18,
+        fps,
+        config: {
+            damping: 14,
+            mass: 0.5
+        }
+    });
+    const wWebsite = (0,esm/* .spring */.oz)({
+        frame: frame - 22,
+        fps,
+        config: {
+            damping: 11,
+            mass: 0.5
+        }
+    });
+    const wSales = (0,esm/* .spring */.oz)({
+        frame: frame - 30,
+        fps,
+        config: {
+            damping: 14,
+            mass: 0.5
+        }
+    });
+    const wMobil = (0,esm/* .spring */.oz)({
+        frame: frame - 34,
+        fps,
+        config: {
+            damping: 14,
+            mass: 0.5
+        }
+    });
+    const wDari = (0,esm/* .spring */.oz)({
+        frame: frame - 38,
+        fps,
+        config: {
+            damping: 14,
+            mass: 0.5
+        }
+    });
+    const wOtosite = (0,esm/* .spring */.oz)({
+        frame: frame - 42,
+        fps,
+        config: {
+            damping: 11,
+            mass: 0.5
+        }
+    });
+    // Phone Mockup spring
+    const phoneSpring = (0,esm/* .spring */.oz)({
+        frame: frame - fPhone,
+        fps,
+        config: {
+            damping: 14,
+            mass: 0.6
+        }
+    });
+    // Feature pills springs
+    const feat1Spring = (0,esm/* .spring */.oz)({
+        frame: frame - fKatalog,
+        fps,
+        config: {
+            damping: 12,
+            mass: 0.5
+        }
+    });
+    const feat2Spring = (0,esm/* .spring */.oz)({
+        frame: frame - fSimulasi,
+        fps,
+        config: {
+            damping: 12,
+            mass: 0.5
+        }
+    });
+    const feat3Spring = (0,esm/* .spring */.oz)({
+        frame: frame - fWhatsApp,
+        fps,
+        config: {
+            damping: 12,
+            mass: 0.5
+        }
+    });
+    // Outro transition (local frames 174 to 186)
+    const sceneExit = (0,esm/* .interpolate */.GW)(frame, [
+        174,
+        186
+    ], [
+        0,
+        -40
+    ], {
+        extrapolateLeft: "clamp",
+        extrapolateRight: "clamp"
+    });
+    const sceneOpacity = (0,esm/* .interpolate */.GW)(frame, [
+        174,
+        186
+    ], [
+        1,
+        0
+    ], {
+        extrapolateLeft: "clamp",
+        extrapolateRight: "clamp"
+    });
+    return /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .AbsoluteFill */.H1, {
+        style: {
+            fontFamily: constants_FONT_FAMILY,
+            opacity: sceneOpacity,
+            transform: `translateY(${sceneExit}px)`,
+            pointerEvents: "none"
+        },
+        children: /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+            style: {
+                position: "absolute",
+                top: constants_SAFE_TOP,
+                left: SAFE_LEFT,
+                width: 960,
+                height: 1300
+            },
+            children: [
+                /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                    style: {
+                        position: "absolute",
+                        top: 50,
+                        left: 0,
+                        right: 0,
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "center",
+                        textAlign: "center",
+                        zIndex: 10
+                    },
+                    children: [
+                        /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                            style: {
+                                marginBottom: 10
+                            },
+                            children: /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                style: {
+                                    display: "inline-block",
+                                    backgroundColor: COLOR_YELLOW,
+                                    color: COLOR_DARK,
+                                    fontWeight: 700,
+                                    fontSize: 50,
+                                    padding: "20px 80px",
+                                    borderRadius: 50,
+                                    border: "2.5px solid #000000",
+                                    boxShadow: "0 6px 0 #000000",
+                                    transform: `scale(${(0,esm/* .interpolate */.GW)(badgeTips4Spring, [
+                                        0,
+                                        1
+                                    ], [
+                                        0.75,
+                                        1
+                                    ])}) translateY(${(0,esm/* .interpolate */.GW)(badgeTips4Spring, [
+                                        0,
+                                        1
+                                    ], [
+                                        20,
+                                        0
+                                    ])}px)`,
+                                    opacity: badgeTips4Spring,
+                                    letterSpacing: -2
+                                },
+                                children: "Tips 4"
+                            })
+                        }),
+                        /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                            style: {
+                                display: "flex",
+                                justifyContent: "center",
+                                alignItems: "center",
+                                gap: 12,
+                                marginBottom: 8,
+                                marginTop: 25,
+                                fontSize: 60,
+                                color: COLOR_DARK,
+                                letterSpacing: -5
+                            },
+                            children: [
+                                /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                    style: {
+                                        display: "inline-block",
+                                        opacity: frame >= 7 ? wMau : 0,
+                                        transform: `translateY(${(0,esm/* .interpolate */.GW)(wMau, [
+                                            0,
+                                            1
+                                        ], [
+                                            20,
+                                            0
+                                        ])}px)`
+                                    },
+                                    children: "Pakai"
+                                }),
+                                /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                    style: {
+                                        display: "inline-block",
+                                        opacity: frame >= 9 ? wLebih : 0,
+                                        transform: `translateY(${(0,esm/* .interpolate */.GW)(wLebih, [
+                                            0,
+                                            1
+                                        ], [
+                                            20,
+                                            0
+                                        ])}px)`
+                                    },
+                                    children: "Website"
+                                }),
+                                /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                    style: {
+                                        display: "inline-block",
+                                        opacity: frame >= 14 ? wGampang : 0,
+                                        transform: `translateY(${(0,esm/* .interpolate */.GW)(wGampang, [
+                                            0,
+                                            1
+                                        ], [
+                                            20,
+                                            0
+                                        ])}px)`
+                                    },
+                                    children: "Sales"
+                                }),
+                                /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                    style: {
+                                        display: "inline-block",
+                                        opacity: frame >= 18 ? wPakai : 0,
+                                        transform: `translateY(${(0,esm/* .interpolate */.GW)(wPakai, [
+                                            0,
+                                            1
+                                        ], [
+                                            20,
+                                            0
+                                        ])}px)`
+                                    },
+                                    children: "dari"
+                                }),
+                                /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                    style: {
+                                        display: "inline-block",
+                                        fontSize: 70,
+                                        fontWeight: 950,
+                                        fontStyle: "italic",
+                                        textDecoration: "underline",
+                                        color: "#1800ac",
+                                        letterSpacing: -5,
+                                        opacity: frame >= 22 ? wWebsite : 0,
+                                        transform: `scale(${(0,esm/* .interpolate */.GW)(wWebsite, [
+                                            0,
+                                            1
+                                        ], [
+                                            0.75,
+                                            1
+                                        ])}) translateY(${(0,esm/* .interpolate */.GW)(wWebsite, [
+                                            0,
+                                            1
+                                        ], [
+                                            28,
+                                            0
+                                        ])}px)`
+                                    },
+                                    children: "Otosite"
+                                })
+                            ]
+                        })
+                    ]
+                }),
+                /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                    style: {
+                        position: "absolute",
+                        top: 350,
+                        right: 40,
+                        width: 440,
+                        height: 680,
+                        backgroundColor: COLOR_CARD_BG,
+                        borderRadius: 36,
+                        border: `2px solid ${COLOR_BORDER}`,
+                        boxShadow: "0 20px 40px rgba(0,0,0,0.08)",
+                        overflow: "hidden",
+                        transform: `scale(${phoneSpring}) translateY(${(1 - phoneSpring) * 60}px)`
+                    },
+                    children: [
+                        /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                            style: {
+                                height: 54,
+                                backgroundColor: "#F1F5F9",
+                                borderBottom: "1px solid #E2E8F0",
+                                display: "flex",
+                                alignItems: "center",
+                                padding: "0 18px",
+                                gap: 8
+                            },
+                            children: [
+                                /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                    style: {
+                                        width: 12,
+                                        height: 12,
+                                        borderRadius: 6,
+                                        backgroundColor: "#EF4444"
+                                    }
+                                }),
+                                /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                    style: {
+                                        width: 12,
+                                        height: 12,
+                                        borderRadius: 6,
+                                        backgroundColor: COLOR_YELLOW
+                                    }
+                                }),
+                                /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                    style: {
+                                        width: 12,
+                                        height: 12,
+                                        borderRadius: 6,
+                                        backgroundColor: "#10B981"
+                                    }
+                                }),
+                                /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                    style: {
+                                        marginLeft: 10,
+                                        flex: 1,
+                                        height: 30,
+                                        backgroundColor: "#FFFFFF",
+                                        borderRadius: 8,
+                                        border: "1px solid #E2E8F0",
+                                        display: "flex",
+                                        alignItems: "center",
+                                        padding: "0 10px",
+                                        fontSize: 13,
+                                        color: COLOR_GRAY,
+                                        fontWeight: 600
+                                    },
+                                    children: "\uD83D\uDD12 otosite.id"
+                                })
+                            ]
+                        }),
+                        /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                            style: {
+                                position: "relative",
+                                width: "100%",
+                                height: 626,
+                                overflow: "hidden"
+                            },
+                            children: /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .OffthreadVideo */.pe, {
+                                src: (0,esm/* .staticFile */.dQ)("assets/Video Scroll Otosite.mp4"),
+                                muted: true,
+                                style: {
+                                    width: "100%",
+                                    height: "auto",
+                                    transform: `translateY(${(0,esm/* .interpolate */.GW)(frame, [
+                                        fPhone,
+                                        fPhone + 90
+                                    ], [
+                                        0,
+                                        -120
+                                    ], {
+                                        extrapolateLeft: "clamp",
+                                        extrapolateRight: "clamp"
+                                    })}px)`
+                                }
+                            })
+                        })
+                    ]
+                }),
+                /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                    style: {
+                        position: "absolute",
+                        top: 360,
+                        left: 40,
+                        width: 400,
+                        display: "flex",
+                        flexDirection: "column",
+                        gap: 35,
+                        zIndex: 10
+                    },
+                    children: [
+                        /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                            style: {
+                                transform: `scale(${(0,esm/* .interpolate */.GW)(feat1Spring, [
+                                    0,
+                                    1
+                                ], [
+                                    0.8,
+                                    1
+                                ])}) translateY(${(0,esm/* .interpolate */.GW)(feat1Spring, [
+                                    0,
+                                    1
+                                ], [
+                                    30,
+                                    0
+                                ])}px)`,
+                                opacity: feat1Spring,
+                                backgroundColor: "#FFFFFF",
+                                border: `2px solid ${COLOR_BORDER}`,
+                                borderRadius: 22,
+                                padding: "18px 20px",
+                                boxShadow: "0 10px 24px rgba(0,0,0,0.06)",
+                                display: "flex",
+                                alignItems: "center",
+                                gap: 14,
+                                letterSpacing: -2
+                            },
+                            children: [
+                                /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                    style: {
+                                        fontSize: 32
+                                    },
+                                    children: "\uD83D\uDE97"
+                                }),
+                                /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                    children: /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                        style: {
+                                            fontSize: 27,
+                                            color: COLOR_DARK
+                                        },
+                                        children: "Katalog Lengkap"
+                                    })
+                                })
+                            ]
+                        }),
+                        /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                            style: {
+                                transform: `scale(${(0,esm/* .interpolate */.GW)(feat2Spring, [
+                                    0,
+                                    1
+                                ], [
+                                    0.8,
+                                    1
+                                ])}) translateY(${(0,esm/* .interpolate */.GW)(feat2Spring, [
+                                    0,
+                                    1
+                                ], [
+                                    30,
+                                    0
+                                ])}px)`,
+                                opacity: feat2Spring,
+                                backgroundColor: "#FFFFFF",
+                                border: `2px solid ${COLOR_BORDER}`,
+                                borderRadius: 22,
+                                padding: "18px 20px",
+                                boxShadow: "0 10px 24px rgba(0,0,0,0.06)",
+                                display: "flex",
+                                alignItems: "center",
+                                gap: 14,
+                                letterSpacing: -2
+                            },
+                            children: [
+                                /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                    style: {
+                                        fontSize: 32
+                                    },
+                                    children: "\uD83C\uDFF7️"
+                                }),
+                                /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                    children: /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                        style: {
+                                            fontSize: 27,
+                                            color: COLOR_DARK
+                                        },
+                                        children: "Cek Promo Kapan Aja"
+                                    })
+                                })
+                            ]
+                        }),
+                        /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                            style: {
+                                transform: `scale(${(0,esm/* .interpolate */.GW)(feat3Spring, [
+                                    0,
+                                    1
+                                ], [
+                                    0.8,
+                                    1
+                                ])}) translateY(${(0,esm/* .interpolate */.GW)(feat3Spring, [
+                                    0,
+                                    1
+                                ], [
+                                    30,
+                                    0
+                                ])}px)`,
+                                opacity: feat3Spring,
+                                backgroundColor: "#F0FDF4",
+                                border: "2px solid #86EFAC",
+                                borderRadius: 22,
+                                padding: "18px 20px",
+                                boxShadow: "0 10px 24px rgba(16, 185, 129, 0.08)",
+                                display: "flex",
+                                alignItems: "center",
+                                letterSpacing: -2,
+                                gap: 14
+                            },
+                            children: [
+                                /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                    style: {
+                                        fontSize: 32
+                                    },
+                                    children: "\uD83D\uDCAC"
+                                }),
+                                /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                    children: /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                        style: {
+                                            fontSize: 27,
+                                            color: "#10B981"
+                                        },
+                                        children: "Terhubung Langsung Dengan WhatsApp"
+                                    })
+                                })
+                            ]
+                        })
+                    ]
+                }),
+                /*#__PURE__*/ (0,jsx_runtime.jsx)(Character_Character, {
+                    characterNumber: 10,
+                    scale: 1.2,
+                    entryProgress: enter10,
+                    poseVariant: "speaking",
+                    style: {
+                        top: 770
+                    }
+                })
+            ]
+        })
+    });
+};
+
+;// CONCATENATED MODULE: ./src/OtositeFollowUp/Scene6ClosingCTA.tsx
+
+
+
+
+
+const Scene6ClosingCTA = ()=>{
+    const frame = (0,esm/* .useCurrentFrame */.UC)();
+    const { fps } = (0,esm/* .useVideoConfig */.Bk)();
+    const sceneConfig = timingData_namespaceObject.scenes.scene6;
+    const { startFrame, triggers } = sceneConfig;
+    // Scene-local frame conversion
+    const fChar11 = triggers.character11Enter - startFrame; // 4
+    const fCtaPart2 = triggers.ctaPart2 - startFrame; // 63
+    const fDomain = triggers.domainPill - startFrame; // 72
+    const fPhone = triggers.phoneBadge - startFrame; // 96
+    const fVoEnd = triggers.voEnd - startFrame; // 106
+    const isPart2 = frame >= fCtaPart2;
+    // Character 11 entrance
+    const enter11 = (0,esm/* .spring */.oz)({
+        frame: frame - fChar11,
+        fps,
+        config: {
+            damping: 14,
+            mass: 0.5
+        }
+    });
+    // Word-by-word kinetic typography springs (Part 6A) - synced to voiceover rhythm
+    const wYuk = (0,esm/* .spring */.oz)({
+        frame: frame - 0,
+        fps,
+        config: {
+            damping: 14,
+            mass: 0.5
+        }
+    });
+    const wTingkatkan = (0,esm/* .spring */.oz)({
+        frame: frame - 2,
+        fps,
+        config: {
+            damping: 14,
+            mass: 0.5
+        }
+    });
+    const wPenjualan = (0,esm/* .spring */.oz)({
+        frame: frame - 16,
+        fps,
+        config: {
+            damping: 11,
+            mass: 0.5
+        }
+    });
+    const wMobil = (0,esm/* .spring */.oz)({
+        frame: frame - 26,
+        fps,
+        config: {
+            damping: 11,
+            mass: 0.5
+        }
+    });
+    const wDengan = (0,esm/* .spring */.oz)({
+        frame: frame - 33,
+        fps,
+        config: {
+            damping: 14,
+            mass: 0.5
+        }
+    });
+    const wOtositeCta = (0,esm/* .spring */.oz)({
+        frame: frame - 39,
+        fps,
+        config: {
+            damping: 11,
+            mass: 0.5
+        }
+    });
+    // Word-by-word kinetic typography springs (Part 6B) - synced to voiceover rhythm
+    const wKunjungi = (0,esm/* .spring */.oz)({
+        frame: frame - 63,
+        fps,
+        config: {
+            damping: 14,
+            mass: 0.5
+        }
+    });
+    const wDomain = (0,esm/* .spring */.oz)({
+        frame: frame - 72,
+        fps,
+        config: {
+            damping: 11,
+            mass: 0.5
+        }
+    });
+    const wSekarang = (0,esm/* .spring */.oz)({
+        frame: frame - 89,
+        fps,
+        config: {
+            damping: 11,
+            mass: 0.5
+        }
+    });
+    // CTA Card spring
+    const ctaCardSpring = (0,esm/* .spring */.oz)({
+        frame: frame - fCtaPart2,
+        fps,
+        config: {
+            damping: 12,
+            mass: 0.5,
+            stiffness: 140
+        }
+    });
+    // Domain pop
+    const domainSpring = (0,esm/* .spring */.oz)({
+        frame: frame - fDomain,
+        fps,
+        config: {
+            damping: 11,
+            mass: 0.5
+        }
+    });
+    // Phone WhatsApp pop
+    const phoneSpring = (0,esm/* .spring */.oz)({
+        frame: frame - fPhone,
+        fps,
+        config: {
+            damping: 12,
+            mass: 0.5
+        }
+    });
+    // Lamp glow animation
+    const lampGlowSpring = (0,esm/* .spring */.oz)({
+        frame: frame - fChar11,
+        fps,
+        config: {
+            damping: 14,
+            mass: 0.5
+        }
+    });
+    const lampPulse = (0,esm/* .interpolate */.GW)(Math.sin(frame / 12 * Math.PI), [
+        -1,
+        1
+    ], [
+        0.88,
+        1.12
+    ]);
+    // Subtle breathing pulse for hold phase (frame >= 106)
+    const breathing = (0,esm/* .interpolate */.GW)(Math.sin(frame / 15 * Math.PI), [
+        -1,
+        1
+    ], [
+        0.985,
+        1.015
+    ]);
+    return /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .AbsoluteFill */.H1, {
+        style: {
+            fontFamily: constants_FONT_FAMILY,
+            pointerEvents: "none"
+        },
+        children: /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+            style: {
+                position: "absolute",
+                top: constants_SAFE_TOP,
+                left: SAFE_LEFT,
+                width: 960,
+                height: 1300
+            },
+            children: !isPart2 ? /*#__PURE__*/ (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+                children: [
+                    /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                        style: {
+                            position: "absolute",
+                            top: 200,
+                            left: 0,
+                            right: 0,
+                            display: "flex",
+                            flexDirection: "column",
+                            alignItems: "center",
+                            textAlign: "center",
+                            zIndex: 10
+                        },
+                        children: [
+                            /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                                style: {
+                                    display: "flex",
+                                    justifyContent: "center",
+                                    alignItems: "center",
+                                    gap: 12,
+                                    marginBottom: 14,
+                                    fontSize: 70,
+                                    fontWeight: 700,
+                                    color: COLOR_DARK,
+                                    letterSpacing: -5
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                        style: {
+                                            display: "inline-block",
+                                            fontStyle: "italic",
+                                            color: "#1800ac",
+                                            textDecoration: "underline",
+                                            opacity: frame >= 0 ? wYuk : 0,
+                                            transform: `translateY(${(0,esm/* .interpolate */.GW)(wYuk, [
+                                                0,
+                                                1
+                                            ], [
+                                                20,
+                                                0
+                                            ])}px)`
+                                        },
+                                        children: "Follow Up"
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                        style: {
+                                            display: "inline-block",
+                                            fontStyle: "italic",
+                                            color: "#1800ac",
+                                            textDecoration: "underline",
+                                            opacity: frame >= 2 ? wTingkatkan : 0,
+                                            transform: `translateY(${(0,esm/* .interpolate */.GW)(wTingkatkan, [
+                                                0,
+                                                1
+                                            ], [
+                                                20,
+                                                0
+                                            ])}px)`
+                                        },
+                                        children: "Pintar"
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                        style: {
+                                            display: "inline-block",
+                                            opacity: frame >= 2 ? wTingkatkan : 0,
+                                            transform: `translateY(${(0,esm/* .interpolate */.GW)(wTingkatkan, [
+                                                0,
+                                                1
+                                            ], [
+                                                20,
+                                                0
+                                            ])}px)`
+                                        },
+                                        children: "Buat"
+                                    })
+                                ]
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                                style: {
+                                    display: "flex",
+                                    justifyContent: "center",
+                                    alignItems: "center",
+                                    gap: 16,
+                                    marginBottom: 14
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                        style: {
+                                            display: "inline-block",
+                                            fontSize: 90,
+                                            fontWeight: 700,
+                                            color: COLOR_RED,
+                                            textDecoration: "underline",
+                                            fontStyle: "italic",
+                                            paintOrder: "stroke fill",
+                                            letterSpacing: -5,
+                                            opacity: frame >= 16 ? wPenjualan : 0,
+                                            transform: `scale(${(0,esm/* .interpolate */.GW)(wPenjualan, [
+                                                0,
+                                                1
+                                            ], [
+                                                0.75,
+                                                1
+                                            ])}) translateY(${(0,esm/* .interpolate */.GW)(wPenjualan, [
+                                                0,
+                                                1
+                                            ], [
+                                                28,
+                                                0
+                                            ])}px)`
+                                        },
+                                        children: "Closing"
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                        style: {
+                                            display: "inline-block",
+                                            fontSize: 80,
+                                            fontWeight: 700,
+                                            textDecoration: "underline",
+                                            fontStyle: "italic",
+                                            color: COLOR_RED,
+                                            paintOrder: "stroke fill",
+                                            letterSpacing: -5,
+                                            opacity: frame >= 26 ? wMobil : 0,
+                                            transform: `scale(${(0,esm/* .interpolate */.GW)(wMobil, [
+                                                0,
+                                                1
+                                            ], [
+                                                0.75,
+                                                1
+                                            ])}) translateY(${(0,esm/* .interpolate */.GW)(wMobil, [
+                                                0,
+                                                1
+                                            ], [
+                                                28,
+                                                0
+                                            ])}px)`
+                                        },
+                                        children: "Lancar"
+                                    })
+                                ]
+                            })
+                        ]
+                    }),
+                    /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                        style: {
+                            position: "absolute",
+                            top: 450,
+                            right: 150,
+                            width: 240,
+                            height: 240,
+                            borderRadius: "50%",
+                            background: "radial-gradient(circle, rgba(255, 221, 80, 0.55) 0%, rgba(255, 205, 50, 0.25) 35%, rgba(255, 205, 50, 0.08) 60%, transparent 75%)",
+                            filter: "blur(12px)",
+                            opacity: lampGlowSpring * 0.9,
+                            transform: `scale(${lampPulse})`,
+                            pointerEvents: "none",
+                            zIndex: 0
+                        }
+                    }),
+                    /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                        style: {
+                            position: "absolute",
+                            top: 650,
+                            right: -90,
+                            width: 180,
+                            height: 180,
+                            borderRadius: "50%",
+                            background: "repeating-conic-gradient(from 0deg, rgba(255, 210, 60, 0.22) 0deg 3deg, transparent 3deg 30deg)",
+                            maskImage: "radial-gradient(circle, transparent 25%, black 70%, transparent 100%)",
+                            opacity: lampGlowSpring * 0.65,
+                            transform: `rotate(${frame * 0.15}deg) scale(${lampPulse})`,
+                            pointerEvents: "none",
+                            zIndex: 0
+                        }
+                    }),
+                    /*#__PURE__*/ (0,jsx_runtime.jsx)(Character_Character, {
+                        characterNumber: 11,
+                        scale: 1.80,
+                        entryProgress: enter11,
+                        poseVariant: "eureka",
+                        style: {
+                            top: 720,
+                            left: 310
+                        }
+                    })
+                ]
+            }) : /*#__PURE__*/ (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+                children: [
+                    /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                        style: {
+                            position: "absolute",
+                            top: 140,
+                            left: 50,
+                            right: 50,
+                            backgroundColor: COLOR_CARD_BG,
+                            borderRadius: 36,
+                            border: `3px solid ${COLOR_BORDER}`,
+                            boxShadow: "0 24px 50px rgba(0,0,0,0.08)",
+                            padding: "45px 36px",
+                            textAlign: "center",
+                            transform: `scale(${ctaCardSpring * (frame >= fVoEnd ? breathing : 1)})`,
+                            opacity: ctaCardSpring,
+                            zIndex: 10
+                        },
+                        children: [
+                            /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                                style: {
+                                    display: "flex",
+                                    flexDirection: "row",
+                                    justifyContent: "center",
+                                    alignItems: "center",
+                                    gap: 16,
+                                    marginBottom: 12,
+                                    whiteSpace: "nowrap"
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                        style: {
+                                            display: "inline-block",
+                                            fontSize: 60,
+                                            fontWeight: 700,
+                                            color: COLOR_DARK,
+                                            letterSpacing: -5,
+                                            opacity: frame >= 63 ? wKunjungi : 0,
+                                            transform: `translateY(${(0,esm/* .interpolate */.GW)(wKunjungi, [
+                                                0,
+                                                1
+                                            ], [
+                                                18,
+                                                0
+                                            ])}px)`
+                                        },
+                                        children: "Hubungi"
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                        style: {
+                                            display: "inline-block",
+                                            fontSize: 80,
+                                            fontWeight: 700,
+                                            color: COLOR_RED,
+                                            fontStyle: "italic",
+                                            letterSpacing: -5,
+                                            opacity: frame >= 63 ? wKunjungi : 0,
+                                            transform: `translateY(${(0,esm/* .interpolate */.GW)(wKunjungi, [
+                                                0,
+                                                1
+                                            ], [
+                                                18,
+                                                0
+                                            ])}px)`
+                                        },
+                                        children: "Otosite"
+                                    })
+                                ]
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                style: {
+                                    marginBottom: 36
+                                },
+                                children: /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                    style: {
+                                        display: "inline-block",
+                                        fontSize: 60,
+                                        fontWeight: 700,
+                                        color: COLOR_DARK,
+                                        letterSpacing: -5,
+                                        opacity: frame >= 89 ? wSekarang : 0,
+                                        transform: `scale(${(0,esm/* .interpolate */.GW)(wSekarang, [
+                                            0,
+                                            1
+                                        ], [
+                                            0.8,
+                                            1
+                                        ])}) translateY(${(0,esm/* .interpolate */.GW)(wSekarang, [
+                                            0,
+                                            1
+                                        ], [
+                                            20,
+                                            0
+                                        ])}px)`
+                                    },
+                                    children: "Sekarang!"
+                                })
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                style: {
+                                    height: 2,
+                                    backgroundColor: "#E2E8F0",
+                                    width: "80%",
+                                    margin: "0 auto 30px auto"
+                                }
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                                style: {
+                                    transform: `scale(${phoneSpring})`,
+                                    opacity: phoneSpring,
+                                    display: "inline-flex",
+                                    alignItems: "center",
+                                    gap: 16,
+                                    backgroundColor: "#F0FDF4",
+                                    border: "2.5px solid #10B981",
+                                    borderRadius: 999,
+                                    padding: "16px 36px",
+                                    boxShadow: "0 10px 24px rgba(16, 185, 129, 0.12)"
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                        style: {
+                                            fontSize: 35
+                                        },
+                                        children: "☎️"
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                        style: {
+                                            fontSize: 34,
+                                            fontWeight: 800,
+                                            color: COLOR_DARK,
+                                            letterSpacing: -0.5
+                                        },
+                                        children: "+62 877-5667-6669"
+                                    })
+                                ]
+                            })
+                        ]
+                    }),
+                    /*#__PURE__*/ (0,jsx_runtime.jsx)(Character_Character, {
+                        characterNumber: 13,
+                        scale: 1.40,
+                        entryProgress: 1,
+                        poseVariant: "idle",
+                        style: {
+                            top: 770,
+                            left: 270
+                        }
+                    })
+                ]
+            })
+        })
+    });
+};
+
+;// CONCATENATED MODULE: ./src/OtositeFollowUp/OtositeFollowUpReels.tsx
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const OtositeFollowUpReels = ()=>{
+    const { scenes } = timingData_namespaceObject;
+    return /*#__PURE__*/ (0,jsx_runtime.jsxs)(esm/* .AbsoluteFill */.H1, {
+        style: {
+            backgroundColor: "#F8FAFC"
+        },
+        children: [
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(FontStyles, {}),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(Background, {}),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Sequence */.gd, {
+                from: scenes.scene1.startFrame,
+                durationInFrames: scenes.scene1.duration,
+                children: /*#__PURE__*/ (0,jsx_runtime.jsx)(Scene1Hook_Scene1Hook, {})
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Sequence */.gd, {
+                from: scenes.scene2.startFrame,
+                durationInFrames: scenes.scene2.duration,
+                children: /*#__PURE__*/ (0,jsx_runtime.jsx)(Scene2ChatHistory, {})
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Sequence */.gd, {
+                from: scenes.scene3.startFrame,
+                durationInFrames: scenes.scene3.duration,
+                children: /*#__PURE__*/ (0,jsx_runtime.jsx)(Scene3UsefulInfo, {})
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Sequence */.gd, {
+                from: scenes.scene4.startFrame,
+                durationInFrames: scenes.scene4.duration,
+                children: /*#__PURE__*/ (0,jsx_runtime.jsx)(Scene4CustomerNotes, {})
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Sequence */.gd, {
+                from: scenes.scene5.startFrame,
+                durationInFrames: scenes.scene5.duration,
+                children: /*#__PURE__*/ (0,jsx_runtime.jsx)(Scene5OtositeWeb, {})
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Sequence */.gd, {
+                from: scenes.scene6.startFrame,
+                durationInFrames: scenes.scene6.duration,
+                children: /*#__PURE__*/ (0,jsx_runtime.jsx)(Scene6ClosingCTA, {})
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(AudioTracks_AudioTracks, {}),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(BrandingOverlay, {})
+        ]
+    });
+};
+
+;// CONCATENATED MODULE: ./src/OtositeCustomer/constants.ts
+const OtositeCustomer_constants_VIDEO_WIDTH = 1080;
+const OtositeCustomer_constants_VIDEO_HEIGHT = 1920;
+const OtositeCustomer_constants_VIDEO_FPS = 30;
+// Total duration: 40.03s VO (1201 frames) + 44 frames outro hold = 1245 frames (41.50s)
+const OtositeCustomer_constants_TOTAL_DURATION = 1245;
+// Strict 6 Brand Colors
+const constants_COLORS = {
+    blue: "#1800AC",
+    red: "#FF3133",
+    dark: "#1D1F20",
+    yellow: "#F7C25D",
+    yellowTua: "#E79B02",
+    yellowMuda: "#FFD33C"
+};
+// Safe Area (in pixels) for content so it never touches top branding pill or bottom footer
+const OtositeCustomer_constants_SAFE_TOP = 270;
+const OtositeCustomer_constants_SAFE_BOTTOM = 1540;
+const constants_SAFE_LEFT = 60;
+const constants_SAFE_RIGHT = 60;
+// Precise Scene Timings in frames (@30fps) based on audio waveform & silence analysis of voice over(3).wav
+const constants_SCENES = {
+    scene1: {
+        from: 0,
+        duration: 240,
+        parts: {
+            part1: {
+                from: 0,
+                duration: 90
+            },
+            part2: {
+                from: 90,
+                duration: 54
+            },
+            part3: {
+                from: 144,
+                duration: 96
+            }
+        }
+    },
+    scene2: {
+        from: 240,
+        duration: 280,
+        parts: {
+            intro: {
+                from: 0,
+                duration: 155
+            },
+            example: {
+                from: 155,
+                duration: 125
+            }
+        }
+    },
+    scene3: {
+        from: 520,
+        duration: 295,
+        parts: {
+            intro: {
+                from: 0,
+                duration: 120
+            },
+            dontAsk: {
+                from: 120,
+                duration: 55
+            },
+            options: {
+                from: 175,
+                duration: 120
+            }
+        }
+    },
+    scene4: {
+        from: 815,
+        duration: 235,
+        parts: {
+            intro: {
+                from: 0,
+                duration: 65
+            },
+            benefits: {
+                from: 65,
+                duration: 170
+            }
+        }
+    },
+    scene5: {
+        from: 1050,
+        duration: 195,
+        parts: {
+            hook: {
+                from: 0,
+                duration: 84
+            },
+            cta: {
+                from: 84,
+                duration: 67
+            },
+            hold: {
+                from: 151,
+                duration: 44
+            }
+        }
+    }
+};
+const OtositeCustomer_constants_FONT_FAMILY = "'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif";
+
+;// CONCATENATED MODULE: ./src/OtositeCustomer/AudioTracks.tsx
+
+
+
+const OtositeCustomer_AudioTracks_AudioTracks = ()=>{
+    return /*#__PURE__*/ (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+        children: [
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Audio */.fP, {
+                src: (0,esm/* .staticFile */.dQ)("assets/voice over(3).wav"),
+                volume: 1
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Sequence */.gd, {
+                from: 6,
+                durationInFrames: 25,
+                children: /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Audio */.fP, {
+                    src: (0,esm/* .staticFile */.dQ)("sfx/pop.wav"),
+                    volume: 0.20
+                })
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Sequence */.gd, {
+                from: 46,
+                durationInFrames: 25,
+                children: /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Audio */.fP, {
+                    src: (0,esm/* .staticFile */.dQ)("sfx/pop.wav"),
+                    volume: 0.20
+                })
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Sequence */.gd, {
+                from: 92,
+                durationInFrames: 25,
+                children: /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Audio */.fP, {
+                    src: (0,esm/* .staticFile */.dQ)("sfx/pop.wav"),
+                    volume: 0.20
+                })
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Sequence */.gd, {
+                from: 144,
+                durationInFrames: 30,
+                children: /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Audio */.fP, {
+                    src: (0,esm/* .staticFile */.dQ)("sfx/whoosh.wav"),
+                    volume: 0.22
+                })
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Sequence */.gd, {
+                from: 186,
+                durationInFrames: 35,
+                children: /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Audio */.fP, {
+                    src: (0,esm/* .staticFile */.dQ)("sfx/impact.wav"),
+                    volume: 0.24
+                })
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Sequence */.gd, {
+                from: 200,
+                durationInFrames: 35,
+                children: /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Audio */.fP, {
+                    src: (0,esm/* .staticFile */.dQ)("sfx/chime.wav"),
+                    volume: 0.22
+                })
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Sequence */.gd, {
+                from: 240,
+                durationInFrames: 25,
+                children: /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Audio */.fP, {
+                    src: (0,esm/* .staticFile */.dQ)("sfx/whoosh.wav"),
+                    volume: 0.22
+                })
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Sequence */.gd, {
+                from: 268,
+                durationInFrames: 25,
+                children: /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Audio */.fP, {
+                    src: (0,esm/* .staticFile */.dQ)("sfx/pop.wav"),
+                    volume: 0.20
+                })
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Sequence */.gd, {
+                from: 366,
+                durationInFrames: 25,
+                children: /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Audio */.fP, {
+                    src: (0,esm/* .staticFile */.dQ)("sfx/pop.wav"),
+                    volume: 0.22
+                })
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Sequence */.gd, {
+                from: 398,
+                durationInFrames: 30,
+                children: /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Audio */.fP, {
+                    src: (0,esm/* .staticFile */.dQ)("sfx/impact.wav"),
+                    volume: 0.24
+                })
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Sequence */.gd, {
+                from: 520,
+                durationInFrames: 25,
+                children: /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Audio */.fP, {
+                    src: (0,esm/* .staticFile */.dQ)("sfx/whoosh.wav"),
+                    volume: 0.22
+                })
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Sequence */.gd, {
+                from: 546,
+                durationInFrames: 25,
+                children: /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Audio */.fP, {
+                    src: (0,esm/* .staticFile */.dQ)("sfx/pop.wav"),
+                    volume: 0.20
+                })
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Sequence */.gd, {
+                from: 644,
+                durationInFrames: 25,
+                children: /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Audio */.fP, {
+                    src: (0,esm/* .staticFile */.dQ)("sfx/pop.wav"),
+                    volume: 0.20
+                })
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Sequence */.gd, {
+                from: 746,
+                durationInFrames: 20,
+                children: /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Audio */.fP, {
+                    src: (0,esm/* .staticFile */.dQ)("sfx/tick.wav"),
+                    volume: 0.24
+                })
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Sequence */.gd, {
+                from: 766,
+                durationInFrames: 20,
+                children: /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Audio */.fP, {
+                    src: (0,esm/* .staticFile */.dQ)("sfx/tick.wav"),
+                    volume: 0.24
+                })
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Sequence */.gd, {
+                from: 815,
+                durationInFrames: 25,
+                children: /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Audio */.fP, {
+                    src: (0,esm/* .staticFile */.dQ)("sfx/whoosh.wav"),
+                    volume: 0.22
+                })
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Sequence */.gd, {
+                from: 840,
+                durationInFrames: 25,
+                children: /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Audio */.fP, {
+                    src: (0,esm/* .staticFile */.dQ)("sfx/pop.wav"),
+                    volume: 0.20
+                })
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Sequence */.gd, {
+                from: 890,
+                durationInFrames: 20,
+                children: /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Audio */.fP, {
+                    src: (0,esm/* .staticFile */.dQ)("sfx/tick.wav"),
+                    volume: 0.24
+                })
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Sequence */.gd, {
+                from: 907,
+                durationInFrames: 20,
+                children: /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Audio */.fP, {
+                    src: (0,esm/* .staticFile */.dQ)("sfx/tick.wav"),
+                    volume: 0.24
+                })
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Sequence */.gd, {
+                from: 923,
+                durationInFrames: 20,
+                children: /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Audio */.fP, {
+                    src: (0,esm/* .staticFile */.dQ)("sfx/tick.wav"),
+                    volume: 0.24
+                })
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Sequence */.gd, {
+                from: 1050,
+                durationInFrames: 25,
+                children: /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Audio */.fP, {
+                    src: (0,esm/* .staticFile */.dQ)("sfx/whoosh.wav"),
+                    volume: 0.22
+                })
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Sequence */.gd, {
+                from: 1060,
+                durationInFrames: 25,
+                children: /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Audio */.fP, {
+                    src: (0,esm/* .staticFile */.dQ)("sfx/pop.wav"),
+                    volume: 0.20
+                })
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Sequence */.gd, {
+                from: 1134,
+                durationInFrames: 25,
+                children: /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Audio */.fP, {
+                    src: (0,esm/* .staticFile */.dQ)("sfx/pop.wav"),
+                    volume: 0.20
+                })
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Sequence */.gd, {
+                from: 1158,
+                durationInFrames: 35,
+                children: /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Audio */.fP, {
+                    src: (0,esm/* .staticFile */.dQ)("sfx/impact.wav"),
+                    volume: 0.25
+                })
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Sequence */.gd, {
+                from: 1170,
+                durationInFrames: 40,
+                children: /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Audio */.fP, {
+                    src: (0,esm/* .staticFile */.dQ)("sfx/sparkle.wav"),
+                    volume: 0.22
+                })
+            })
+        ]
+    });
+};
+
+// EXTERNAL MODULE: ./node_modules/remotion/dist/esm/no-react.mjs
+var no_react = __webpack_require__(9382);
+;// CONCATENATED MODULE: ./node_modules/@remotion/google-fonts/dist/esm/ABeeZee-ay08gs2s.mjs
+// src/base.ts
+
+
+
+// src/resolve-font-subsets.ts
+var isChunkSubset = (subset) => /^\[\d+\]$/.test(subset);
+var compareChunkSubsets = (a, b) => {
+  return Number(a.slice(1, -1)) - Number(b.slice(1, -1));
+};
+var resolveFontSubsetKeys = ({
+  availableSubsetKeys,
+  metaSubsets,
+  requestedSubset
+}) => {
+  if (availableSubsetKeys.includes(requestedSubset)) {
+    return [requestedSubset];
+  }
+  if (!metaSubsets.includes(requestedSubset)) {
+    return [requestedSubset];
+  }
+  const chunkSubsets = availableSubsetKeys.filter(isChunkSubset).sort(compareChunkSubsets);
+  return chunkSubsets.length === 0 ? [requestedSubset] : chunkSubsets;
+};
+
+// src/base.ts
+var loadedFontsByDocument = new WeakMap;
+var getLoadedFontsForDocument = (targetDocument) => {
+  const cached = loadedFontsByDocument.get(targetDocument);
+  if (cached) {
+    return cached;
+  }
+  const loadedFonts = {};
+  loadedFontsByDocument.set(targetDocument, loadedFonts);
+  return loadedFonts;
+};
+var withResolvers = function() {
+  let resolve;
+  let reject;
+  const promise = new Promise((res, rej) => {
+    resolve = res;
+    reject = rej;
+  });
+  return { promise, resolve, reject };
+};
+var loadFontFaceOrTimeoutAfter20Seconds = (fontFace) => {
+  const timeout = withResolvers();
+  const int = setTimeout(() => {
+    timeout.reject(new Error("Timed out loading Google Font"));
+  }, 18000);
+  return Promise.race([
+    fontFace.load().then(() => {
+      clearTimeout(int);
+    }),
+    timeout.promise
+  ]);
+};
+var loadFonts = (meta, style, options) => {
+  const weightsAndSubsetsAreSpecified = Array.isArray(options?.weights) && Array.isArray(options?.subsets) && options.weights.length > 0 && options.subsets.length > 0;
+  if (no_react/* .NoReactInternals.ENABLE_V5_BREAKING_CHANGES */.JC.ENABLE_V5_BREAKING_CHANGES && !weightsAndSubsetsAreSpecified) {
+    throw new Error("Loading Google Fonts without specifying weights and subsets is not supported in Remotion v5. Please specify the weights and subsets you need.");
+  }
+  const promises = [];
+  const styles = style ? [style] : Object.keys(meta.fonts);
+  let fontsLoaded = 0;
+  let previousAdded = Promise.resolve();
+  for (const style of styles) {
+    if (typeof FontFace === "undefined") {
+      continue;
+    }
+    if (!meta.fonts[style]) {
+      throw new Error(`The font ${meta.fontFamily} does not have a style ${style}`);
+    }
+    const targetDocument = options?.document ?? document;
+    const loadedFonts = getLoadedFontsForDocument(targetDocument);
+    const weights = options?.weights ?? Object.keys(meta.fonts[style]);
+    for (const weight of weights) {
+      if (!meta.fonts[style][weight]) {
+        throw new Error(`The font ${meta.fontFamily} does not  have a weight ${weight} in style ${style}`);
+      }
+      const requestedSubsets = options?.subsets ?? Object.keys(meta.fonts[style][weight]);
+      const availableSubsetKeys = Object.keys(meta.fonts[style][weight]);
+      const subsets = [
+        ...new Set(requestedSubsets.flatMap((requestedSubset) => resolveFontSubsetKeys({
+          availableSubsetKeys,
+          metaSubsets: meta.subsets,
+          requestedSubset
+        })))
+      ];
+      for (const subset of subsets) {
+        let font = meta.fonts[style]?.[weight]?.[subset];
+        if (!font) {
+          throw new Error(`weight: ${weight} subset: ${subset} is not available for '${meta.fontFamily}'`);
+        }
+        let fontKey = `${meta.fontFamily}-${style}-${weight}-${subset}`;
+        const previousPromise = loadedFonts[fontKey];
+        if (previousPromise) {
+          promises.push(previousPromise);
+          continue;
+        }
+        const baseLabel = `Fetching ${meta.fontFamily} font ${JSON.stringify({
+          style,
+          weight,
+          subset
+        })}`;
+        const label = weightsAndSubsetsAreSpecified ? baseLabel : `${baseLabel}. This might be caused by loading too many font variations. Read more: https://www.remotion.dev/docs/troubleshooting/font-loading-errors#render-timeout-when-loading-google-fonts`;
+        const handle = (0,esm/* .delayRender */.IH)(label, { timeoutInMilliseconds: 60000 });
+        fontsLoaded++;
+        const registerFont = (fontData) => {
+          no_react/* .NoReactInternals.registerFontFace */.JC.registerFontFace({
+            ascentOverride: null,
+            descentOverride: null,
+            display: null,
+            featureSettings: null,
+            fontFamily: meta.fontFamily,
+            fontData,
+            fontUrl: font,
+            format: "woff2",
+            lineGapOverride: null,
+            style,
+            weight,
+            stretch: null,
+            unicodeRange: meta.unicodeRanges[subset] ?? null,
+            variant: null
+          });
+        };
+        let attempts = 2;
+        const tryToLoad = () => {
+          return no_react/* .NoReactInternals.fetchFontData */.JC.fetchFontData(font).then((fontData) => {
+            const fontFace = new FontFace(meta.fontFamily, fontData, {
+              weight,
+              style,
+              unicodeRange: meta.unicodeRanges[subset]
+            });
+            return loadFontFaceOrTimeoutAfter20Seconds(fontFace).then(() => ({
+              fontFace,
+              fontData
+            }));
+          }).catch((err) => {
+            if (attempts === 0) {
+              loadedFonts[fontKey] = undefined;
+              throw err;
+            }
+            attempts--;
+            return tryToLoad();
+          });
+        };
+        const promise = Promise.all([tryToLoad(), previousAdded]).then(([{ fontFace, fontData }]) => {
+          targetDocument.fonts.add(fontFace);
+          registerFont(fontData);
+          (0,esm/* .continueRender */._8)(handle);
+        });
+        previousAdded = promise.catch(() => {
+          return;
+        });
+        loadedFonts[fontKey] = promise;
+        promises.push(promise);
+      }
+    }
+    if (fontsLoaded > 20 && !options?.ignoreTooManyRequestsWarning) {
+      console.warn(`Made ${fontsLoaded} network requests to load fonts for ${meta.fontFamily}. Consider loading fewer weights and subsets by passing options to loadFont(). Disable this warning by passing "ignoreTooManyRequestsWarning: true" to "options".`);
+    }
+  }
+  return {
+    fontFamily: meta.fontFamily,
+    fonts: meta.fonts,
+    unicodeRanges: meta.unicodeRanges,
+    waitUntilDone: () => Promise.all(promises).then(() => {
+      return;
+    })
+  };
+};
+var ABeeZee_ay08gs2s_loadVariableFonts = (meta, style, options) => {
+  if (!meta.variable) {
+    throw new Error(`${meta.fontFamily} is not available as a variable font`);
+  }
+  if (options.subsets.length === 0) {
+    throw new Error("Pass at least one subset to loadVariableFont()");
+  }
+  const fontFacesForStyle = meta.variable.fontFaces.filter((fontFace) => fontFace.style === style);
+  if (fontFacesForStyle.length === 0) {
+    throw new Error(`The variable font ${meta.fontFamily} does not have a style ${style}`);
+  }
+  const availableSubsetKeys = fontFacesForStyle.map((fontFace) => fontFace.subset);
+  const subsets = [
+    ...new Set(options.subsets.flatMap((requestedSubset) => resolveFontSubsetKeys({
+      availableSubsetKeys,
+      metaSubsets: meta.subsets,
+      requestedSubset
+    })))
+  ];
+  const promises = [];
+  let previousAdded = Promise.resolve();
+  for (const subset of subsets) {
+    if (typeof FontFace === "undefined") {
+      continue;
+    }
+    const font = fontFacesForStyle.find((fontFace) => fontFace.subset === subset);
+    if (!font) {
+      throw new Error(`subset: ${subset} is not available for the variable font '${meta.fontFamily}'`);
+    }
+    const fontKey = [
+      meta.fontFamily,
+      "variable",
+      font.style,
+      font.weight,
+      font.stretch,
+      font.subset,
+      font.src
+    ].join("-");
+    const targetDocument = options.document ?? document;
+    const loadedFonts = getLoadedFontsForDocument(targetDocument);
+    const previousPromise = loadedFonts[fontKey];
+    if (previousPromise) {
+      promises.push(previousPromise);
+      continue;
+    }
+    const handle = delayRender(`Fetching variable ${meta.fontFamily} font ${JSON.stringify({
+      style,
+      subset
+    })}`, { timeoutInMilliseconds: 60000 });
+    const descriptors = {
+      style: font.style,
+      weight: font.weight,
+      unicodeRange: font.unicodeRange
+    };
+    if (font.stretch) {
+      descriptors.stretch = font.stretch;
+    }
+    const registerFont = (fontData) => {
+      NoReactInternals.registerFontFace({
+        ascentOverride: null,
+        descentOverride: null,
+        display: null,
+        featureSettings: null,
+        fontFamily: meta.fontFamily,
+        fontData,
+        fontUrl: font.src,
+        format: "woff2",
+        lineGapOverride: null,
+        style: font.style,
+        weight: font.weight,
+        stretch: font.stretch,
+        unicodeRange: font.unicodeRange,
+        variant: null
+      });
+    };
+    let attempts = 2;
+    const tryToLoad = () => {
+      return NoReactInternals.fetchFontData(font.src).then((fontData) => {
+        const fontFace = new FontFace(meta.fontFamily, fontData, descriptors);
+        return loadFontFaceOrTimeoutAfter20Seconds(fontFace).then(() => ({
+          fontFace,
+          fontData
+        }));
+      }).catch((err) => {
+        if (attempts === 0) {
+          loadedFonts[fontKey] = undefined;
+          throw err;
+        }
+        attempts--;
+        return tryToLoad();
+      });
+    };
+    const promise = Promise.all([tryToLoad(), previousAdded]).then(([{ fontFace, fontData }]) => {
+      targetDocument.fonts.add(fontFace);
+      registerFont(fontData);
+      continueRender(handle);
+    });
+    previousAdded = promise.catch(() => {
+      return;
+    });
+    loadedFonts[fontKey] = promise;
+    promises.push(promise);
+  }
+  if (subsets.length > 20 && !options.ignoreTooManyRequestsWarning) {
+    console.warn(`Made ${subsets.length} network requests to load the variable font ${meta.fontFamily}. Consider loading fewer subsets. Disable this warning by passing "ignoreTooManyRequestsWarning: true" to "options".`);
+  }
+  return {
+    fontFamily: meta.fontFamily,
+    axes: meta.variable.axes,
+    waitUntilDone: () => Promise.all(promises).then(() => {
+      return;
+    })
+  };
+};
+
+
+
+;// CONCATENATED MODULE: ./node_modules/@remotion/google-fonts/dist/esm/Montserrat.mjs
+
+
+// src/Montserrat.ts
+var getInfo = () => ({
+  fontFamily: "Montserrat",
+  importName: "Montserrat",
+  version: "v31",
+  url: "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900",
+  unicodeRanges: {
+    "cyrillic-ext": "U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
+    cyrillic: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
+    vietnamese: "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB",
+    "latin-ext": "U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF",
+    latin: "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD"
+  },
+  fonts: {
+    italic: {
+      "100": {
+        "cyrillic-ext": "https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRxC7mw9c.woff2",
+        cyrillic: "https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRzS7mw9c.woff2",
+        vietnamese: "https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRxi7mw9c.woff2",
+        "latin-ext": "https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRxy7mw9c.woff2",
+        latin: "https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRyS7m.woff2"
+      },
+      "200": {
+        "cyrillic-ext": "https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRxC7mw9c.woff2",
+        cyrillic: "https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRzS7mw9c.woff2",
+        vietnamese: "https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRxi7mw9c.woff2",
+        "latin-ext": "https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRxy7mw9c.woff2",
+        latin: "https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRyS7m.woff2"
+      },
+      "300": {
+        "cyrillic-ext": "https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRxC7mw9c.woff2",
+        cyrillic: "https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRzS7mw9c.woff2",
+        vietnamese: "https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRxi7mw9c.woff2",
+        "latin-ext": "https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRxy7mw9c.woff2",
+        latin: "https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRyS7m.woff2"
+      },
+      "400": {
+        "cyrillic-ext": "https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRxC7mw9c.woff2",
+        cyrillic: "https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRzS7mw9c.woff2",
+        vietnamese: "https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRxi7mw9c.woff2",
+        "latin-ext": "https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRxy7mw9c.woff2",
+        latin: "https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRyS7m.woff2"
+      },
+      "500": {
+        "cyrillic-ext": "https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRxC7mw9c.woff2",
+        cyrillic: "https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRzS7mw9c.woff2",
+        vietnamese: "https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRxi7mw9c.woff2",
+        "latin-ext": "https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRxy7mw9c.woff2",
+        latin: "https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRyS7m.woff2"
+      },
+      "600": {
+        "cyrillic-ext": "https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRxC7mw9c.woff2",
+        cyrillic: "https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRzS7mw9c.woff2",
+        vietnamese: "https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRxi7mw9c.woff2",
+        "latin-ext": "https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRxy7mw9c.woff2",
+        latin: "https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRyS7m.woff2"
+      },
+      "700": {
+        "cyrillic-ext": "https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRxC7mw9c.woff2",
+        cyrillic: "https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRzS7mw9c.woff2",
+        vietnamese: "https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRxi7mw9c.woff2",
+        "latin-ext": "https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRxy7mw9c.woff2",
+        latin: "https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRyS7m.woff2"
+      },
+      "800": {
+        "cyrillic-ext": "https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRxC7mw9c.woff2",
+        cyrillic: "https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRzS7mw9c.woff2",
+        vietnamese: "https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRxi7mw9c.woff2",
+        "latin-ext": "https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRxy7mw9c.woff2",
+        latin: "https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRyS7m.woff2"
+      },
+      "900": {
+        "cyrillic-ext": "https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRxC7mw9c.woff2",
+        cyrillic: "https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRzS7mw9c.woff2",
+        vietnamese: "https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRxi7mw9c.woff2",
+        "latin-ext": "https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRxy7mw9c.woff2",
+        latin: "https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRyS7m.woff2"
+      }
+    },
+    normal: {
+      "100": {
+        "cyrillic-ext": "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2",
+        cyrillic: "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2",
+        vietnamese: "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2",
+        "latin-ext": "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2",
+        latin: "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2"
+      },
+      "200": {
+        "cyrillic-ext": "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2",
+        cyrillic: "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2",
+        vietnamese: "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2",
+        "latin-ext": "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2",
+        latin: "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2"
+      },
+      "300": {
+        "cyrillic-ext": "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2",
+        cyrillic: "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2",
+        vietnamese: "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2",
+        "latin-ext": "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2",
+        latin: "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2"
+      },
+      "400": {
+        "cyrillic-ext": "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2",
+        cyrillic: "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2",
+        vietnamese: "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2",
+        "latin-ext": "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2",
+        latin: "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2"
+      },
+      "500": {
+        "cyrillic-ext": "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2",
+        cyrillic: "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2",
+        vietnamese: "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2",
+        "latin-ext": "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2",
+        latin: "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2"
+      },
+      "600": {
+        "cyrillic-ext": "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2",
+        cyrillic: "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2",
+        vietnamese: "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2",
+        "latin-ext": "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2",
+        latin: "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2"
+      },
+      "700": {
+        "cyrillic-ext": "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2",
+        cyrillic: "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2",
+        vietnamese: "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2",
+        "latin-ext": "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2",
+        latin: "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2"
+      },
+      "800": {
+        "cyrillic-ext": "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2",
+        cyrillic: "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2",
+        vietnamese: "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2",
+        "latin-ext": "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2",
+        latin: "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2"
+      },
+      "900": {
+        "cyrillic-ext": "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2",
+        cyrillic: "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2",
+        vietnamese: "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2",
+        "latin-ext": "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2",
+        latin: "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2"
+      }
+    }
+  },
+  subsets: ["cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
+  variable: {
+    axes: {
+      wght: {
+        min: 100,
+        max: 900
+      }
+    },
+    fontFaces: [
+      {
+        style: "italic",
+        weight: "100 900",
+        stretch: null,
+        subset: "cyrillic-ext",
+        unicodeRange: "U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
+        src: "https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRxC7mw9c.woff2"
+      },
+      {
+        style: "italic",
+        weight: "100 900",
+        stretch: null,
+        subset: "cyrillic",
+        unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
+        src: "https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRzS7mw9c.woff2"
+      },
+      {
+        style: "italic",
+        weight: "100 900",
+        stretch: null,
+        subset: "vietnamese",
+        unicodeRange: "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB",
+        src: "https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRxi7mw9c.woff2"
+      },
+      {
+        style: "italic",
+        weight: "100 900",
+        stretch: null,
+        subset: "latin-ext",
+        unicodeRange: "U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF",
+        src: "https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRxy7mw9c.woff2"
+      },
+      {
+        style: "italic",
+        weight: "100 900",
+        stretch: null,
+        subset: "latin",
+        unicodeRange: "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+        src: "https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRyS7m.woff2"
+      },
+      {
+        style: "normal",
+        weight: "100 900",
+        stretch: null,
+        subset: "cyrillic-ext",
+        unicodeRange: "U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
+        src: "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2"
+      },
+      {
+        style: "normal",
+        weight: "100 900",
+        stretch: null,
+        subset: "cyrillic",
+        unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
+        src: "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2"
+      },
+      {
+        style: "normal",
+        weight: "100 900",
+        stretch: null,
+        subset: "vietnamese",
+        unicodeRange: "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB",
+        src: "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2"
+      },
+      {
+        style: "normal",
+        weight: "100 900",
+        stretch: null,
+        subset: "latin-ext",
+        unicodeRange: "U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF",
+        src: "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2"
+      },
+      {
+        style: "normal",
+        weight: "100 900",
+        stretch: null,
+        subset: "latin",
+        unicodeRange: "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+        src: "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2"
+      }
+    ],
+    url: "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900"
+  }
+});
+var fontFamily = "Montserrat";
+var loadFont = (style, options) => {
+  return loadFonts(getInfo(), style, options);
+};
+var loadVariableFont = (style, options) => {
+  return loadVariableFonts(getInfo(), style, options);
+};
+
+
+;// CONCATENATED MODULE: ./src/OtositeCustomer/loadFonts.tsx
+
+
+
+
+// Pre-load Google Fonts with Montserrat SemiBold, Bold, and ExtraBold
+const loadFonts_fontData = loadFont("normal", {
+    weights: [
+        "600",
+        "700",
+        "800"
+    ]
+});
+const LoadCustomerFonts = ()=>{
+    const [handle] = (0,react.useState)(()=>(0,esm/* .delayRender */.IH)("Loading Montserrat Font"));
+    (0,react.useEffect)(()=>{
+        loadFonts_fontData.waitUntilDone().then(()=>{
+            (0,esm/* .continueRender */._8)(handle);
+        }).catch((err)=>{
+            console.warn("Font loading fallback to local fonts:", err);
+            (0,esm/* .continueRender */._8)(handle);
+        });
+    }, [
+        handle
+    ]);
+    const montserratBoldUrl = (0,esm/* .staticFile */.dQ)("fonts/Montserrat-Bold.ttf");
+    const montserratExtraBoldUrl = (0,esm/* .staticFile */.dQ)("fonts/Montserrat-ExtraBold.ttf");
+    return /*#__PURE__*/ (0,jsx_runtime.jsx)("style", {
+        children: `
+      @font-face {
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+        src: local('Montserrat Bold'), url('${montserratBoldUrl}') format('truetype');
+      }
+      @font-face {
+        font-family: 'Montserrat';
+        font-weight: 800;
+        font-style: normal;
+        font-display: swap;
+        src: local('Montserrat ExtraBold'), url('${montserratExtraBoldUrl}') format('truetype');
+      }
+    `
+    });
+};
+
+;// CONCATENATED MODULE: ./src/OtositeCustomer/Character.tsx
+
+
+
+const OtositeCustomer_Character_Character = ({ assetName, height = 540, animationType = "none", enterFrom = "bottom", delay = 0, exitFrame, showShadow = true, flipX = false, style = {} })=>{
+    const frame = (0,esm/* .useCurrentFrame */.UC)();
+    const { fps } = (0,esm/* .useVideoConfig */.Bk)();
+    const adjustedFrame = Math.max(0, frame - delay);
+    // Smooth entrance spring
+    const entrance = (0,esm/* .spring */.oz)({
+        frame: adjustedFrame,
+        fps,
+        config: {
+            damping: 14,
+            stiffness: 120,
+            mass: 0.7
+        }
+    });
+    // Smooth exit if exitFrame is specified
+    let exitProgress = 1;
+    let exitTranslateX = 0;
+    if (exitFrame !== undefined && frame >= exitFrame) {
+        exitProgress = (0,esm/* .interpolate */.GW)(frame, [
+            exitFrame,
+            exitFrame + 8
+        ], [
+            1,
+            0
+        ], {
+            extrapolateLeft: "clamp",
+            extrapolateRight: "clamp"
+        });
+        exitTranslateX = (0,esm/* .interpolate */.GW)(frame, [
+            exitFrame,
+            exitFrame + 8
+        ], [
+            0,
+            -30
+        ], {
+            extrapolateLeft: "clamp",
+            extrapolateRight: "clamp"
+        });
+    }
+    // Entrance translation based on direction
+    let enterX = 0;
+    let enterY = 0;
+    let enterScale = 1;
+    if (enterFrom === "bottom") {
+        enterY = (0,esm/* .interpolate */.GW)(entrance, [
+            0,
+            1
+        ], [
+            100,
+            0
+        ]);
+    } else if (enterFrom === "scale") {
+        enterScale = (0,esm/* .interpolate */.GW)(entrance, [
+            0,
+            1
+        ], [
+            0.85,
+            1
+        ]);
+        enterY = (0,esm/* .interpolate */.GW)(entrance, [
+            0,
+            1
+        ], [
+            30,
+            0
+        ]);
+    } else if (enterFrom === "left") {
+        enterX = (0,esm/* .interpolate */.GW)(entrance, [
+            0,
+            1
+        ], [
+            -120,
+            0
+        ]);
+    } else if (enterFrom === "right") {
+        enterX = (0,esm/* .interpolate */.GW)(entrance, [
+            0,
+            1
+        ], [
+            120,
+            0
+        ]);
+    }
+    // Nuanced procedural motions per character type
+    let idleY = 0;
+    let idleRotate = 0;
+    let idleScale = 1;
+    let shadowScale = 1;
+    if (animationType === "confused") {
+        // Subtle puzzled wobble + hesitation breathing
+        idleRotate = Math.sin(frame * 0.16) * 3;
+        idleScale = 1 + Math.sin(frame * 0.12) * 0.015;
+        idleY = Math.sin(frame * 0.14) * 4;
+        shadowScale = 1 + Math.sin(frame * 0.12) * 0.04;
+    } else if (animationType === "awkward") {
+        // Awkward scratch head tilt & nervous hesitation
+        idleRotate = -2.5 + Math.sin(frame * 0.2) * 2;
+        idleY = Math.sin(frame * 0.16) * 3;
+        shadowScale = 0.98;
+    } else if (animationType === "cheerful_wave") {
+        // Rhythmic 3-finger wave rocking & cheerful energetic vertical bounce
+        const waveCycle = Math.sin(frame * 0.32);
+        idleRotate = waveCycle * 5;
+        idleY = -Math.abs(Math.sin(frame * 0.28)) * 14;
+        idleScale = 1 + Math.abs(waveCycle) * 0.02;
+        shadowScale = 1 - Math.abs(Math.sin(frame * 0.28)) * 0.12;
+    } else if (animationType === "shouting") {
+        // Megaphone announcement pulse & forward lean
+        const shoutCycle = Math.sin(frame * 0.35);
+        idleScale = 1 + Math.sin(frame * 0.35) * 0.02;
+        idleRotate = -1.5 + shoutCycle * 1.5;
+        enterX += Math.sin(frame * 0.35) * 4;
+    } else if (animationType === "cool_thumbs") {
+        // Confident steady posture with subtle breathing
+        idleY = Math.sin(frame * 0.14) * 5;
+        shadowScale = 1 + Math.sin(frame * 0.14) * 0.05;
+    } else if (animationType === "discussion") {
+        // Gentle conversational nodding
+        idleRotate = Math.sin(frame * 0.18) * 1.8;
+        idleY = Math.sin(frame * 0.18) * 3;
+    } else if (animationType === "jumping_joy") {
+        // High energy celebratory jump
+        const jumpBounce = Math.abs(Math.sin(frame * 0.26));
+        idleY = -jumpBounce * 24;
+        idleRotate = Math.sin(frame * 0.26) * 3;
+        shadowScale = 1 - jumpBounce * 0.25;
+    }
+    const opacity = (0,esm/* .interpolate */.GW)(adjustedFrame, [
+        0,
+        6
+    ], [
+        0,
+        1
+    ], {
+        extrapolateLeft: "clamp",
+        extrapolateRight: "clamp"
+    }) * exitProgress;
+    return /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+        style: {
+            position: "relative",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "flex-end",
+            opacity,
+            transform: `translate(${enterX + exitTranslateX}px, ${enterY}px)`,
+            pointerEvents: "none",
+            ...style
+        },
+        children: [
+            showShadow && /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                style: {
+                    position: "absolute",
+                    bottom: 4,
+                    width: height * 0.44,
+                    height: 18,
+                    borderRadius: "50%",
+                    background: "radial-gradient(ellipse at center, rgba(29, 31, 32, 0.28) 0%, rgba(29, 31, 32, 0) 72%)",
+                    transform: `scale(${shadowScale})`,
+                    pointerEvents: "none",
+                    zIndex: 1
+                }
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                style: {
+                    transformOrigin: "bottom center",
+                    transform: `translateY(${idleY}px) rotate(${idleRotate}deg) scale(${enterScale * idleScale}) ${flipX ? "scaleX(-1)" : ""}`,
+                    zIndex: 2
+                },
+                children: /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Img */.E9, {
+                    src: (0,esm/* .staticFile */.dQ)(`assets/character/${assetName}`),
+                    alt: assetName,
+                    style: {
+                        height,
+                        width: "auto",
+                        objectFit: "contain",
+                        filter: "drop-shadow(0 8px 16px rgba(29, 31, 32, 0.12))"
+                    }
+                })
+            })
+        ]
+    });
+};
+
+;// CONCATENATED MODULE: ./src/OtositeCustomer/Scene1Hook.tsx
+
+
+
+
+
+const CUSTOM_3D_ICONS_CONFIG = [
+    // Karakter 1
+    {
+        id: "p1-tengil",
+        fileName: "3d-icon-emot-tengil.png",
+        x: 120,
+        y: 970,
+        size: 200,
+        enterFrame: 6,
+        exitFrame: 84,
+        baseTilt: -10,
+        floatPhase: 0
+    },
+    {
+        id: "p1-tanda-tanya",
+        fileName: "3d-icon-tanda-tanya.png",
+        right: 115,
+        y: 700,
+        size: 250,
+        enterFrame: 46,
+        exitFrame: 84,
+        baseTilt: 12,
+        floatPhase: 2.1
+    },
+    // Karakter 2
+    {
+        id: "p2-ghost",
+        fileName: "3d-icon-ghost.png",
+        x: 95,
+        y: 820,
+        size: 200,
+        enterFrame: 88,
+        exitFrame: 138,
+        baseTilt: -12,
+        floatPhase: 0.5
+    },
+    {
+        id: "p2-patah-hati",
+        fileName: "3d-icon-patah-hati.png",
+        right: 110,
+        y: 830,
+        size: 190,
+        enterFrame: 92,
+        exitFrame: 138,
+        baseTilt: 12,
+        floatPhase: 1.8
+    },
+    {
+        id: "p2-panic",
+        fileName: "3d-icon-panic.png",
+        x: 160,
+        y: 1110,
+        size: 150,
+        enterFrame: 96,
+        exitFrame: 138,
+        baseTilt: 8,
+        floatPhase: 3.2
+    },
+    {
+        id: "p2-tidak-senang",
+        fileName: "3d-icon-tidak-senang.png",
+        right: 120,
+        y: 1110,
+        size: 150,
+        enterFrame: 100,
+        exitFrame: 138,
+        baseTilt: -20,
+        floatPhase: 4.5
+    },
+    // Karakter 3
+    {
+        id: "p3-keren",
+        fileName: "3d-icon-keren.png",
+        x: 100,
+        y: 850,
+        size: 175,
+        enterFrame: 144,
+        exitFrame: 235,
+        baseTilt: -10,
+        floatPhase: 1.2
+    },
+    {
+        id: "p3-excited",
+        fileName: "3d-icon-excited.png",
+        right: 75,
+        y: 960,
+        size: 175,
+        enterFrame: 186,
+        exitFrame: 235,
+        baseTilt: 10,
+        floatPhase: 3.7
+    }
+];
+// KOMPONEN ANIMASI FLOATING 3D PNG 
+const Floating3DSticker = ({ item })=>{
+    const frame = (0,esm/* .useCurrentFrame */.UC)();
+    const { fps } = (0,esm/* .useVideoConfig */.Bk)();
+    // Jangan render jika belum waktunya tampil atau sudah selesai keluar
+    if (frame < item.enterFrame - 5 || frame > item.exitFrame + 20) {
+        return null;
+    }
+    // Spring Pop-Up Masuk 
+    const inSpring = (0,esm/* .spring */.oz)({
+        frame: frame - item.enterFrame,
+        fps,
+        config: {
+            damping: 11,
+            stiffness: 160,
+            mass: 0.65
+        }
+    });
+    // Spring Keluar (Mengecil halus)
+    const outSpring = (0,esm/* .spring */.oz)({
+        frame: frame - item.exitFrame,
+        fps,
+        config: {
+            damping: 15,
+            stiffness: 170,
+            mass: 0.5
+        }
+    });
+    // Gerakan mengambang organik 3D (naik-turun & goyang halus)
+    const t = frame * 0.05 + item.floatPhase;
+    const floatY = Math.sin(t) * 14;
+    const floatX = Math.cos(t * 0.7) * 6;
+    const floatRotate = Math.sin(t * 0.85) * 7;
+    // Gabungan animasi masuk + keluar + mengambang
+    const scale = (0,esm/* .interpolate */.GW)(inSpring, [
+        0,
+        1
+    ], [
+        0.1,
+        1
+    ]) * (0,esm/* .interpolate */.GW)(outSpring, [
+        0,
+        1
+    ], [
+        1,
+        0.3
+    ]);
+    const entryY = (0,esm/* .interpolate */.GW)(inSpring, [
+        0,
+        1
+    ], [
+        65,
+        0
+    ]);
+    const exitY = (0,esm/* .interpolate */.GW)(outSpring, [
+        0,
+        1
+    ], [
+        0,
+        40
+    ]);
+    const entryRot = (0,esm/* .interpolate */.GW)(inSpring, [
+        0,
+        1
+    ], [
+        item.baseTilt * 2.2,
+        item.baseTilt
+    ]);
+    const opacity = (0,esm/* .interpolate */.GW)(inSpring, [
+        0,
+        0.35,
+        1
+    ], [
+        0,
+        1,
+        1
+    ]) * (0,esm/* .interpolate */.GW)(outSpring, [
+        0,
+        0.7,
+        1
+    ], [
+        1,
+        0,
+        0
+    ]);
+    return /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+        style: {
+            position: "absolute",
+            top: item.y,
+            ...item.x !== undefined ? {
+                left: item.x
+            } : {},
+            ...item.right !== undefined ? {
+                right: item.right
+            } : {},
+            width: item.size,
+            height: item.size,
+            opacity,
+            transform: `translate3d(${floatX}px, ${entryY + exitY + floatY}px, 0) scale(${scale}) rotate(${entryRot + floatRotate}deg)`,
+            filter: "drop-shadow(0 16px 24px rgba(0, 0, 0, 0.22))",
+            willChange: "transform, opacity",
+            zIndex: 4
+        },
+        children: /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Img */.E9, {
+            src: (0,esm/* .staticFile */.dQ)(`assets/character/${item.fileName}`),
+            style: {
+                width: "100%",
+                height: "100%",
+                objectFit: "contain"
+            }
+        })
+    });
+};
+// KOMPONEN UTAMA SCENE 1
+const OtositeCustomer_Scene1Hook_Scene1Hook = ()=>{
+    const frame = (0,esm/* .useCurrentFrame */.UC)();
+    const { fps } = (0,esm/* .useVideoConfig */.Bk)();
+    // JUICY SPRINGS CONFIGURATION
+    const popConfig = {
+        damping: 12,
+        stiffness: 180,
+        mass: 0.7
+    };
+    const textConfig = {
+        damping: 14,
+        stiffness: 160,
+        mass: 0.8
+    };
+    // PART 1 & 2 TIMINGS (Tepat sesuai VO)
+    const wCustomer = (0,esm/* .spring */.oz)({
+        frame: frame - 6,
+        fps,
+        config: textConfig
+    });
+    const wSeringBilang = (0,esm/* .spring */.oz)({
+        frame: frame - 12,
+        fps,
+        config: textConfig
+    });
+    const quote1Spring = (0,esm/* .spring */.oz)({
+        frame: frame - 46,
+        fps,
+        config: popConfig
+    });
+    const quote2Spring = (0,esm/* .spring */.oz)({
+        frame: frame - 92,
+        fps,
+        config: popConfig
+    });
+    const part1ExitOpacity = (0,esm/* .interpolate */.GW)(frame, [
+        136,
+        142
+    ], [
+        1,
+        0
+    ], {
+        extrapolateLeft: "clamp",
+        extrapolateRight: "clamp"
+    });
+    const part1ExitY = (0,esm/* .interpolate */.GW)(frame, [
+        136,
+        144
+    ], [
+        0,
+        -50
+    ], {
+        extrapolateLeft: "clamp",
+        extrapolateRight: "clamp"
+    });
+    // PART 3 TIMINGS (Tepat sesuai VO)
+    const wPakaiTeknik = (0,esm/* .spring */.oz)({
+        frame: frame - 144,
+        fps,
+        config: popConfig
+    });
+    const wDealBadge = (0,esm/* .spring */.oz)({
+        frame: frame - 186,
+        fps,
+        config: popConfig
+    });
+    // Dinamika ornamen kecil
+    const starPulse = 1 + Math.sin(frame * 0.25) * 0.2;
+    // POP-UP CHARACTER SPRINGS
+    const char1In = (0,esm/* .spring */.oz)({
+        frame: frame - 4,
+        fps,
+        config: popConfig
+    });
+    const char1Out = (0,esm/* .spring */.oz)({
+        frame: frame - 86,
+        fps,
+        config: {
+            damping: 16,
+            stiffness: 150,
+            mass: 0.6
+        }
+    });
+    const char2In = (0,esm/* .spring */.oz)({
+        frame: frame - 88,
+        fps,
+        config: popConfig
+    });
+    const char2Out = (0,esm/* .spring */.oz)({
+        frame: frame - 142,
+        fps,
+        config: {
+            damping: 16,
+            stiffness: 150,
+            mass: 0.6
+        }
+    });
+    const char3In = (0,esm/* .spring */.oz)({
+        frame: frame - 144,
+        fps,
+        config: popConfig
+    });
+    const calcCharTransform = (inSpring, outSpring = 0)=>{
+        const scale = (0,esm/* .interpolate */.GW)(inSpring, [
+            0,
+            1
+        ], [
+            0.1,
+            1
+        ]) * (0,esm/* .interpolate */.GW)(outSpring, [
+            0,
+            1
+        ], [
+            1,
+            0.5
+        ]);
+        const y = (0,esm/* .interpolate */.GW)(inSpring, [
+            0,
+            1
+        ], [
+            100,
+            0
+        ]) + (0,esm/* .interpolate */.GW)(outSpring, [
+            0,
+            1
+        ], [
+            0,
+            80
+        ]);
+        const rot = (0,esm/* .interpolate */.GW)(inSpring, [
+            0,
+            1
+        ], [
+            15,
+            0
+        ]) + (0,esm/* .interpolate */.GW)(outSpring, [
+            0,
+            1
+        ], [
+            0,
+            -15
+        ]);
+        const opacity = (0,esm/* .interpolate */.GW)(inSpring, [
+            0,
+            0.4,
+            1
+        ], [
+            0,
+            1,
+            1
+        ]) * (0,esm/* .interpolate */.GW)(outSpring, [
+            0,
+            0.6,
+            1
+        ], [
+            1,
+            0,
+            0
+        ]);
+        return {
+            scale,
+            y,
+            rot,
+            opacity
+        };
+    };
+    const c1 = calcCharTransform(char1In, char1Out);
+    const c2 = calcCharTransform(char2In, char2Out);
+    const c3 = calcCharTransform(char3In, 0);
+    return /*#__PURE__*/ (0,jsx_runtime.jsxs)(esm/* .AbsoluteFill */.H1, {
+        style: {
+            fontFamily: OtositeCustomer_constants_FONT_FAMILY,
+            pointerEvents: "none"
+        },
+        children: [
+            CUSTOM_3D_ICONS_CONFIG.map((item)=>/*#__PURE__*/ (0,jsx_runtime.jsx)(Floating3DSticker, {
+                    item: item
+                }, item.id)),
+            frame < 144 && /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                style: {
+                    position: "absolute",
+                    top: 310,
+                    left: 0,
+                    right: 0,
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    opacity: part1ExitOpacity,
+                    transform: `translateY(${part1ExitY}px)`,
+                    zIndex: 10
+                },
+                children: [
+                    /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                        style: {
+                            display: "flex",
+                            gap: 14,
+                            fontSize: 70,
+                            fontWeight: 700,
+                            color: constants_COLORS.dark,
+                            marginBottom: 24,
+                            marginTop: 60,
+                            letterSpacing: -5
+                        },
+                        children: [
+                            /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                style: {
+                                    display: "inline-block",
+                                    opacity: wCustomer,
+                                    transform: `translateY(${(0,esm/* .interpolate */.GW)(wCustomer, [
+                                        0,
+                                        1
+                                    ], [
+                                        30,
+                                        0
+                                    ])}px) rotate(${(0,esm/* .interpolate */.GW)(wCustomer, [
+                                        0,
+                                        1
+                                    ], [
+                                        -5,
+                                        0
+                                    ])}deg)`
+                                },
+                                children: "Customer"
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                style: {
+                                    display: "inline-block",
+                                    opacity: wSeringBilang,
+                                    transform: `translateY(${(0,esm/* .interpolate */.GW)(wSeringBilang, [
+                                        0,
+                                        1
+                                    ], [
+                                        30,
+                                        0
+                                    ])}px) rotate(${(0,esm/* .interpolate */.GW)(wSeringBilang, [
+                                        0,
+                                        1
+                                    ], [
+                                        5,
+                                        0
+                                    ])}deg)`
+                                },
+                                children: "Sering Bilang..."
+                            })
+                        ]
+                    }),
+                    /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                        style: {
+                            display: "flex",
+                            flexDirection: "column",
+                            gap: 55,
+                            marginTop: 20,
+                            width: "100%",
+                            maxWidth: 860,
+                            alignItems: "center"
+                        },
+                        children: [
+                            frame >= 44 && /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                                style: {
+                                    backgroundColor: constants_COLORS.yellowMuda,
+                                    border: `4px solid ${constants_COLORS.dark}`,
+                                    boxShadow: `0 6px 0 ${constants_COLORS.dark}`,
+                                    borderRadius: 22,
+                                    padding: "18px 28px",
+                                    display: "flex",
+                                    alignItems: "center",
+                                    gap: 16,
+                                    width: "90%",
+                                    transform: `scale(${(0,esm/* .interpolate */.GW)(quote1Spring, [
+                                        0,
+                                        1
+                                    ], [
+                                        0.8,
+                                        1
+                                    ])}) translateY(${(0,esm/* .interpolate */.GW)(quote1Spring, [
+                                        0,
+                                        1
+                                    ], [
+                                        40,
+                                        0
+                                    ])}px) rotateZ(${(0,esm/* .interpolate */.GW)(quote1Spring, [
+                                        0,
+                                        1
+                                    ], [
+                                        -8,
+                                        0
+                                    ])}deg)`,
+                                    opacity: quote1Spring
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                        style: {
+                                            backgroundColor: constants_COLORS.red,
+                                            color: "#ffffff",
+                                            borderRadius: "50%",
+                                            width: 42,
+                                            height: 42,
+                                            display: "flex",
+                                            alignItems: "center",
+                                            justifyContent: "center",
+                                            fontSize: 24,
+                                            fontWeight: 900,
+                                            flexShrink: 0,
+                                            border: `2px solid ${constants_COLORS.dark}`
+                                        },
+                                        children: "?"
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                        style: {
+                                            fontSize: 34,
+                                            fontWeight: 700,
+                                            letterSpacing: -2,
+                                            color: constants_COLORS.dark
+                                        },
+                                        children: "“Pikir-pikir dulu ya...”"
+                                    })
+                                ]
+                            }),
+                            frame >= 90 && /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                                style: {
+                                    backgroundColor: constants_COLORS.yellow,
+                                    border: `4px solid ${constants_COLORS.dark}`,
+                                    boxShadow: `0 6px 0 ${constants_COLORS.dark}`,
+                                    borderRadius: 22,
+                                    padding: "18px 28px",
+                                    display: "flex",
+                                    alignItems: "center",
+                                    gap: 16,
+                                    width: "90%",
+                                    transform: `scale(${(0,esm/* .interpolate */.GW)(quote2Spring, [
+                                        0,
+                                        1
+                                    ], [
+                                        0.8,
+                                        1
+                                    ])}) translateY(${(0,esm/* .interpolate */.GW)(quote2Spring, [
+                                        0,
+                                        1
+                                    ], [
+                                        40,
+                                        0
+                                    ])}px) rotateZ(${(0,esm/* .interpolate */.GW)(quote2Spring, [
+                                        0,
+                                        1
+                                    ], [
+                                        8,
+                                        0
+                                    ])}deg)`,
+                                    opacity: quote2Spring
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                        style: {
+                                            backgroundColor: constants_COLORS.blue,
+                                            color: constants_COLORS.yellowMuda,
+                                            borderRadius: "50%",
+                                            width: 42,
+                                            height: 42,
+                                            display: "flex",
+                                            alignItems: "center",
+                                            justifyContent: "center",
+                                            fontSize: 22,
+                                            fontWeight: 900,
+                                            flexShrink: 0,
+                                            border: `2px solid ${constants_COLORS.dark}`
+                                        },
+                                        children: "\uD83D\uDCAC"
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                        style: {
+                                            fontSize: 34,
+                                            fontWeight: 700,
+                                            letterSpacing: -2,
+                                            color: constants_COLORS.dark
+                                        },
+                                        children: "“Atau nanti dihubungi lagi?”"
+                                    })
+                                ]
+                            })
+                        ]
+                    })
+                ]
+            }),
+            frame >= 144 && /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                style: {
+                    position: "absolute",
+                    top: 300,
+                    left: 0,
+                    right: 0,
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    zIndex: 10
+                },
+                children: [
+                    /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                        style: {
+                            borderRadius: 26,
+                            padding: "24px 36px",
+                            textAlign: "center",
+                            width: "88%",
+                            maxWidth: 840,
+                            transform: `scale(${(0,esm/* .interpolate */.GW)(wPakaiTeknik, [
+                                0,
+                                1
+                            ], [
+                                0.8,
+                                1
+                            ])}) translateY(${(0,esm/* .interpolate */.GW)(wPakaiTeknik, [
+                                0,
+                                1
+                            ], [
+                                40,
+                                0
+                            ])}px) rotateZ(${(0,esm/* .interpolate */.GW)(wPakaiTeknik, [
+                                0,
+                                1
+                            ], [
+                                -3,
+                                0
+                            ])}deg)`,
+                            opacity: wPakaiTeknik,
+                            marginBottom: 35
+                        },
+                        children: [
+                            /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                style: {
+                                    fontSize: 65,
+                                    letterSpacing: -5,
+                                    color: constants_COLORS.dark,
+                                    marginBottom: 25
+                                },
+                                children: "Jangan Bingung!"
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                style: {
+                                    fontSize: 85,
+                                    color: constants_COLORS.blue,
+                                    letterSpacing: -5,
+                                    fontStyle: "italic",
+                                    textDecoration: "underline",
+                                    lineHeight: 1.15
+                                },
+                                children: "Pakai 3 Teknik Ini"
+                            })
+                        ]
+                    }),
+                    frame >= 184 && /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                        style: {
+                            backgroundColor: constants_COLORS.yellowMuda,
+                            border: `4px solid ${constants_COLORS.dark}`,
+                            boxShadow: `0 6px 0 ${constants_COLORS.dark}`,
+                            borderRadius: 20,
+                            padding: "14px 38px",
+                            display: "flex",
+                            alignItems: "center",
+                            gap: 15,
+                            transform: `scale(${(0,esm/* .interpolate */.GW)(wDealBadge, [
+                                0,
+                                1
+                            ], [
+                                0.7,
+                                1
+                            ])}) rotateZ(${(0,esm/* .interpolate */.GW)(wDealBadge, [
+                                0,
+                                1
+                            ], [
+                                5,
+                                0
+                            ])}deg)`,
+                            opacity: wDealBadge
+                        },
+                        children: /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                            style: {
+                                fontSize: 40,
+                                color: constants_COLORS.dark,
+                                letterSpacing: -2
+                            },
+                            children: "Biar Langsung Deal!"
+                        })
+                    })
+                ]
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                style: {
+                    position: "absolute",
+                    top: 900,
+                    left: 0,
+                    right: 0,
+                    height: 560,
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "flex-end",
+                    zIndex: 5
+                },
+                children: [
+                    frame < 90 && /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                        style: {
+                            position: "absolute",
+                            bottom: 0,
+                            transform: `translateX(50px) translateY(${c1.y}px) scale(${c1.scale * 1.5}) rotateZ(${c1.rot}deg)`,
+                            transformOrigin: "bottom center",
+                            opacity: c1.opacity,
+                            willChange: "transform, opacity"
+                        },
+                        children: /*#__PURE__*/ (0,jsx_runtime.jsx)(OtositeCustomer_Character_Character, {
+                            assetName: "Scene1 (1).png",
+                            height: 530,
+                            enterFrom: "none",
+                            delay: 0,
+                            animationType: "confused"
+                        })
+                    }),
+                    frame >= 88 && frame < 146 && /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                        style: {
+                            position: "absolute",
+                            bottom: 0,
+                            transform: `translateY(${c2.y + 25}px) scale(${c2.scale * 1.4}) rotateZ(${c2.rot}deg)`,
+                            transformOrigin: "bottom center",
+                            opacity: c2.opacity,
+                            willChange: "transform, opacity"
+                        },
+                        children: /*#__PURE__*/ (0,jsx_runtime.jsx)(OtositeCustomer_Character_Character, {
+                            assetName: "Scene1 (2).png",
+                            height: 530,
+                            enterFrom: "none",
+                            delay: 0,
+                            animationType: "awkward"
+                        })
+                    }),
+                    frame >= 144 && /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                        style: {
+                            position: "absolute",
+                            bottom: 0,
+                            transform: `translateX(-20px) translateY(${c3.y + 20}px) scale(${c3.scale * 1.4}) rotateZ(${c3.rot}deg)`,
+                            transformOrigin: "bottom center",
+                            opacity: c3.opacity,
+                            willChange: "transform, opacity"
+                        },
+                        children: [
+                            /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                style: {
+                                    position: "absolute",
+                                    top: 40,
+                                    right: 50,
+                                    fontSize: 34,
+                                    color: constants_COLORS.red,
+                                    transform: `scale(${starPulse}) rotate(${frame * 3}deg)`,
+                                    zIndex: 8
+                                },
+                                children: "✨"
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                style: {
+                                    position: "absolute",
+                                    top: 15,
+                                    right: 90,
+                                    fontSize: 24,
+                                    color: constants_COLORS.yellowTua,
+                                    transform: `scale(${starPulse}) rotate(${-frame * 4}deg)`,
+                                    zIndex: 8
+                                },
+                                children: "⭐"
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime.jsx)(OtositeCustomer_Character_Character, {
+                                assetName: "Scene1 (3).png",
+                                height: 530,
+                                enterFrom: "none",
+                                delay: 0,
+                                animationType: "cheerful_wave"
+                            })
+                        ]
+                    })
+                ]
+            })
+        ]
+    });
+};
+
+;// CONCATENATED MODULE: ./src/OtositeCustomer/Scene2Scarcity.tsx
+
+
+
+
+
+const MarkerHighlight = ({ children, progress, color = "rgba(255, 214, 10, 0.65)", height = "78%", bottom = "6%", skew = -10, rotate = -1, paddingX = 10 })=>{
+    const rawClamped = (0,esm/* .interpolate */.GW)(progress, [
+        0,
+        1
+    ], [
+        0,
+        1
+    ], {
+        extrapolateLeft: "clamp",
+        extrapolateRight: "clamp"
+    });
+    const sweep = esm/* .Easing.out */.GS.out(esm/* .Easing.exp */.GS.exp)(rawClamped);
+    const sweepY = (0,esm/* .interpolate */.GW)(rawClamped, [
+        0,
+        0.3,
+        1
+    ], [
+        0.85,
+        1.02,
+        1
+    ], {
+        extrapolateLeft: "clamp",
+        extrapolateRight: "clamp"
+    });
+    const markerOpacity = (0,esm/* .interpolate */.GW)(rawClamped, [
+        0,
+        0.12,
+        1
+    ], [
+        0,
+        1,
+        1
+    ], {
+        extrapolateLeft: "clamp",
+        extrapolateRight: "clamp"
+    });
+    return /*#__PURE__*/ (0,jsx_runtime.jsxs)("span", {
+        style: {
+            position: "relative",
+            display: "inline-block",
+            zIndex: 1,
+            margin: "0 2px"
+        },
+        children: [
+            /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                style: {
+                    position: "absolute",
+                    left: -paddingX,
+                    right: -paddingX,
+                    bottom,
+                    height,
+                    backgroundColor: color,
+                    borderRadius: "8px 4px 10px 5px",
+                    transformOrigin: "left center",
+                    transform: `scaleX(${sweep}) scaleY(${sweepY}) skewX(${skew}deg) rotate(${rotate}deg)`,
+                    opacity: markerOpacity,
+                    zIndex: -1,
+                    pointerEvents: "none",
+                    willChange: "transform, opacity"
+                }
+            }),
+            children
+        ]
+    });
+};
+const Scene2Scarcity = ()=>{
+    const frame = (0,esm/* .useCurrentFrame */.UC)();
+    const { fps } = (0,esm/* .useVideoConfig */.Bk)();
+    // Config spring ultra-smooth (modern damped motion tanpa pantulan kasar)
+    const sweepConfig = {
+        damping: 24,
+        stiffness: 105,
+        mass: 0.8
+    };
+    const smoothPopConfig = {
+        damping: 18,
+        stiffness: 140,
+        mass: 0.75
+    };
+    const cardGlideConfig = {
+        damping: 20,
+        stiffness: 130,
+        mass: 0.85
+    };
+    // TIMINGS & SPRINGS SESUAI VO (voice over(3).wav)
+    const pBadgeText = (0,esm/* .spring */.oz)({
+        frame: frame - 6,
+        fps,
+        config: smoothPopConfig
+    });
+    const hTeknik1 = (0,esm/* .spring */.oz)({
+        frame: frame - 10,
+        fps,
+        config: sweepConfig
+    });
+    // Kartu Title & "Bikin Mereka Takut Kehabisan" langsung muncul bersamaan dengan mulus
+    const wTitle = (0,esm/* .spring */.oz)({
+        frame: frame - 28,
+        fps,
+        config: cardGlideConfig
+    });
+    const wFomo = (0,esm/* .spring */.oz)({
+        frame: frame - 126,
+        fps,
+        config: {
+            damping: 14,
+            stiffness: 160,
+            mass: 0.7
+        }
+    });
+    // Example Card springs (Contohnya: Promo diskon ini cuma berlaku sampai besok loh pak!)
+    const pCard = (0,esm/* .spring */.oz)({
+        frame: frame - 158,
+        fps,
+        config: cardGlideConfig
+    });
+    const wPromoText = (0,esm/* .spring */.oz)({
+        frame: frame - 188,
+        fps,
+        config: smoothPopConfig
+    });
+    const wBesokText = (0,esm/* .spring */.oz)({
+        frame: frame - 204,
+        fps,
+        config: smoothPopConfig
+    });
+    const hBesokSweep = (0,esm/* .spring */.oz)({
+        frame: frame - 212,
+        fps,
+        config: sweepConfig
+    });
+    // Karakter masuk dengan smooth glide dari bawah
+    const charEnter = (0,esm/* .spring */.oz)({
+        frame: frame - 6,
+        fps,
+        config: {
+            damping: 18,
+            stiffness: 125,
+            mass: 0.85
+        }
+    });
+    const charFloatY = Math.sin(frame * 0.07) * 3.5;
+    // Breathing halus pada teks FOMO setelah muncul (frame 134+)
+    const fomoPulse = frame >= 134 ? 1 + Math.sin((frame - 134) * 0.14) * 0.025 : 1;
+    // Outro transition for Scene 2 (f270 to f280)
+    const exitProgress = (0,esm/* .spring */.oz)({
+        frame: frame - 270,
+        fps,
+        config: {
+            damping: 22,
+            stiffness: 150,
+            mass: 0.65
+        }
+    });
+    const sceneExitOpacity = (0,esm/* .interpolate */.GW)(frame, [
+        270,
+        280
+    ], [
+        1,
+        0
+    ], {
+        extrapolateLeft: "clamp",
+        extrapolateRight: "clamp"
+    });
+    const sceneExitY = (0,esm/* .interpolate */.GW)(exitProgress, [
+        0,
+        1
+    ], [
+        0,
+        -35
+    ]);
+    const sceneExitScale = (0,esm/* .interpolate */.GW)(exitProgress, [
+        0,
+        1
+    ], [
+        1,
+        0.97
+    ]);
+    // Soft motion blur saat transisi masuk
+    const badgeBlur = (0,esm/* .interpolate */.GW)(pBadgeText, [
+        0,
+        0.65,
+        1
+    ], [
+        5,
+        0,
+        0
+    ], {
+        extrapolateRight: "clamp"
+    });
+    const titleCardBlur = (0,esm/* .interpolate */.GW)(wTitle, [
+        0,
+        0.65,
+        1
+    ], [
+        6,
+        0,
+        0
+    ], {
+        extrapolateRight: "clamp"
+    });
+    const exampleCardBlur = (0,esm/* .interpolate */.GW)(pCard, [
+        0,
+        0.65,
+        1
+    ], [
+        6,
+        0,
+        0
+    ], {
+        extrapolateRight: "clamp"
+    });
+    return /*#__PURE__*/ (0,jsx_runtime.jsxs)(esm/* .AbsoluteFill */.H1, {
+        style: {
+            fontFamily: OtositeCustomer_constants_FONT_FAMILY,
+            pointerEvents: "none",
+            opacity: sceneExitOpacity,
+            transform: `translateY(${sceneExitY}px) scale(${sceneExitScale})`,
+            willChange: "transform, opacity"
+        },
+        children: [
+            /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                style: {
+                    position: "absolute",
+                    top: 310,
+                    left: 0,
+                    right: 0,
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    zIndex: 10
+                },
+                children: [
+                    /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                        style: {
+                            color: "#ffffff",
+                            padding: "6px 20px",
+                            fontSize: 55,
+                            letterSpacing: -5,
+                            transform: `translateY(${(0,esm/* .interpolate */.GW)(pBadgeText, [
+                                0,
+                                1
+                            ], [
+                                20,
+                                0
+                            ])}px) scale(${(0,esm/* .interpolate */.GW)(pBadgeText, [
+                                0,
+                                1
+                            ], [
+                                0.9,
+                                1
+                            ])})`,
+                            opacity: (0,esm/* .interpolate */.GW)(pBadgeText, [
+                                0,
+                                0.35,
+                                1
+                            ], [
+                                0,
+                                1,
+                                1
+                            ], {
+                                extrapolateRight: "clamp"
+                            }),
+                            filter: `blur(${badgeBlur}px)`,
+                            marginBottom: 18,
+                            willChange: "transform, opacity, filter"
+                        },
+                        children: /*#__PURE__*/ (0,jsx_runtime.jsx)(MarkerHighlight, {
+                            progress: hTeknik1,
+                            color: "#ff3133",
+                            height: "100%",
+                            bottom: "2%",
+                            paddingX: 16,
+                            rotate: -1.5,
+                            children: "Teknik 01"
+                        })
+                    }),
+                    /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                        style: {
+                            backgroundColor: constants_COLORS.yellowMuda,
+                            border: `5px solid ${constants_COLORS.dark}`,
+                            boxShadow: `0 8px 0 ${constants_COLORS.dark}`,
+                            borderRadius: 26,
+                            padding: "22px 36px",
+                            textAlign: "center",
+                            width: "88%",
+                            maxWidth: 840,
+                            transform: `scale(${(0,esm/* .interpolate */.GW)(wTitle, [
+                                0,
+                                1
+                            ], [
+                                0.88,
+                                1
+                            ])}) translateY(${(0,esm/* .interpolate */.GW)(wTitle, [
+                                0,
+                                1
+                            ], [
+                                28,
+                                0
+                            ])}px)`,
+                            opacity: (0,esm/* .interpolate */.GW)(wTitle, [
+                                0,
+                                0.3,
+                                1
+                            ], [
+                                0,
+                                1,
+                                1
+                            ], {
+                                extrapolateRight: "clamp"
+                            }),
+                            filter: `blur(${titleCardBlur}px)`,
+                            marginBottom: 18,
+                            willChange: "transform, opacity, filter"
+                        },
+                        children: [
+                            /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                style: {
+                                    fontSize: 55,
+                                    color: constants_COLORS.dark,
+                                    letterSpacing: -5,
+                                    lineHeight: 1.15
+                                },
+                                children: "Scarcity Closing"
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                                style: {
+                                    fontSize: 35,
+                                    color: constants_COLORS.dark,
+                                    marginTop: 10,
+                                    letterSpacing: -3
+                                },
+                                children: [
+                                    "Bikin Mereka",
+                                    " ",
+                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                        style: {
+                                            color: constants_COLORS.dark,
+                                            fontStyle: "italic"
+                                        },
+                                        children: "Takut Kehabisan"
+                                    })
+                                ]
+                            })
+                        ]
+                    }),
+                    frame >= 120 && /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                        style: {
+                            padding: "6px 16px",
+                            display: "flex",
+                            alignItems: "center",
+                            gap: 10,
+                            transform: `translateY(${(0,esm/* .interpolate */.GW)(wFomo, [
+                                0,
+                                1
+                            ], [
+                                22,
+                                0
+                            ]) + 15}px) scale(${(0,esm/* .interpolate */.GW)(wFomo, [
+                                0,
+                                1
+                            ], [
+                                0.8,
+                                1
+                            ]) * fomoPulse}) rotate(${(0,esm/* .interpolate */.GW)(wFomo, [
+                                0,
+                                1
+                            ], [
+                                -5,
+                                -1.5
+                            ])}deg)`,
+                            opacity: (0,esm/* .interpolate */.GW)(wFomo, [
+                                0,
+                                0.35,
+                                1
+                            ], [
+                                0,
+                                1,
+                                1
+                            ], {
+                                extrapolateRight: "clamp"
+                            }),
+                            willChange: "transform, opacity"
+                        },
+                        children: /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                            style: {
+                                fontSize: 38,
+                                fontWeight: 900,
+                                color: constants_COLORS.red,
+                                letterSpacing: 1.5
+                            },
+                            children: "ALIAS FOMO!"
+                        })
+                    }),
+                    frame >= 155 && /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                        style: {
+                            backgroundColor: "#FFFFFF",
+                            border: `4px solid ${constants_COLORS.dark}`,
+                            boxShadow: `0 6px 0 ${constants_COLORS.dark}`,
+                            borderRadius: 22,
+                            padding: "20px 28px",
+                            width: "86%",
+                            maxWidth: 820,
+                            transform: `scale(${(0,esm/* .interpolate */.GW)(pCard, [
+                                0,
+                                1
+                            ], [
+                                0.88,
+                                1
+                            ])}) translateY(${(0,esm/* .interpolate */.GW)(pCard, [
+                                0,
+                                1
+                            ], [
+                                28,
+                                0
+                            ])}px)`,
+                            opacity: (0,esm/* .interpolate */.GW)(pCard, [
+                                0,
+                                0.3,
+                                1
+                            ], [
+                                0,
+                                1,
+                                1
+                            ], {
+                                extrapolateRight: "clamp"
+                            }),
+                            filter: `blur(${exampleCardBlur}px)`,
+                            display: "flex",
+                            flexDirection: "column",
+                            gap: 10,
+                            marginTop: 30,
+                            willChange: "transform, opacity, filter"
+                        },
+                        children: [
+                            /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                style: {
+                                    fontSize: 25,
+                                    color: constants_COLORS.dark,
+                                    letterSpacing: 1,
+                                    opacity: (0,esm/* .interpolate */.GW)(pCard, [
+                                        0.2,
+                                        1
+                                    ], [
+                                        0,
+                                        1
+                                    ], {
+                                        extrapolateLeft: "clamp",
+                                        extrapolateRight: "clamp"
+                                    })
+                                },
+                                children: "Contoh:"
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                                style: {
+                                    fontSize: 30,
+                                    color: constants_COLORS.dark,
+                                    lineHeight: 1.45
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                        style: {
+                                            display: "inline-block",
+                                            opacity: (0,esm/* .interpolate */.GW)(wPromoText, [
+                                                0,
+                                                0.45,
+                                                1
+                                            ], [
+                                                0,
+                                                1,
+                                                1
+                                            ], {
+                                                extrapolateRight: "clamp"
+                                            }),
+                                            transform: `translateY(${(0,esm/* .interpolate */.GW)(wPromoText, [
+                                                0,
+                                                1
+                                            ], [
+                                                8,
+                                                0
+                                            ])}px)`,
+                                            letterSpacing: -2,
+                                            marginRight: 6
+                                        },
+                                        children: "“Promo diskon ini"
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                        style: {
+                                            display: "inline-block",
+                                            opacity: (0,esm/* .interpolate */.GW)(wBesokText, [
+                                                0,
+                                                0.4,
+                                                1
+                                            ], [
+                                                0,
+                                                1,
+                                                1
+                                            ], {
+                                                extrapolateRight: "clamp"
+                                            }),
+                                            transform: `translateY(${(0,esm/* .interpolate */.GW)(wBesokText, [
+                                                0,
+                                                1
+                                            ], [
+                                                8,
+                                                0
+                                            ])}px)`
+                                        },
+                                        children: /*#__PURE__*/ (0,jsx_runtime.jsx)(MarkerHighlight, {
+                                            progress: hBesokSweep,
+                                            color: "rgba(255, 214, 10, 0.75)",
+                                            height: "88%",
+                                            bottom: "2%",
+                                            paddingX: 8,
+                                            skew: -8,
+                                            children: /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                                style: {
+                                                    color: constants_COLORS.dark,
+                                                    letterSpacing: -2
+                                                },
+                                                children: "cuma berlaku sampai besok"
+                                            })
+                                        })
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                        style: {
+                                            display: "inline-block",
+                                            opacity: (0,esm/* .interpolate */.GW)(wBesokText, [
+                                                0,
+                                                0.45,
+                                                1
+                                            ], [
+                                                0,
+                                                1,
+                                                1
+                                            ], {
+                                                extrapolateRight: "clamp"
+                                            }),
+                                            transform: `translateY(${(0,esm/* .interpolate */.GW)(wBesokText, [
+                                                0,
+                                                1
+                                            ], [
+                                                8,
+                                                0
+                                            ])}px)`,
+                                            marginLeft: 6
+                                        },
+                                        children: "loh pak!”"
+                                    })
+                                ]
+                            })
+                        ]
+                    })
+                ]
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                style: {
+                    position: "absolute",
+                    top: 900,
+                    left: 70,
+                    right: 0,
+                    height: 560,
+                    display: "flex",
+                    justifyContent: "center",
+                    transform: "scale(1.1)",
+                    alignItems: "flex-end",
+                    zIndex: 5
+                },
+                children: /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                    style: {
+                        position: "relative",
+                        transform: `translateY(${(0,esm/* .interpolate */.GW)(charEnter, [
+                            0,
+                            1
+                        ], [
+                            45,
+                            0
+                        ]) + charFloatY}px) scale(${(0,esm/* .interpolate */.GW)(charEnter, [
+                            0,
+                            1
+                        ], [
+                            0.9,
+                            1
+                        ])})`,
+                        transformOrigin: "bottom center",
+                        opacity: (0,esm/* .interpolate */.GW)(charEnter, [
+                            0,
+                            0.3,
+                            1
+                        ], [
+                            0,
+                            1,
+                            1
+                        ], {
+                            extrapolateRight: "clamp"
+                        }),
+                        willChange: "transform, opacity"
+                    },
+                    children: /*#__PURE__*/ (0,jsx_runtime.jsx)(OtositeCustomer_Character_Character, {
+                        assetName: "Scene2.png",
+                        height: 530,
+                        enterFrom: "bottom",
+                        delay: 6,
+                        animationType: "shouting"
+                    })
+                })
+            })
+        ]
+    });
+};
+
+;// CONCATENATED MODULE: ./src/OtositeCustomer/Scene3Assumptive.tsx
+
+
+
+
+
+const SCENE3_3D_ICONS_CONFIG = [
+    {
+        id: "s3-mata-duitan",
+        fileName: "3d-icon-mata-duitan.png",
+        x: 150,
+        y: 1150,
+        size: 165,
+        enterFrame: 175,
+        exitFrame: 285,
+        baseTilt: -10,
+        floatPhase: 0.4
+    },
+    {
+        id: "s3-ide-cemerlang",
+        fileName: "3d-icon-ide-cemerlang.png",
+        right: 150,
+        y: 1000,
+        size: 165,
+        enterFrame: 230,
+        exitFrame: 285,
+        baseTilt: 10,
+        floatPhase: 2.6
+    }
+];
+// Komponen Animasi 3d
+const Scene3Assumptive_Floating3DSticker = ({ item })=>{
+    const frame = (0,esm/* .useCurrentFrame */.UC)();
+    const { fps } = (0,esm/* .useVideoConfig */.Bk)();
+    if (frame < item.enterFrame - 5 || frame > item.exitFrame + 20) {
+        return null;
+    }
+    const inSpring = (0,esm/* .spring */.oz)({
+        frame: frame - item.enterFrame,
+        fps,
+        config: {
+            damping: 12,
+            stiffness: 185,
+            mass: 0.55
+        }
+    });
+    const outSpring = (0,esm/* .spring */.oz)({
+        frame: frame - item.exitFrame,
+        fps,
+        config: {
+            damping: 16,
+            stiffness: 170,
+            mass: 0.5
+        }
+    });
+    const t = frame * 0.05 + item.floatPhase;
+    const floatY = Math.sin(t) * 14;
+    const floatX = Math.cos(t * 0.7) * 6;
+    const floatRotate = Math.sin(t * 0.85) * 7;
+    const scale = (0,esm/* .interpolate */.GW)(inSpring, [
+        0,
+        1
+    ], [
+        0.1,
+        1
+    ]) * (0,esm/* .interpolate */.GW)(outSpring, [
+        0,
+        1
+    ], [
+        1,
+        0.3
+    ]);
+    const entryY = (0,esm/* .interpolate */.GW)(inSpring, [
+        0,
+        1
+    ], [
+        65,
+        0
+    ]);
+    const exitY = (0,esm/* .interpolate */.GW)(outSpring, [
+        0,
+        1
+    ], [
+        0,
+        40
+    ]);
+    const entryRot = (0,esm/* .interpolate */.GW)(inSpring, [
+        0,
+        1
+    ], [
+        item.baseTilt * 2.2,
+        item.baseTilt
+    ]);
+    const opacity = (0,esm/* .interpolate */.GW)(inSpring, [
+        0,
+        0.3,
+        1
+    ], [
+        0,
+        1,
+        1
+    ]) * (0,esm/* .interpolate */.GW)(outSpring, [
+        0,
+        0.7,
+        1
+    ], [
+        1,
+        0,
+        0
+    ]);
+    return /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+        style: {
+            position: "absolute",
+            top: item.y,
+            ...item.x !== undefined ? {
+                left: item.x
+            } : {},
+            ...item.right !== undefined ? {
+                right: item.right
+            } : {},
+            width: item.size,
+            height: item.size,
+            opacity,
+            transform: `translate3d(${floatX}px, ${entryY + exitY + floatY}px, 0) scale(${scale}) rotate(${entryRot + floatRotate}deg)`,
+            filter: "drop-shadow(0 16px 24px rgba(0, 0, 0, 0.22))",
+            willChange: "transform, opacity",
+            zIndex: 6
+        },
+        children: /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Img */.E9, {
+            src: (0,esm/* .staticFile */.dQ)(`assets/character/${item.fileName}`),
+            style: {
+                width: "100%",
+                height: "100%",
+                objectFit: "contain"
+            }
+        })
+    });
+};
+const Scene3Assumptive_MarkerHighlight = ({ children, progress, color = "rgba(255, 214, 10, 0.65)", height = "78%", bottom = "6%", skew = -10, rotate = -1, paddingX = 10 })=>{
+    const rawClamped = (0,esm/* .interpolate */.GW)(progress, [
+        0,
+        1
+    ], [
+        0,
+        1
+    ], {
+        extrapolateLeft: "clamp",
+        extrapolateRight: "clamp"
+    });
+    const sweep = esm/* .Easing.out */.GS.out(esm/* .Easing.exp */.GS.exp)(rawClamped);
+    const sweepY = (0,esm/* .interpolate */.GW)(rawClamped, [
+        0,
+        0.3,
+        1
+    ], [
+        0.85,
+        1.02,
+        1
+    ], {
+        extrapolateLeft: "clamp",
+        extrapolateRight: "clamp"
+    });
+    const markerOpacity = (0,esm/* .interpolate */.GW)(rawClamped, [
+        0,
+        0.12,
+        1
+    ], [
+        0,
+        1,
+        1
+    ], {
+        extrapolateLeft: "clamp",
+        extrapolateRight: "clamp"
+    });
+    return /*#__PURE__*/ (0,jsx_runtime.jsxs)("span", {
+        style: {
+            position: "relative",
+            display: "inline-block",
+            zIndex: 1,
+            margin: "0 2px"
+        },
+        children: [
+            /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                style: {
+                    position: "absolute",
+                    left: -paddingX,
+                    right: -paddingX,
+                    bottom,
+                    height,
+                    backgroundColor: color,
+                    borderRadius: "8px 4px 10px 5px",
+                    transformOrigin: "left center",
+                    transform: `scaleX(${sweep}) scaleY(${sweepY}) skewX(${skew}deg) rotate(${rotate}deg)`,
+                    opacity: markerOpacity,
+                    zIndex: -1,
+                    pointerEvents: "none",
+                    willChange: "transform, opacity"
+                }
+            }),
+            children
+        ]
+    });
+};
+const Scene3Assumptive = ()=>{
+    const frame = (0,esm/* .useCurrentFrame */.UC)();
+    const { fps } = (0,esm/* .useVideoConfig */.Bk)();
+    // Config spring responsif & sangat smooth (tanpa delay lambat)
+    const sweepConfig = {
+        damping: 20,
+        stiffness: 135,
+        mass: 0.7
+    };
+    const smoothPopConfig = {
+        damping: 16,
+        stiffness: 170,
+        mass: 0.65
+    };
+    const cardGlideConfig = {
+        damping: 17,
+        stiffness: 160,
+        mass: 0.7
+    };
+    // TIMINGS TEPAT SESUAI VO (voice over(3).wav)
+    // Badge Teknik 02 (f6) & Stabilo (f10)
+    const pBadgeText = (0,esm/* .spring */.oz)({
+        frame: frame - 6,
+        fps,
+        config: smoothPopConfig
+    });
+    const hTeknik2 = (0,esm/* .spring */.oz)({
+        frame: frame - 10,
+        fps,
+        config: sweepConfig
+    });
+    // Kartu Assumptive Closing menyusul saat VO "Assumptive Closing" (f26)
+    const wTitle = (0,esm/* .spring */.oz)({
+        frame: frame - 26,
+        fps,
+        config: cardGlideConfig
+    });
+    // Teks "Jangan Tanya 'Mau beli gak?'" tepat saat VO (f122)
+    const wDontText = (0,esm/* .spring */.oz)({
+        frame: frame - 122,
+        fps,
+        config: {
+            damping: 14,
+            stiffness: 175,
+            mass: 0.65
+        }
+    });
+    // Coretan silang (X) tepat saat VO "mau beli gak?" (f144 & f150)
+    const xStroke1 = (0,esm/* .spring */.oz)({
+        frame: frame - 144,
+        fps,
+        config: {
+            damping: 18,
+            stiffness: 200,
+            mass: 0.55
+        }
+    });
+    const xStroke2 = (0,esm/* .spring */.oz)({
+        frame: frame - 150,
+        fps,
+        config: {
+            damping: 18,
+            stiffness: 200,
+            mass: 0.55
+        }
+    });
+    // Efek Bergetar "Salah Jawaban" tepat saat silang selesai (f150 - f170)
+    const shakeDecay = (0,esm/* .interpolate */.GW)(frame, [
+        150,
+        170
+    ], [
+        1,
+        0
+    ], {
+        extrapolateLeft: "clamp",
+        extrapolateRight: "clamp"
+    });
+    const errorShakeX = frame >= 150 && frame <= 170 ? Math.sin((frame - 150) * 2.6) * 14 * shakeDecay : 0;
+    const errorShakeY = frame >= 150 && frame <= 170 ? Math.cos((frame - 150) * 3.2) * 4 * shakeDecay : 0;
+    const errorShakeRot = frame >= 150 && frame <= 170 ? Math.sin((frame - 150) * 2.6) * 3.5 * shakeDecay : 0;
+    // Header "Langsung Kasih Pilihan:" tepat saat VO "tapi langsung kasih pilihan:" (f172)
+    const wChoiceHeader = (0,esm/* .spring */.oz)({
+        frame: frame - 172,
+        fps,
+        config: smoothPopConfig
+    });
+    // Kotak 1: Mau dikirim Hari Ini? tepat saat VO (f224) + Stabilo (f232)
+    const box1Spring = (0,esm/* .spring */.oz)({
+        frame: frame - 224,
+        fps,
+        config: cardGlideConfig
+    });
+    const hHariIniSweep = (0,esm/* .spring */.oz)({
+        frame: frame - 232,
+        fps,
+        config: sweepConfig
+    });
+    // Kotak 2: Atau dikirim Besok? tepat saat VO (f246) + Stabilo (f254)
+    const box2Spring = (0,esm/* .spring */.oz)({
+        frame: frame - 246,
+        fps,
+        config: cardGlideConfig
+    });
+    const hBesokSweep = (0,esm/* .spring */.oz)({
+        frame: frame - 254,
+        fps,
+        config: sweepConfig
+    });
+    // Character masuk dari frame 6
+    const charEnter = (0,esm/* .spring */.oz)({
+        frame: frame - 6,
+        fps,
+        config: {
+            damping: 15,
+            stiffness: 155,
+            mass: 0.7
+        }
+    });
+    const walkSpeed = Math.max(0, frame - 6) * 0.22;
+    const walkBobY = Math.abs(Math.sin(walkSpeed)) * -12;
+    const walkStrideX = Math.sin(walkSpeed * 0.5) * 14;
+    const walkWobbleRot = Math.cos(walkSpeed * 0.5) * 2.2;
+    const walkSlideInX = (0,esm/* .interpolate */.GW)(charEnter, [
+        0,
+        1
+    ], [
+        -55,
+        0
+    ]);
+    // Outro transition for Scene 3 (f285 to f295)
+    const exitProgress = (0,esm/* .spring */.oz)({
+        frame: frame - 285,
+        fps,
+        config: {
+            damping: 22,
+            stiffness: 150,
+            mass: 0.65
+        }
+    });
+    const sceneExitOpacity = (0,esm/* .interpolate */.GW)(frame, [
+        285,
+        295
+    ], [
+        1,
+        0
+    ], {
+        extrapolateLeft: "clamp",
+        extrapolateRight: "clamp"
+    });
+    const sceneExitY = (0,esm/* .interpolate */.GW)(exitProgress, [
+        0,
+        1
+    ], [
+        0,
+        -35
+    ]);
+    const sceneExitScale = (0,esm/* .interpolate */.GW)(exitProgress, [
+        0,
+        1
+    ], [
+        1,
+        0.97
+    ]);
+    // Soft motion blur saat transisi masuk
+    const badgeBlur = (0,esm/* .interpolate */.GW)(pBadgeText, [
+        0,
+        0.65,
+        1
+    ], [
+        5,
+        0,
+        0
+    ], {
+        extrapolateRight: "clamp"
+    });
+    const titleCardBlur = (0,esm/* .interpolate */.GW)(wTitle, [
+        0,
+        0.65,
+        1
+    ], [
+        6,
+        0,
+        0
+    ], {
+        extrapolateRight: "clamp"
+    });
+    const box1Blur = (0,esm/* .interpolate */.GW)(box1Spring, [
+        0,
+        0.65,
+        1
+    ], [
+        6,
+        0,
+        0
+    ], {
+        extrapolateRight: "clamp"
+    });
+    const box2Blur = (0,esm/* .interpolate */.GW)(box2Spring, [
+        0,
+        0.65,
+        1
+    ], [
+        6,
+        0,
+        0
+    ], {
+        extrapolateRight: "clamp"
+    });
+    return /*#__PURE__*/ (0,jsx_runtime.jsxs)(esm/* .AbsoluteFill */.H1, {
+        style: {
+            fontFamily: OtositeCustomer_constants_FONT_FAMILY,
+            pointerEvents: "none",
+            opacity: sceneExitOpacity,
+            transform: `translateY(${sceneExitY}px) scale(${sceneExitScale})`,
+            willChange: "transform, opacity"
+        },
+        children: [
+            SCENE3_3D_ICONS_CONFIG.map((item)=>/*#__PURE__*/ (0,jsx_runtime.jsx)(Scene3Assumptive_Floating3DSticker, {
+                    item: item
+                }, item.id)),
+            /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                style: {
+                    position: "absolute",
+                    top: 310,
+                    left: 0,
+                    right: 0,
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    zIndex: 10
+                },
+                children: [
+                    /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                        style: {
+                            color: "#ffffff",
+                            padding: "6px 20px",
+                            fontSize: 55,
+                            letterSpacing: -5,
+                            transform: `translateY(${(0,esm/* .interpolate */.GW)(pBadgeText, [
+                                0,
+                                1
+                            ], [
+                                20,
+                                0
+                            ])}px) scale(${(0,esm/* .interpolate */.GW)(pBadgeText, [
+                                0,
+                                1
+                            ], [
+                                0.9,
+                                1
+                            ])})`,
+                            opacity: (0,esm/* .interpolate */.GW)(pBadgeText, [
+                                0,
+                                0.35,
+                                1
+                            ], [
+                                0,
+                                1,
+                                1
+                            ], {
+                                extrapolateRight: "clamp"
+                            }),
+                            filter: `blur(${badgeBlur}px)`,
+                            marginBottom: 18,
+                            willChange: "transform, opacity, filter"
+                        },
+                        children: /*#__PURE__*/ (0,jsx_runtime.jsx)(Scene3Assumptive_MarkerHighlight, {
+                            progress: hTeknik2,
+                            color: "#ff3133",
+                            height: "100%",
+                            bottom: "2%",
+                            paddingX: 16,
+                            rotate: -1.5,
+                            children: "Teknik 02"
+                        })
+                    }),
+                    /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                        style: {
+                            backgroundColor: constants_COLORS.yellowMuda,
+                            border: `5px solid ${constants_COLORS.dark}`,
+                            boxShadow: `0 8px 0 ${constants_COLORS.dark}`,
+                            borderRadius: 26,
+                            padding: "22px 36px",
+                            textAlign: "center",
+                            width: "88%",
+                            maxWidth: 840,
+                            transform: `scale(${(0,esm/* .interpolate */.GW)(wTitle, [
+                                0,
+                                1
+                            ], [
+                                0.88,
+                                1
+                            ])}) translateX(${(0,esm/* .interpolate */.GW)(wTitle, [
+                                0,
+                                1
+                            ], [
+                                -24,
+                                0
+                            ])}px) translateY(${(0,esm/* .interpolate */.GW)(wTitle, [
+                                0,
+                                1
+                            ], [
+                                24,
+                                0
+                            ])}px) rotate(${(0,esm/* .interpolate */.GW)(wTitle, [
+                                0,
+                                1
+                            ], [
+                                -1.5,
+                                0
+                            ])}deg)`,
+                            opacity: (0,esm/* .interpolate */.GW)(wTitle, [
+                                0,
+                                0.3,
+                                1
+                            ], [
+                                0,
+                                1,
+                                1
+                            ], {
+                                extrapolateRight: "clamp"
+                            }),
+                            filter: `blur(${titleCardBlur}px)`,
+                            marginBottom: 18,
+                            willChange: "transform, opacity, filter"
+                        },
+                        children: [
+                            /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                style: {
+                                    fontSize: 55,
+                                    color: constants_COLORS.dark,
+                                    letterSpacing: -5,
+                                    lineHeight: 1.15
+                                },
+                                children: "Assumptive Closing"
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                                style: {
+                                    fontSize: 35,
+                                    color: constants_COLORS.dark,
+                                    marginTop: 10,
+                                    letterSpacing: -3
+                                },
+                                children: [
+                                    "Asumsikan Mereka",
+                                    " ",
+                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                        style: {
+                                            color: constants_COLORS.dark
+                                        },
+                                        children: "Pasti Beli!"
+                                    })
+                                ]
+                            })
+                        ]
+                    }),
+                    frame >= 120 && /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                        style: {
+                            padding: "8px 20px",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            transform: `translate3d(${errorShakeX}px, ${(0,esm/* .interpolate */.GW)(wDontText, [
+                                0,
+                                1
+                            ], [
+                                22,
+                                0
+                            ]) + 10 + errorShakeY}px, 0) scale(${(0,esm/* .interpolate */.GW)(wDontText, [
+                                0,
+                                1
+                            ], [
+                                0.82,
+                                1
+                            ])}) rotate(${(0,esm/* .interpolate */.GW)(wDontText, [
+                                0,
+                                1
+                            ], [
+                                4,
+                                -1.2
+                            ]) + errorShakeRot}deg)`,
+                            opacity: (0,esm/* .interpolate */.GW)(wDontText, [
+                                0,
+                                0.35,
+                                1
+                            ], [
+                                0,
+                                1,
+                                1
+                            ], {
+                                extrapolateRight: "clamp"
+                            }),
+                            willChange: "transform, opacity"
+                        },
+                        children: /*#__PURE__*/ (0,jsx_runtime.jsxs)("span", {
+                            style: {
+                                fontSize: 36,
+                                fontWeight: 700,
+                                marginTop: 35,
+                                color: constants_COLORS.red,
+                                letterSpacing: -2,
+                                position: "relative",
+                                display: "inline-block"
+                            },
+                            children: [
+                                "Jangan Tanya “Mau beli gak?”",
+                                frame >= 142 && /*#__PURE__*/ (0,jsx_runtime.jsxs)("span", {
+                                    style: {
+                                        position: "absolute",
+                                        left: "-4%",
+                                        right: "-4%",
+                                        top: "50%",
+                                        height: 0,
+                                        pointerEvents: "none"
+                                    },
+                                    children: [
+                                        /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                            style: {
+                                                position: "absolute",
+                                                left: 0,
+                                                right: 0,
+                                                top: -4,
+                                                height: 7,
+                                                backgroundColor: "#ff3133",
+                                                borderRadius: 99,
+                                                boxShadow: "0 2px 0 rgba(0,0,0,0.18)",
+                                                transformOrigin: "center center",
+                                                transform: `rotate(9deg) scaleX(${esm/* .Easing.out */.GS.out(esm/* .Easing.exp */.GS.exp)((0,esm/* .interpolate */.GW)(xStroke1, [
+                                                    0,
+                                                    1
+                                                ], [
+                                                    0,
+                                                    1
+                                                ], {
+                                                    extrapolateLeft: "clamp",
+                                                    extrapolateRight: "clamp"
+                                                }))})`
+                                            }
+                                        }),
+                                        /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                            style: {
+                                                position: "absolute",
+                                                left: 0,
+                                                right: 0,
+                                                top: -4,
+                                                height: 7,
+                                                backgroundColor: "#ff3133",
+                                                borderRadius: 99,
+                                                boxShadow: "0 2px 0 rgba(0,0,0,0.18)",
+                                                transformOrigin: "center center",
+                                                transform: `rotate(-9deg) scaleX(${esm/* .Easing.out */.GS.out(esm/* .Easing.exp */.GS.exp)((0,esm/* .interpolate */.GW)(xStroke2, [
+                                                    0,
+                                                    1
+                                                ], [
+                                                    0,
+                                                    1
+                                                ], {
+                                                    extrapolateLeft: "clamp",
+                                                    extrapolateRight: "clamp"
+                                                }))})`
+                                            }
+                                        })
+                                    ]
+                                })
+                            ]
+                        })
+                    }),
+                    frame >= 170 && /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                        style: {
+                            width: "88%",
+                            maxWidth: 840,
+                            display: "flex",
+                            flexDirection: "column",
+                            alignItems: "center",
+                            gap: 12,
+                            marginTop: 22
+                        },
+                        children: [
+                            /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                style: {
+                                    fontSize: 35,
+                                    marginTop: 25,
+                                    color: constants_COLORS.dark,
+                                    letterSpacing: -1,
+                                    opacity: (0,esm/* .interpolate */.GW)(wChoiceHeader, [
+                                        0,
+                                        0.4,
+                                        1
+                                    ], [
+                                        0,
+                                        1,
+                                        1
+                                    ], {
+                                        extrapolateRight: "clamp"
+                                    }),
+                                    transform: `translateY(${(0,esm/* .interpolate */.GW)(wChoiceHeader, [
+                                        0,
+                                        1
+                                    ], [
+                                        14,
+                                        0
+                                    ])}px)`
+                                },
+                                children: "Langsung Kasih Pilihan:"
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                                style: {
+                                    display: "flex",
+                                    gap: 20,
+                                    marginTop: 20,
+                                    width: "100%",
+                                    justifyContent: "center"
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                                        style: {
+                                            flex: 1,
+                                            backgroundColor: "rgba(255, 255, 255, 0.55)",
+                                            border: `4px solid ${constants_COLORS.dark}`,
+                                            boxShadow: `0 6px 0 ${constants_COLORS.dark}`,
+                                            borderRadius: 22,
+                                            padding: "18px 20px",
+                                            display: "flex",
+                                            flexDirection: "column",
+                                            alignItems: "center",
+                                            justifyContent: "center",
+                                            textAlign: "center",
+                                            gap: 6,
+                                            transform: `scale(${(0,esm/* .interpolate */.GW)(box1Spring, [
+                                                0,
+                                                1
+                                            ], [
+                                                0.84,
+                                                1
+                                            ])}) translateX(${(0,esm/* .interpolate */.GW)(box1Spring, [
+                                                0,
+                                                1
+                                            ], [
+                                                -22,
+                                                0
+                                            ])}px) translateY(${(0,esm/* .interpolate */.GW)(box1Spring, [
+                                                0,
+                                                1
+                                            ], [
+                                                24,
+                                                0
+                                            ])}px) rotate(${(0,esm/* .interpolate */.GW)(box1Spring, [
+                                                0,
+                                                1
+                                            ], [
+                                                -3,
+                                                -1
+                                            ])}deg)`,
+                                            opacity: (0,esm/* .interpolate */.GW)(box1Spring, [
+                                                0,
+                                                0.3,
+                                                1
+                                            ], [
+                                                0,
+                                                1,
+                                                1
+                                            ], {
+                                                extrapolateRight: "clamp"
+                                            }),
+                                            filter: `blur(${box1Blur}px)`,
+                                            willChange: "transform, opacity, filter"
+                                        },
+                                        children: [
+                                            /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                                style: {
+                                                    fontSize: 25,
+                                                    color: constants_COLORS.dark,
+                                                    letterSpacing: -2,
+                                                    lineHeight: 1.15
+                                                },
+                                                children: "“Mau dikirim"
+                                            }),
+                                            /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                                style: {
+                                                    fontSize: 33,
+                                                    color: constants_COLORS.dark,
+                                                    lineHeight: 1.25
+                                                },
+                                                children: /*#__PURE__*/ (0,jsx_runtime.jsx)(Scene3Assumptive_MarkerHighlight, {
+                                                    progress: hHariIniSweep,
+                                                    color: "rgba(255, 214, 10, 0.78)",
+                                                    height: "88%",
+                                                    bottom: "4%",
+                                                    paddingX: 10,
+                                                    skew: -8,
+                                                    children: /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                                        style: {
+                                                            color: constants_COLORS.dark,
+                                                            fontWeight: 600,
+                                                            letterSpacing: -3
+                                                        },
+                                                        children: "Hari Ini?”"
+                                                    })
+                                                })
+                                            })
+                                        ]
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                                        style: {
+                                            flex: 1,
+                                            backgroundColor: "rgba(255, 255, 255, 0.69)",
+                                            border: `4px solid ${constants_COLORS.dark}`,
+                                            boxShadow: `0 6px 0 ${constants_COLORS.dark}`,
+                                            borderRadius: 22,
+                                            padding: "18px 20px",
+                                            display: "flex",
+                                            flexDirection: "column",
+                                            alignItems: "center",
+                                            justifyContent: "center",
+                                            textAlign: "center",
+                                            gap: 6,
+                                            transform: `scale(${(0,esm/* .interpolate */.GW)(box2Spring, [
+                                                0,
+                                                1
+                                            ], [
+                                                0.84,
+                                                1
+                                            ])}) translateX(${(0,esm/* .interpolate */.GW)(box2Spring, [
+                                                0,
+                                                1
+                                            ], [
+                                                22,
+                                                0
+                                            ])}px) translateY(${(0,esm/* .interpolate */.GW)(box2Spring, [
+                                                0,
+                                                1
+                                            ], [
+                                                24,
+                                                0
+                                            ])}px) rotate(${(0,esm/* .interpolate */.GW)(box2Spring, [
+                                                0,
+                                                1
+                                            ], [
+                                                3,
+                                                1
+                                            ])}deg)`,
+                                            opacity: (0,esm/* .interpolate */.GW)(box2Spring, [
+                                                0,
+                                                0.3,
+                                                1
+                                            ], [
+                                                0,
+                                                1,
+                                                1
+                                            ], {
+                                                extrapolateRight: "clamp"
+                                            }),
+                                            filter: `blur(${box2Blur}px)`,
+                                            willChange: "transform, opacity, filter"
+                                        },
+                                        children: [
+                                            /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                                style: {
+                                                    fontSize: 25,
+                                                    color: constants_COLORS.dark,
+                                                    letterSpacing: -1.5,
+                                                    lineHeight: 1.15
+                                                },
+                                                children: "“Atau dikirim"
+                                            }),
+                                            /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                                style: {
+                                                    fontSize: 33,
+                                                    color: constants_COLORS.dark,
+                                                    lineHeight: 1.25
+                                                },
+                                                children: /*#__PURE__*/ (0,jsx_runtime.jsx)(Scene3Assumptive_MarkerHighlight, {
+                                                    progress: hBesokSweep,
+                                                    color: "rgba(255, 214, 10, 0.85)",
+                                                    height: "88%",
+                                                    bottom: "4%",
+                                                    paddingX: 10,
+                                                    skew: -8,
+                                                    children: /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                                        style: {
+                                                            color: constants_COLORS.dark,
+                                                            fontWeight: 600,
+                                                            letterSpacing: -3
+                                                        },
+                                                        children: "Besok?”"
+                                                    })
+                                                })
+                                            })
+                                        ]
+                                    })
+                                ]
+                            })
+                        ]
+                    })
+                ]
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                style: {
+                    position: "absolute",
+                    top: 950,
+                    left: 70,
+                    right: 0,
+                    height: 560,
+                    display: "flex",
+                    justifyContent: "center",
+                    transform: "scale(1.1)",
+                    alignItems: "flex-end",
+                    zIndex: 5
+                },
+                children: /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                    style: {
+                        position: "relative",
+                        transform: `translateX(${walkSlideInX + walkStrideX}px) translateY(${(0,esm/* .interpolate */.GW)(charEnter, [
+                            0,
+                            1
+                        ], [
+                            45,
+                            0
+                        ]) + walkBobY}px) scale(${(0,esm/* .interpolate */.GW)(charEnter, [
+                            0,
+                            1
+                        ], [
+                            0.9,
+                            1
+                        ])}) rotate(${walkWobbleRot}deg)`,
+                        transformOrigin: "bottom center",
+                        opacity: (0,esm/* .interpolate */.GW)(charEnter, [
+                            0,
+                            0.3,
+                            1
+                        ], [
+                            0,
+                            1,
+                            1
+                        ], {
+                            extrapolateRight: "clamp"
+                        }),
+                        willChange: "transform, opacity"
+                    },
+                    children: /*#__PURE__*/ (0,jsx_runtime.jsx)(OtositeCustomer_Character_Character, {
+                        assetName: "Scene3.png",
+                        height: 530,
+                        enterFrom: "none",
+                        delay: 0,
+                        animationType: "cool_thumbs"
+                    })
+                })
+            })
+        ]
+    });
+};
+
+;// CONCATENATED MODULE: ./src/OtositeCustomer/Scene4Summary.tsx
+
+
+
+
+
+const Scene4Summary_MarkerHighlight = ({ children, progress, color = "rgba(255, 214, 10, 0.65)", height = "78%", bottom = "6%", skew = -10, rotate = -1, paddingX = 10 })=>{
+    const rawClamped = (0,esm/* .interpolate */.GW)(progress, [
+        0,
+        1
+    ], [
+        0,
+        1
+    ], {
+        extrapolateLeft: "clamp",
+        extrapolateRight: "clamp"
+    });
+    const sweep = esm/* .Easing.out */.GS.out(esm/* .Easing.exp */.GS.exp)(rawClamped);
+    const sweepY = (0,esm/* .interpolate */.GW)(rawClamped, [
+        0,
+        0.3,
+        1
+    ], [
+        0.85,
+        1.02,
+        1
+    ], {
+        extrapolateLeft: "clamp",
+        extrapolateRight: "clamp"
+    });
+    const markerOpacity = (0,esm/* .interpolate */.GW)(rawClamped, [
+        0,
+        0.12,
+        1
+    ], [
+        0,
+        1,
+        1
+    ], {
+        extrapolateLeft: "clamp",
+        extrapolateRight: "clamp"
+    });
+    return /*#__PURE__*/ (0,jsx_runtime.jsxs)("span", {
+        style: {
+            position: "relative",
+            display: "inline-block",
+            zIndex: 1,
+            margin: "0 2px"
+        },
+        children: [
+            /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                style: {
+                    position: "absolute",
+                    left: -paddingX,
+                    right: -paddingX,
+                    bottom,
+                    height,
+                    backgroundColor: color,
+                    borderRadius: "8px 4px 10px 5px",
+                    transformOrigin: "left center",
+                    transform: `scaleX(${sweep}) scaleY(${sweepY}) skewX(${skew}deg) rotate(${rotate}deg)`,
+                    opacity: markerOpacity,
+                    zIndex: -1,
+                    pointerEvents: "none",
+                    willChange: "transform, opacity"
+                }
+            }),
+            children
+        ]
+    });
+};
+const Scene4Summary = ()=>{
+    const frame = (0,esm/* .useCurrentFrame */.UC)();
+    const { fps } = (0,esm/* .useVideoConfig */.Bk)();
+    // Config spring responsif & ultra-smooth (tanpa delay lama)
+    const sweepConfig = {
+        damping: 20,
+        stiffness: 135,
+        mass: 0.7
+    };
+    const smoothPopConfig = {
+        damping: 16,
+        stiffness: 170,
+        mass: 0.65
+    };
+    const cardGlideConfig = {
+        damping: 17,
+        stiffness: 160,
+        mass: 0.7
+    };
+    // TIMINGS TEPAT SESUAI VO (voice over(3).wav)
+    // Badge Teknik 03 (f6) & Stabilo Merah (f10)
+    const pBadgeText = (0,esm/* .spring */.oz)({
+        frame: frame - 6,
+        fps,
+        config: smoothPopConfig
+    });
+    const hTeknik3 = (0,esm/* .spring */.oz)({
+        frame: frame - 10,
+        fps,
+        config: sweepConfig
+    });
+    // Kartu Summary Closing & Subjudul saat VO "Summary Closing" (f26)
+    const wTitle = (0,esm/* .spring */.oz)({
+        frame: frame - 26,
+        fps,
+        config: cardGlideConfig
+    });
+    // Checklist Card & Item 1-3 saat VO "Sebutin ulang semua keuntungannya" (f66 -> f74 -> f90 -> f106)
+    const pCard = (0,esm/* .spring */.oz)({
+        frame: frame - 66,
+        fps,
+        config: cardGlideConfig
+    });
+    const wItem1 = (0,esm/* .spring */.oz)({
+        frame: frame - 74,
+        fps,
+        config: smoothPopConfig
+    });
+    const wItem2 = (0,esm/* .spring */.oz)({
+        frame: frame - 90,
+        fps,
+        config: smoothPopConfig
+    });
+    const wItem3 = (0,esm/* .spring */.oz)({
+        frame: frame - 106,
+        fps,
+        config: smoothPopConfig
+    });
+    const hItem3Sweep = (0,esm/* .spring */.oz)({
+        frame: frame - 114,
+        fps,
+        config: sweepConfig
+    });
+    // Teks "Biar mereka sadar kalau produk ini udah paling pas buat kebutuhannya" saat VO (f122 & stabilo f180)
+    const wSadarText = (0,esm/* .spring */.oz)({
+        frame: frame - 122,
+        fps,
+        config: smoothPopConfig
+    });
+    const hPalingPasSweep = (0,esm/* .spring */.oz)({
+        frame: frame - 180,
+        fps,
+        config: sweepConfig
+    });
+    // Karakter masuk dengan smooth glide dari bawah
+    const charEnter = (0,esm/* .spring */.oz)({
+        frame: frame - 6,
+        fps,
+        config: {
+            damping: 18,
+            stiffness: 125,
+            mass: 0.85
+        }
+    });
+    const charFloatY = Math.sin(frame * 0.07) * 3.5;
+    // Outro transition for Scene 4 (f225 to f235)
+    const exitProgress = (0,esm/* .spring */.oz)({
+        frame: frame - 225,
+        fps,
+        config: {
+            damping: 22,
+            stiffness: 150,
+            mass: 0.65
+        }
+    });
+    const sceneExitOpacity = (0,esm/* .interpolate */.GW)(frame, [
+        225,
+        235
+    ], [
+        1,
+        0
+    ], {
+        extrapolateLeft: "clamp",
+        extrapolateRight: "clamp"
+    });
+    const sceneExitY = (0,esm/* .interpolate */.GW)(exitProgress, [
+        0,
+        1
+    ], [
+        0,
+        -35
+    ]);
+    const sceneExitScale = (0,esm/* .interpolate */.GW)(exitProgress, [
+        0,
+        1
+    ], [
+        1,
+        0.97
+    ]);
+    // Soft motion blur saat transisi masuk
+    const badgeBlur = (0,esm/* .interpolate */.GW)(pBadgeText, [
+        0,
+        0.65,
+        1
+    ], [
+        5,
+        0,
+        0
+    ], {
+        extrapolateRight: "clamp"
+    });
+    const titleCardBlur = (0,esm/* .interpolate */.GW)(wTitle, [
+        0,
+        0.65,
+        1
+    ], [
+        6,
+        0,
+        0
+    ], {
+        extrapolateRight: "clamp"
+    });
+    const checklistCardBlur = (0,esm/* .interpolate */.GW)(pCard, [
+        0,
+        0.65,
+        1
+    ], [
+        6,
+        0,
+        0
+    ], {
+        extrapolateRight: "clamp"
+    });
+    return /*#__PURE__*/ (0,jsx_runtime.jsxs)(esm/* .AbsoluteFill */.H1, {
+        style: {
+            fontFamily: OtositeCustomer_constants_FONT_FAMILY,
+            pointerEvents: "none",
+            opacity: sceneExitOpacity,
+            transform: `translateY(${sceneExitY}px) scale(${sceneExitScale})`,
+            willChange: "transform, opacity"
+        },
+        children: [
+            /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                style: {
+                    position: "absolute",
+                    top: 290,
+                    left: 0,
+                    right: 0,
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    zIndex: 10
+                },
+                children: [
+                    /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                        style: {
+                            color: "#ffffff",
+                            padding: "6px 20px",
+                            fontSize: 55,
+                            letterSpacing: -5,
+                            transform: `translateY(${(0,esm/* .interpolate */.GW)(pBadgeText, [
+                                0,
+                                1
+                            ], [
+                                20,
+                                0
+                            ])}px) scale(${(0,esm/* .interpolate */.GW)(pBadgeText, [
+                                0,
+                                1
+                            ], [
+                                0.9,
+                                1
+                            ])})`,
+                            opacity: (0,esm/* .interpolate */.GW)(pBadgeText, [
+                                0,
+                                0.35,
+                                1
+                            ], [
+                                0,
+                                1,
+                                1
+                            ], {
+                                extrapolateRight: "clamp"
+                            }),
+                            filter: `blur(${badgeBlur}px)`,
+                            marginBottom: 14,
+                            willChange: "transform, opacity, filter"
+                        },
+                        children: /*#__PURE__*/ (0,jsx_runtime.jsx)(Scene4Summary_MarkerHighlight, {
+                            progress: hTeknik3,
+                            color: "#ff3133",
+                            height: "100%",
+                            bottom: "2%",
+                            paddingX: 16,
+                            rotate: -1.5,
+                            children: "Teknik 03"
+                        })
+                    }),
+                    /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                        style: {
+                            backgroundColor: constants_COLORS.yellowMuda,
+                            border: `5px solid ${constants_COLORS.dark}`,
+                            boxShadow: `0 8px 0 ${constants_COLORS.dark}`,
+                            borderRadius: 26,
+                            padding: "20px 36px",
+                            textAlign: "center",
+                            width: "88%",
+                            maxWidth: 840,
+                            transform: `scale(${(0,esm/* .interpolate */.GW)(wTitle, [
+                                0,
+                                1
+                            ], [
+                                0.88,
+                                1
+                            ])}) translateY(${(0,esm/* .interpolate */.GW)(wTitle, [
+                                0,
+                                1
+                            ], [
+                                26,
+                                0
+                            ])}px)`,
+                            opacity: (0,esm/* .interpolate */.GW)(wTitle, [
+                                0,
+                                0.3,
+                                1
+                            ], [
+                                0,
+                                1,
+                                1
+                            ], {
+                                extrapolateRight: "clamp"
+                            }),
+                            filter: `blur(${titleCardBlur}px)`,
+                            marginBottom: 14,
+                            willChange: "transform, opacity, filter"
+                        },
+                        children: [
+                            /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                style: {
+                                    fontSize: 55,
+                                    color: constants_COLORS.dark,
+                                    letterSpacing: -5,
+                                    lineHeight: 1.15
+                                },
+                                children: "Summary Closing"
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                                style: {
+                                    fontSize: 34,
+                                    color: constants_COLORS.dark,
+                                    marginTop: 8,
+                                    letterSpacing: -3
+                                },
+                                children: [
+                                    "Sebut Ulang",
+                                    " ",
+                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                        style: {
+                                            color: constants_COLORS.dark,
+                                            fontStyle: "italic"
+                                        },
+                                        children: "Semua Keuntungannya!"
+                                    })
+                                ]
+                            })
+                        ]
+                    }),
+                    frame >= 64 && /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                        style: {
+                            backgroundColor: "#FFFFFF",
+                            border: `4px solid ${constants_COLORS.dark}`,
+                            boxShadow: `0 6px 0 ${constants_COLORS.dark}`,
+                            borderRadius: 22,
+                            padding: "16px 24px",
+                            width: "88%",
+                            maxWidth: 840,
+                            marginTop: 10,
+                            transform: `scale(${(0,esm/* .interpolate */.GW)(pCard, [
+                                0,
+                                1
+                            ], [
+                                0.88,
+                                1
+                            ])}) translateY(${(0,esm/* .interpolate */.GW)(pCard, [
+                                0,
+                                1
+                            ], [
+                                26,
+                                0
+                            ])}px)`,
+                            opacity: (0,esm/* .interpolate */.GW)(pCard, [
+                                0,
+                                0.3,
+                                1
+                            ], [
+                                0,
+                                1,
+                                1
+                            ], {
+                                extrapolateRight: "clamp"
+                            }),
+                            filter: `blur(${checklistCardBlur}px)`,
+                            display: "flex",
+                            flexDirection: "column",
+                            gap: 10,
+                            willChange: "transform, opacity, filter"
+                        },
+                        children: [
+                            /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                style: {
+                                    fontSize: 30,
+                                    color: constants_COLORS.blue,
+                                    letterSpacing: -2,
+                                    paddingBottom: 6
+                                },
+                                children: "Checklist Rekap Manfaat:"
+                            }),
+                            frame >= 72 && /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                                style: {
+                                    backgroundColor: constants_COLORS.yellowMuda,
+                                    border: `3px solid ${constants_COLORS.dark}`,
+                                    boxShadow: `0 3px 0 ${constants_COLORS.dark}`,
+                                    borderRadius: 14,
+                                    padding: "10px 16px",
+                                    display: "flex",
+                                    alignItems: "center",
+                                    gap: 12,
+                                    transform: `translateX(${(0,esm/* .interpolate */.GW)(wItem1, [
+                                        0,
+                                        1
+                                    ], [
+                                        -20,
+                                        0
+                                    ])}px) scale(${(0,esm/* .interpolate */.GW)(wItem1, [
+                                        0,
+                                        1
+                                    ], [
+                                        0.92,
+                                        1
+                                    ])})`,
+                                    opacity: (0,esm/* .interpolate */.GW)(wItem1, [
+                                        0,
+                                        0.35,
+                                        1
+                                    ], [
+                                        0,
+                                        1,
+                                        1
+                                    ], {
+                                        extrapolateRight: "clamp"
+                                    })
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                        style: {
+                                            backgroundColor: constants_COLORS.blue,
+                                            color: constants_COLORS.yellowMuda,
+                                            width: 30,
+                                            height: 30,
+                                            borderRadius: "50%",
+                                            display: "flex",
+                                            alignItems: "center",
+                                            justifyContent: "center",
+                                            fontSize: 18,
+                                            fontWeight: 900,
+                                            flexShrink: 0
+                                        },
+                                        children: "✓"
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                        style: {
+                                            fontSize: 30,
+                                            color: constants_COLORS.dark,
+                                            letterSpacing: -2
+                                        },
+                                        children: "Spesifikasi Sesuai Kebutuhan"
+                                    })
+                                ]
+                            }),
+                            frame >= 88 && /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                                style: {
+                                    backgroundColor: constants_COLORS.yellowMuda,
+                                    border: `3px solid ${constants_COLORS.dark}`,
+                                    boxShadow: `0 3px 0 ${constants_COLORS.dark}`,
+                                    borderRadius: 14,
+                                    padding: "10px 16px",
+                                    display: "flex",
+                                    alignItems: "center",
+                                    gap: 12,
+                                    transform: `translateX(${(0,esm/* .interpolate */.GW)(wItem2, [
+                                        0,
+                                        1
+                                    ], [
+                                        -20,
+                                        0
+                                    ])}px) scale(${(0,esm/* .interpolate */.GW)(wItem2, [
+                                        0,
+                                        1
+                                    ], [
+                                        0.92,
+                                        1
+                                    ])})`,
+                                    opacity: (0,esm/* .interpolate */.GW)(wItem2, [
+                                        0,
+                                        0.35,
+                                        1
+                                    ], [
+                                        0,
+                                        1,
+                                        1
+                                    ], {
+                                        extrapolateRight: "clamp"
+                                    })
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                        style: {
+                                            backgroundColor: constants_COLORS.red,
+                                            color: constants_COLORS.yellowMuda,
+                                            width: 30,
+                                            height: 30,
+                                            borderRadius: "50%",
+                                            display: "flex",
+                                            alignItems: "center",
+                                            justifyContent: "center",
+                                            fontSize: 18,
+                                            fontWeight: 900,
+                                            flexShrink: 0
+                                        },
+                                        children: "✓"
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                        style: {
+                                            fontSize: 30,
+                                            color: constants_COLORS.dark,
+                                            letterSpacing: -2
+                                        },
+                                        children: "Penawaran Harga Paling Pas"
+                                    })
+                                ]
+                            }),
+                            frame >= 104 && /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                                style: {
+                                    backgroundColor: constants_COLORS.yellowMuda,
+                                    border: `3px solid ${constants_COLORS.dark}`,
+                                    boxShadow: `0 3px 0 ${constants_COLORS.dark}`,
+                                    borderRadius: 14,
+                                    padding: "10px 16px",
+                                    display: "flex",
+                                    alignItems: "center",
+                                    gap: 12,
+                                    transform: `translateX(${(0,esm/* .interpolate */.GW)(wItem3, [
+                                        0,
+                                        1
+                                    ], [
+                                        -20,
+                                        0
+                                    ])}px) scale(${(0,esm/* .interpolate */.GW)(wItem3, [
+                                        0,
+                                        1
+                                    ], [
+                                        0.92,
+                                        1
+                                    ])})`,
+                                    opacity: (0,esm/* .interpolate */.GW)(wItem3, [
+                                        0,
+                                        0.35,
+                                        1
+                                    ], [
+                                        0,
+                                        1,
+                                        1
+                                    ], {
+                                        extrapolateRight: "clamp"
+                                    })
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                        style: {
+                                            backgroundColor: constants_COLORS.blue,
+                                            color: constants_COLORS.yellowMuda,
+                                            width: 30,
+                                            height: 30,
+                                            borderRadius: "50%",
+                                            display: "flex",
+                                            alignItems: "center",
+                                            justifyContent: "center",
+                                            fontSize: 18,
+                                            fontWeight: 900,
+                                            flexShrink: 0
+                                        },
+                                        children: "✓"
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                        style: {
+                                            fontSize: 30,
+                                            color: constants_COLORS.dark,
+                                            letterSpacing: -2
+                                        },
+                                        children: /*#__PURE__*/ (0,jsx_runtime.jsx)(Scene4Summary_MarkerHighlight, {
+                                            progress: hItem3Sweep,
+                                            color: "rgba(255, 214, 10, 0.78)",
+                                            height: "85%",
+                                            bottom: "4%",
+                                            paddingX: 8,
+                                            skew: -8,
+                                            children: /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                                children: "Bonus & Garansi Lengkap"
+                                            })
+                                        })
+                                    })
+                                ]
+                            })
+                        ]
+                    }),
+                    frame >= 120 && /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                        style: {
+                            width: "88%",
+                            maxWidth: 840,
+                            textAlign: "center",
+                            padding: "4px 16px",
+                            fontSize: 40,
+                            color: constants_COLORS.dark,
+                            letterSpacing: -4,
+                            lineHeight: 1.35,
+                            transform: `translateY(${(0,esm/* .interpolate */.GW)(wSadarText, [
+                                0,
+                                1
+                            ], [
+                                18,
+                                0
+                            ])}px) scale(${(0,esm/* .interpolate */.GW)(wSadarText, [
+                                0,
+                                1
+                            ], [
+                                0.9,
+                                1
+                            ])})`,
+                            opacity: (0,esm/* .interpolate */.GW)(wSadarText, [
+                                0,
+                                0.35,
+                                1
+                            ], [
+                                0,
+                                1,
+                                1
+                            ], {
+                                extrapolateRight: "clamp"
+                            }),
+                            marginBottom: 25,
+                            marginTop: 20,
+                            willChange: "transform, opacity"
+                        },
+                        children: [
+                            "Biar mereka sadar kalau produk ini",
+                            " ",
+                            /*#__PURE__*/ (0,jsx_runtime.jsx)(Scene4Summary_MarkerHighlight, {
+                                progress: hPalingPasSweep,
+                                color: "rgba(255, 214, 10, 0.8)",
+                                height: "88%",
+                                bottom: "2%",
+                                paddingX: 8,
+                                skew: -8,
+                                children: /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                    style: {
+                                        color: constants_COLORS.red,
+                                        fontWeight: 700
+                                    },
+                                    children: "udah paling pas"
+                                })
+                            }),
+                            " ",
+                            "buat kebutuhannya!"
+                        ]
+                    })
+                ]
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                style: {
+                    position: "absolute",
+                    top: 950,
+                    left: 0,
+                    right: 0,
+                    height: 560,
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "flex-end",
+                    zIndex: 5
+                },
+                children: /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                    style: {
+                        position: "relative",
+                        transform: `translateY(${(0,esm/* .interpolate */.GW)(charEnter, [
+                            0,
+                            1
+                        ], [
+                            45,
+                            0
+                        ]) + charFloatY}px) scale(${(0,esm/* .interpolate */.GW)(charEnter, [
+                            0,
+                            1
+                        ], [
+                            0.9,
+                            1
+                        ])})`,
+                        transformOrigin: "bottom center",
+                        opacity: (0,esm/* .interpolate */.GW)(charEnter, [
+                            0,
+                            0.3,
+                            1
+                        ], [
+                            0,
+                            1,
+                            1
+                        ], {
+                            extrapolateRight: "clamp"
+                        }),
+                        willChange: "transform, opacity"
+                    },
+                    children: /*#__PURE__*/ (0,jsx_runtime.jsx)(OtositeCustomer_Character_Character, {
+                        assetName: "Scene4.png",
+                        height: 480,
+                        enterFrom: "bottom",
+                        delay: 6,
+                        animationType: "discussion"
+                    })
+                })
+            })
+        ]
+    });
+};
+
+;// CONCATENATED MODULE: ./src/OtositeCustomer/Scene5CTA.tsx
+
+
+
+
+
+const Scene5CTA_Scene5CTA = ()=>{
+    const frame = (0,esm/* .useCurrentFrame */.UC)();
+    const { fps } = (0,esm/* .useVideoConfig */.Bk)();
+    // TIMINGS TEPAT SESUAI VO (voice over(3).wav)
+    // Baris pertama saat VO "Mau tips jitu lainnya" (f10)
+    const wQuestionLine1 = (0,esm/* .spring */.oz)({
+        frame: frame - 10,
+        fps,
+        config: {
+            damping: 14,
+            stiffness: 170,
+            mass: 0.5
+        }
+    });
+    // Baris kedua saat VO "biar makin jago closing?" (f28)
+    const wQuestionLine2 = (0,esm/* .spring */.oz)({
+        frame: frame - 28,
+        fps,
+        config: {
+            damping: 14,
+            stiffness: 170,
+            mass: 0.5
+        }
+    });
+    // Card CTA saat VO "Langsung aja" (f84)
+    const pCtaCard = (0,esm/* .spring */.oz)({
+        frame: frame - 84,
+        fps,
+        config: {
+            damping: 14,
+            stiffness: 170,
+            mass: 0.5
+        }
+    });
+    // Tombol FOLLOW OTOSITE! tepat saat VO "follow Otosite sekarang!" (f108)
+    const wFollowBtn = (0,esm/* .spring */.oz)({
+        frame: frame - 108,
+        fps,
+        config: {
+            damping: 11,
+            stiffness: 180,
+            mass: 0.5
+        }
+    });
+    // Gerakan dinamis tombol FOLLOW OTOSITE! (Pulse + Wiggle + Float + Pointing Finger)
+    const ctaPulse = 1 + Math.sin(frame * 0.25) * 0.055;
+    const ctaWiggleRot = Math.sin(frame * 0.2) * 2.5 + Math.cos(frame * 0.35) * 1.2;
+    const ctaFloatY = Math.cos(frame * 0.18) * 6;
+    const fingerPokeX = Math.sin(frame * 0.38) * 9;
+    return /*#__PURE__*/ (0,jsx_runtime.jsxs)(esm/* .AbsoluteFill */.H1, {
+        style: {
+            fontFamily: OtositeCustomer_constants_FONT_FAMILY,
+            pointerEvents: "none"
+        },
+        children: [
+            /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                style: {
+                    position: "absolute",
+                    top: 310,
+                    left: 0,
+                    right: 0,
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    zIndex: 10
+                },
+                children: [
+                    /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                        style: {
+                            borderRadius: 26,
+                            padding: "18px 36px",
+                            textAlign: "center",
+                            width: "88%",
+                            maxWidth: 840,
+                            transform: `scale(${(0,esm/* .interpolate */.GW)(wQuestionLine1, [
+                                0,
+                                1
+                            ], [
+                                0.85,
+                                1
+                            ])}) translateY(${(0,esm/* .interpolate */.GW)(wQuestionLine1, [
+                                0,
+                                1
+                            ], [
+                                20,
+                                0
+                            ])}px)`,
+                            opacity: wQuestionLine1,
+                            marginBottom: 14,
+                            marginTop: 30
+                        },
+                        children: [
+                            /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                style: {
+                                    fontSize: 60,
+                                    fontWeight: 700,
+                                    letterSpacing: -5,
+                                    color: constants_COLORS.dark,
+                                    marginBottom: 6
+                                },
+                                children: "Mau Tips Jitu Lainnya"
+                            }),
+                            frame >= 26 && /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                style: {
+                                    fontSize: 65,
+                                    fontWeight: 700,
+                                    color: constants_COLORS.blue,
+                                    letterSpacing: -5,
+                                    lineHeight: 1.2,
+                                    opacity: wQuestionLine2,
+                                    transform: `translateY(${(0,esm/* .interpolate */.GW)(wQuestionLine2, [
+                                        0,
+                                        1
+                                    ], [
+                                        15,
+                                        0
+                                    ])}px)`
+                                },
+                                children: "Biar Makin Jago Closing?"
+                            })
+                        ]
+                    }),
+                    frame >= 82 && /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                        style: {
+                            borderRadius: 24,
+                            padding: "18px 28px",
+                            width: "88%",
+                            maxWidth: 840,
+                            display: "flex",
+                            flexDirection: "column",
+                            alignItems: "center",
+                            gap: 12,
+                            transform: `scale(${(0,esm/* .interpolate */.GW)(pCtaCard, [
+                                0,
+                                1
+                            ], [
+                                0.85,
+                                1
+                            ])}) translateY(${(0,esm/* .interpolate */.GW)(pCtaCard, [
+                                0,
+                                1
+                            ], [
+                                20,
+                                0
+                            ])}px)`,
+                            opacity: pCtaCard
+                        },
+                        children: frame >= 106 && /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                            style: {
+                                backgroundColor: constants_COLORS.red,
+                                color: "#ffffff",
+                                border: `4px solid ${constants_COLORS.dark}`,
+                                boxShadow: `0 6px 0 ${constants_COLORS.dark}`,
+                                borderRadius: 18,
+                                padding: "16px 36px",
+                                display: "flex",
+                                alignItems: "center",
+                                gap: 12,
+                                transform: `translateY(${ctaFloatY}px) scale(${(0,esm/* .interpolate */.GW)(wFollowBtn, [
+                                    0,
+                                    1
+                                ], [
+                                    0.8,
+                                    1
+                                ]) * ctaPulse}) rotate(${ctaWiggleRot}deg)`,
+                                opacity: wFollowBtn,
+                                willChange: "transform, opacity"
+                            },
+                            children: [
+                                /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                    style: {
+                                        fontSize: 55,
+                                        display: "inline-block",
+                                        transform: `translateX(${fingerPokeX}px)`
+                                    },
+                                    children: "\uD83D\uDC49\uD83C\uDFFB"
+                                }),
+                                /*#__PURE__*/ (0,jsx_runtime.jsx)("span", {
+                                    style: {
+                                        fontSize: 55,
+                                        fontWeight: 900,
+                                        letterSpacing: 1
+                                    },
+                                    children: "FOLLOW OTOSITE!"
+                                })
+                            ]
+                        })
+                    })
+                ]
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                style: {
+                    position: "absolute",
+                    top: 800,
+                    transform: "scale(1.4)",
+                    left: 0,
+                    right: 0,
+                    height: 560,
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "flex-end",
+                    zIndex: 5
+                },
+                children: /*#__PURE__*/ (0,jsx_runtime.jsx)(OtositeCustomer_Character_Character, {
+                    assetName: "Scene5.png",
+                    height: 530,
+                    enterFrom: "bottom",
+                    delay: 2,
+                    animationType: "jumping_joy"
+                })
+            })
+        ]
+    });
+};
+
+;// CONCATENATED MODULE: ./src/OtositeCustomer/OtositeCustomerReels.tsx
+
+
+
+
+
+
+
+
+
+
+
+
+
+const OtositeCustomerReels = ()=>{
+    return /*#__PURE__*/ (0,jsx_runtime.jsxs)(esm/* .AbsoluteFill */.H1, {
+        style: {
+            backgroundColor: "#F8FAFC"
+        },
+        children: [
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(LoadCustomerFonts, {}),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(Background, {}),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Sequence */.gd, {
+                from: constants_SCENES.scene1.from,
+                durationInFrames: constants_SCENES.scene1.duration,
+                children: /*#__PURE__*/ (0,jsx_runtime.jsx)(OtositeCustomer_Scene1Hook_Scene1Hook, {})
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Sequence */.gd, {
+                from: constants_SCENES.scene2.from,
+                durationInFrames: constants_SCENES.scene2.duration,
+                children: /*#__PURE__*/ (0,jsx_runtime.jsx)(Scene2Scarcity, {})
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Sequence */.gd, {
+                from: constants_SCENES.scene3.from,
+                durationInFrames: constants_SCENES.scene3.duration,
+                children: /*#__PURE__*/ (0,jsx_runtime.jsx)(Scene3Assumptive, {})
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Sequence */.gd, {
+                from: constants_SCENES.scene4.from,
+                durationInFrames: constants_SCENES.scene4.duration,
+                children: /*#__PURE__*/ (0,jsx_runtime.jsx)(Scene4Summary, {})
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Sequence */.gd, {
+                from: constants_SCENES.scene5.from,
+                durationInFrames: constants_SCENES.scene5.duration,
+                children: /*#__PURE__*/ (0,jsx_runtime.jsx)(Scene5CTA_Scene5CTA, {})
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(OtositeCustomer_AudioTracks_AudioTracks, {}),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(BrandingOverlay, {})
+        ]
+    });
+};
+
 ;// CONCATENATED MODULE: ./src/Root.tsx
+
+
+
+
 
 
 
@@ -23438,6 +31773,22 @@ const RemotionRoot = ()=>{
                 fps: (/* inlined export .VIDEO_FPS */30),
                 width: (/* inlined export .VIDEO_WIDTH */1080),
                 height: (/* inlined export .VIDEO_HEIGHT */1920)
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Composition */.BO, {
+                id: "OtositeFollowUpReels",
+                component: OtositeFollowUpReels,
+                durationInFrames: constants_TOTAL_DURATION,
+                fps: 30,
+                width: 1080,
+                height: 1920
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Composition */.BO, {
+                id: "OtositeCustomer",
+                component: OtositeCustomerReels,
+                durationInFrames: (/* inlined export .TOTAL_DURATION */1245),
+                fps: 30,
+                width: 1080,
+                height: 1920
             }),
             /*#__PURE__*/ (0,jsx_runtime.jsx)(esm/* .Composition */.BO, {
                 id: "HelloWorld",
@@ -44767,7 +53118,7 @@ __webpack_require__.u = (chunkId) => {
 })();
 // webpack/runtime/get_full_hash
 (() => {
-__webpack_require__.h = () => ("df4481869b52c49e")
+__webpack_require__.h = () => ("29b949dc18f6919e")
 })();
 // webpack/runtime/global
 (() => {
@@ -44985,7 +53336,7 @@ jsonpChunkLoadingGlobal.push = __rspack_jsonp.bind(null, jsonpChunkLoadingGlobal
 // Load entry module and return exports
 __webpack_require__(6507);
 __webpack_require__(3999);
-__webpack_require__(8585);
+__webpack_require__(6522);
 __webpack_require__(3610);
 var __webpack_exports__ = __webpack_require__(3482);
 })()

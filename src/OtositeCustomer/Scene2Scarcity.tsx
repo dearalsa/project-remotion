@@ -89,24 +89,24 @@ export const Scene2Scarcity: React.FC = () => {
   const smoothPopConfig = { damping: 18, stiffness: 140, mass: 0.75 };
   const cardGlideConfig = { damping: 20, stiffness: 130, mass: 0.85 };
 
-  // TIMINGS & SPRINGS SESUAI VO
+  // TIMINGS & SPRINGS SESUAI VO (voice over(3).wav)
   const pBadgeText = spring({ frame: frame - 6, fps, config: smoothPopConfig });
   const hTeknik1 = spring({ frame: frame - 10, fps, config: sweepConfig });
 
   // Kartu Title & "Bikin Mereka Takut Kehabisan" langsung muncul bersamaan dengan mulus
-  const wTitle = spring({ frame: frame - 22, fps, config: cardGlideConfig });
+  const wTitle = spring({ frame: frame - 28, fps, config: cardGlideConfig });
 
   const wFomo = spring({
-    frame: frame - 80,
+    frame: frame - 126,
     fps,
     config: { damping: 14, stiffness: 160, mass: 0.7 },
   });
 
-  // Example Card springs
-  const pCard = spring({ frame: frame - 105, fps, config: cardGlideConfig });
-  const wPromoText = spring({ frame: frame - 116, fps, config: smoothPopConfig });
-  const wBesokText = spring({ frame: frame - 130, fps, config: smoothPopConfig });
-  const hBesokSweep = spring({ frame: frame - 136, fps, config: sweepConfig });
+  // Example Card springs (Contohnya: Promo diskon ini cuma berlaku sampai besok loh pak!)
+  const pCard = spring({ frame: frame - 158, fps, config: cardGlideConfig });
+  const wPromoText = spring({ frame: frame - 188, fps, config: smoothPopConfig });
+  const wBesokText = spring({ frame: frame - 204, fps, config: smoothPopConfig });
+  const hBesokSweep = spring({ frame: frame - 212, fps, config: sweepConfig });
 
   // Karakter masuk dengan smooth glide dari bawah
   const charEnter = spring({
@@ -116,16 +116,16 @@ export const Scene2Scarcity: React.FC = () => {
   });
   const charFloatY = Math.sin(frame * 0.07) * 3.5;
 
-  // Breathing halus pada teks FOMO setelah muncul
-  const fomoPulse = frame >= 88 ? 1 + Math.sin((frame - 88) * 0.14) * 0.025 : 1;
+  // Breathing halus pada teks FOMO setelah muncul (frame 134+)
+  const fomoPulse = frame >= 134 ? 1 + Math.sin((frame - 134) * 0.14) * 0.025 : 1;
 
-  // Outro transition for Scene 2 (f165 to f175)
+  // Outro transition for Scene 2 (f270 to f280)
   const exitProgress = spring({
-    frame: frame - 165,
+    frame: frame - 270,
     fps,
     config: { damping: 22, stiffness: 150, mass: 0.65 },
   });
-  const sceneExitOpacity = interpolate(frame, [165, 175], [1, 0], {
+  const sceneExitOpacity = interpolate(frame, [270, 280], [1, 0], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
   });
@@ -165,7 +165,7 @@ export const Scene2Scarcity: React.FC = () => {
           zIndex: 10,
         }}
       >
-        {/* Step Text dengan Sapuan Stabilo (f8) */}
+        {/* Step Text dengan Sapuan Stabilo */}
         <div
           style={{
             color: "#ffffff",
@@ -240,7 +240,7 @@ export const Scene2Scarcity: React.FC = () => {
         </div>
 
         {/* Fomo */}
-        {frame >= 75 && (
+        {frame >= 120 && (
           <div
             style={{
               padding: "6px 16px",
@@ -267,8 +267,8 @@ export const Scene2Scarcity: React.FC = () => {
           </div>
         )}
 
-        {/* Example Urgency Card (f105) */}
-        {frame >= 100 && (
+        {/* Example Urgency Card */}
+        {frame >= 155 && (
           <div
             style={{
               backgroundColor: "#FFFFFF",

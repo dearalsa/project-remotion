@@ -32,8 +32,8 @@ const CUSTOM_3D_ICONS_CONFIG: Custom3DIconItem[] = [
     x: 120,
     y: 970,
     size: 200,
-    enterFrame: 12,
-    exitFrame: 82,
+    enterFrame: 6,
+    exitFrame: 84,
     baseTilt: -10,
     floatPhase: 0,
   },
@@ -43,8 +43,8 @@ const CUSTOM_3D_ICONS_CONFIG: Custom3DIconItem[] = [
     right: 115,
     y: 700,
     size: 250,
-    enterFrame: 22,
-    exitFrame: 82,
+    enterFrame: 46,
+    exitFrame: 84,
     baseTilt: 12,
     floatPhase: 2.1,
   },
@@ -53,10 +53,10 @@ const CUSTOM_3D_ICONS_CONFIG: Custom3DIconItem[] = [
   {
     id: "p2-ghost",
     fileName: "3d-icon-ghost.png",
-    x:95,
+    x: 95,
     y: 820,
     size: 200,
-    enterFrame: 86,
+    enterFrame: 88,
     exitFrame: 138,
     baseTilt: -12,
     floatPhase: 0.5,
@@ -78,7 +78,7 @@ const CUSTOM_3D_ICONS_CONFIG: Custom3DIconItem[] = [
     x: 160,
     y: 1110,
     size: 150,
-    enterFrame: 98,
+    enterFrame: 96,
     exitFrame: 138,
     baseTilt: 8,
     floatPhase: 3.2,
@@ -89,7 +89,7 @@ const CUSTOM_3D_ICONS_CONFIG: Custom3DIconItem[] = [
     right: 120,
     y: 1110,
     size: 150,
-    enterFrame: 104,
+    enterFrame: 100,
     exitFrame: 138,
     baseTilt: -20,
     floatPhase: 4.5,
@@ -102,8 +102,8 @@ const CUSTOM_3D_ICONS_CONFIG: Custom3DIconItem[] = [
     x: 100,
     y: 850,
     size: 175,
-    enterFrame: 148,
-    exitFrame: 999, 
+    enterFrame: 144,
+    exitFrame: 235,
     baseTilt: -10,
     floatPhase: 1.2,
   },
@@ -113,8 +113,8 @@ const CUSTOM_3D_ICONS_CONFIG: Custom3DIconItem[] = [
     right: 75,
     y: 960,
     size: 175,
-    enterFrame: 158,
-    exitFrame: 999, 
+    enterFrame: 186,
+    exitFrame: 235,
     baseTilt: 10,
     floatPhase: 3.7,
   },
@@ -191,7 +191,7 @@ const Floating3DSticker: React.FC<{ item: Custom3DIconItem }> = ({ item }) => {
   );
 };
 
-// KOMPONEN UTAMA SCENE 1 =
+// KOMPONEN UTAMA SCENE 1
 export const Scene1Hook: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
@@ -200,11 +200,11 @@ export const Scene1Hook: React.FC = () => {
   const popConfig = { damping: 12, stiffness: 180, mass: 0.7 };
   const textConfig = { damping: 14, stiffness: 160, mass: 0.8 };
 
-  // PART 1 & 2 TIMINGS
-  const wCustomer = spring({ frame: frame - 12, fps, config: textConfig });
-  const wSeringBilang = spring({ frame: frame - 18, fps, config: textConfig });
+  // PART 1 & 2 TIMINGS (Tepat sesuai VO)
+  const wCustomer = spring({ frame: frame - 6, fps, config: textConfig });
+  const wSeringBilang = spring({ frame: frame - 12, fps, config: textConfig });
 
-  const quote1Spring = spring({ frame: frame - 44, fps, config: popConfig });
+  const quote1Spring = spring({ frame: frame - 46, fps, config: popConfig });
   const quote2Spring = spring({ frame: frame - 92, fps, config: popConfig });
 
   const part1ExitOpacity = interpolate(frame, [136, 142], [1, 0], {
@@ -216,31 +216,29 @@ export const Scene1Hook: React.FC = () => {
     extrapolateRight: "clamp",
   });
 
-  // PART 3 TIMINGS
-  const pSolusiBadge = spring({ frame: frame - 148, fps, config: popConfig });
-  const wPakaiTeknik = spring({ frame: frame - 160, fps, config: popConfig });
-  const wDealBadge = spring({ frame: frame - 195, fps, config: popConfig });
+  // PART 3 TIMINGS (Tepat sesuai VO)
+  const wPakaiTeknik = spring({ frame: frame - 144, fps, config: popConfig });
+  const wDealBadge = spring({ frame: frame - 186, fps, config: popConfig });
 
   // Dinamika ornamen kecil
-  const qFloat = Math.sin(frame * 0.15) * 6;
   const starPulse = 1 + Math.sin(frame * 0.25) * 0.2;
 
   // POP-UP CHARACTER SPRINGS
   const char1In = spring({ frame: frame - 4, fps, config: popConfig });
   const char1Out = spring({
-    frame: frame - 82,
+    frame: frame - 86,
     fps,
     config: { damping: 16, stiffness: 150, mass: 0.6 },
   });
 
-  const char2In = spring({ frame: frame - 84, fps, config: popConfig });
+  const char2In = spring({ frame: frame - 88, fps, config: popConfig });
   const char2Out = spring({
-    frame: frame - 140,
+    frame: frame - 142,
     fps,
     config: { damping: 16, stiffness: 150, mass: 0.6 },
   });
 
-  const char3In = spring({ frame: frame - 142, fps, config: popConfig });
+  const char3In = spring({ frame: frame - 144, fps, config: popConfig });
 
   const calcCharTransform = (inSpring: number, outSpring: number = 0) => {
     const scale =
@@ -269,7 +267,6 @@ export const Scene1Hook: React.FC = () => {
         pointerEvents: "none",
       }}
     >
-
       {CUSTOM_3D_ICONS_CONFIG.map((item) => (
         <Floating3DSticker key={item.id} item={item} />
       ))}
@@ -332,7 +329,7 @@ export const Scene1Hook: React.FC = () => {
               alignItems: "center",
             }}
           >
-            {frame >= 40 && (
+            {frame >= 44 && (
               <div
                 style={{
                   backgroundColor: COLORS.yellowMuda,
@@ -379,7 +376,7 @@ export const Scene1Hook: React.FC = () => {
               </div>
             )}
 
-            {frame >= 88 && (
+            {frame >= 90 && (
               <div
                 style={{
                   backgroundColor: COLORS.yellow,
@@ -443,7 +440,6 @@ export const Scene1Hook: React.FC = () => {
             zIndex: 10,
           }}
         >
-
           <div
             style={{
               borderRadius: 26,
@@ -480,7 +476,7 @@ export const Scene1Hook: React.FC = () => {
             </div>
           </div>
 
-          {frame >= 190 && (
+          {frame >= 184 && (
             <div
               style={{
                 backgroundColor: COLORS.yellowMuda,
@@ -523,12 +519,11 @@ export const Scene1Hook: React.FC = () => {
         }}
       >
         {/* Character 1 */}
-        {frame < 92 && (
+        {frame < 90 && (
           <div
             style={{
               position: "absolute",
               bottom: 0,
-              transform: `translateY(${c1.y}px) scale(${c1.scale * 1.5}) rotateZ(${c1.rot}deg)`,
               transform: `translateX(50px) translateY(${c1.y}px) scale(${c1.scale * 1.5}) rotateZ(${c1.rot}deg)`,
               transformOrigin: "bottom center",
               opacity: c1.opacity,
@@ -546,7 +541,7 @@ export const Scene1Hook: React.FC = () => {
         )}
 
         {/* Character 2 */}
-        {frame >= 84 && frame < 150 && (
+        {frame >= 88 && frame < 146 && (
           <div
             style={{
               position: "absolute",
@@ -568,12 +563,11 @@ export const Scene1Hook: React.FC = () => {
         )}
 
         {/* Character 3 */}
-        {frame >= 142 && (
+        {frame >= 144 && (
           <div
             style={{
               position: "absolute",
               bottom: 0,
-              transform: `translateY(${c3.y + 50}px) scale(${c3.scale * 1.4}) rotateZ(${c3.rot}deg)`,
               transform: `translateX(-20px) translateY(${c3.y + 20}px) scale(${c3.scale * 1.4}) rotateZ(${c3.rot}deg)`,
               transformOrigin: "bottom center",
               opacity: c3.opacity,

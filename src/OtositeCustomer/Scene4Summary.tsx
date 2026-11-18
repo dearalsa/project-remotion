@@ -89,24 +89,24 @@ export const Scene4Summary: React.FC = () => {
   const smoothPopConfig = { damping: 16, stiffness: 170, mass: 0.65 };
   const cardGlideConfig = { damping: 17, stiffness: 160, mass: 0.7 };
 
-  // TIMINGS CEPAT & MENGALIR TANPA DELAY LAMA 
-  // Badge Teknik 03 (f2) & Stabilo Merah (f5)
-  const pBadgeText = spring({ frame: frame - 2, fps, config: smoothPopConfig });
-  const hTeknik3 = spring({ frame: frame - 5, fps, config: sweepConfig });
+  // TIMINGS TEPAT SESUAI VO (voice over(3).wav)
+  // Badge Teknik 03 (f6) & Stabilo Merah (f10)
+  const pBadgeText = spring({ frame: frame - 6, fps, config: smoothPopConfig });
+  const hTeknik3 = spring({ frame: frame - 10, fps, config: sweepConfig });
 
-  // Kartu Summary Closing & Subjudul langsung tampil bersamaan (f14)
-  const wTitle = spring({ frame: frame - 14, fps, config: cardGlideConfig });
+  // Kartu Summary Closing & Subjudul saat VO "Summary Closing" (f26)
+  const wTitle = spring({ frame: frame - 26, fps, config: cardGlideConfig });
 
-  // Teks "Biar mereka sadar kalau produk ini udah paling pas buat kebutuhannya" (f28)
-  const wSadarText = spring({ frame: frame - 28, fps, config: smoothPopConfig });
-  const hPalingPasSweep = spring({ frame: frame - 36, fps, config: sweepConfig });
+  // Checklist Card & Item 1-3 saat VO "Sebutin ulang semua keuntungannya" (f66 -> f74 -> f90 -> f106)
+  const pCard = spring({ frame: frame - 66, fps, config: cardGlideConfig });
+  const wItem1 = spring({ frame: frame - 74, fps, config: smoothPopConfig });
+  const wItem2 = spring({ frame: frame - 90, fps, config: smoothPopConfig });
+  const wItem3 = spring({ frame: frame - 106, fps, config: smoothPopConfig });
+  const hItem3Sweep = spring({ frame: frame - 114, fps, config: sweepConfig });
 
-  // Checklist Card & Item 1-3 muncul beruntun dengan cepat (f48 -> f56 -> f68 -> f80)
-  const pCard = spring({ frame: frame - 48, fps, config: cardGlideConfig });
-  const wItem1 = spring({ frame: frame - 56, fps, config: smoothPopConfig });
-  const wItem2 = spring({ frame: frame - 68, fps, config: smoothPopConfig });
-  const wItem3 = spring({ frame: frame - 80, fps, config: smoothPopConfig });
-  const hItem3Sweep = spring({ frame: frame - 86, fps, config: sweepConfig });
+  // Teks "Biar mereka sadar kalau produk ini udah paling pas buat kebutuhannya" saat VO (f122 & stabilo f180)
+  const wSadarText = spring({ frame: frame - 122, fps, config: smoothPopConfig });
+  const hPalingPasSweep = spring({ frame: frame - 180, fps, config: sweepConfig });
 
   // Karakter masuk dengan smooth glide dari bawah
   const charEnter = spring({
@@ -236,46 +236,8 @@ export const Scene4Summary: React.FC = () => {
           </div>
         </div>
 
-        {/* Teks Tambahan: "Biar mereka sadar kalau produk ini udah paling pas buat kebutuhannya" */}
-        {frame >= 26 && (
-          <div
-            style={{
-              width: "88%",
-              maxWidth: 840,
-              textAlign: "center",
-              padding: "4px 16px",
-              fontSize: 40,
-              color: COLORS.dark,
-              letterSpacing: -4,
-              lineHeight: 1.35,
-              transform: `translateY(${interpolate(wSadarText, [0, 1], [18, 0])}px) scale(${interpolate(wSadarText, [0, 1], [0.9, 1])})`,
-              opacity: interpolate(wSadarText, [0, 0.35, 1], [0, 1, 1], {
-                extrapolateRight: "clamp",
-              }),
-              marginBottom: 25,
-              marginTop: 30,
-              willChange: "transform, opacity",
-            }}
-          >
-            Biar mereka sadar kalau produk ini{" "}
-            <MarkerHighlight
-              progress={hPalingPasSweep}
-              color="rgba(255, 214, 10, 0.8)"
-              height="88%"
-              bottom="2%"
-              paddingX={8}
-              skew={-8}
-            >
-              <span style={{ color: COLORS.red, fontWeight: 700 }}>
-                udah paling pas
-              </span>
-            </MarkerHighlight>{" "}
-            buat kebutuhannya!
-          </div>
-        )}
-
-        {/* Checklist Card */}
-        {frame >= 46 && (
+        {/* Checklist Card (Muncul saat VO "Sebutin ulang semua keuntungannya" f64+) */}
+        {frame >= 64 && (
           <div
             style={{
               backgroundColor: "#FFFFFF",
@@ -285,7 +247,7 @@ export const Scene4Summary: React.FC = () => {
               padding: "16px 24px",
               width: "88%",
               maxWidth: 840,
-              marginTop: 10, 
+              marginTop: 40, 
               transform: `scale(${interpolate(pCard, [0, 1], [0.88, 1])}) translateY(${interpolate(pCard, [0, 1], [26, 0])}px)`,
               opacity: interpolate(pCard, [0, 0.3, 1], [0, 1, 1], {
                 extrapolateRight: "clamp",
@@ -309,7 +271,7 @@ export const Scene4Summary: React.FC = () => {
             </div>
 
             {/* Checklist Item 1 */}
-            {frame >= 54 && (
+            {frame >= 72 && (
               <div
                 style={{
                   backgroundColor: COLORS.yellowMuda,
@@ -355,8 +317,8 @@ export const Scene4Summary: React.FC = () => {
               </div>
             )}
 
-            {/* Checklist Item 2 (f68) */}
-            {frame >= 66 && (
+            {/* Checklist Item 2 */}
+            {frame >= 88 && (
               <div
                 style={{
                   backgroundColor: COLORS.yellowMuda,
@@ -403,7 +365,7 @@ export const Scene4Summary: React.FC = () => {
             )}
 
             {/* Checklist Item 3 */}
-            {frame >= 78 && (
+            {frame >= 104 && (
               <div
                 style={{
                   backgroundColor: COLORS.yellowMuda,
@@ -457,6 +419,44 @@ export const Scene4Summary: React.FC = () => {
                 </div>
               </div>
             )}
+          </div>
+        )}
+
+        {/* Teks Tambahan: "Biar mereka sadar kalau produk ini udah paling pas buat kebutuhannya" saat VO (f120+) */}
+        {frame >= 120 && (
+          <div
+            style={{
+              width: "88%",
+              maxWidth: 840,
+              textAlign: "center",
+              padding: "4px 16px",
+              fontSize: 40,
+              color: COLORS.dark,
+              letterSpacing: -4,
+              lineHeight: 1.35,
+              transform: `translateY(${interpolate(wSadarText, [0, 1], [18, 0])}px) scale(${interpolate(wSadarText, [0, 1], [0.9, 1])})`,
+              opacity: interpolate(wSadarText, [0, 0.35, 1], [0, 1, 1], {
+                extrapolateRight: "clamp",
+              }),
+              marginBottom: 25,
+              marginTop: 40,
+              willChange: "transform, opacity",
+            }}
+          >
+            Biar mereka sadar kalau produk ini{" "}
+            <MarkerHighlight
+              progress={hPalingPasSweep}
+              color="rgba(255, 214, 10, 0.8)"
+              height="88%"
+              bottom="2%"
+              paddingX={8}
+              skew={-8}
+            >
+              <span style={{ color: COLORS.red, fontWeight: 700 }}>
+                udah paling pas
+              </span>
+            </MarkerHighlight>{" "}
+            buat kebutuhannya!
           </div>
         )}
       </div>

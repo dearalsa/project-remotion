@@ -7,29 +7,31 @@ export const Scene5CTA: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  // TIMINGS CEPAT TANPA DELAY LAMA 
-  // Baris pertama langsung muncul di awal (f2)
+  // TIMINGS TEPAT SESUAI VO (voice over(3).wav)
+  // Baris pertama saat VO "Mau tips jitu lainnya" (f10)
   const wQuestionLine1 = spring({
-    frame: frame - 2,
+    frame: frame - 10,
     fps,
     config: { damping: 14, stiffness: 170, mass: 0.5 },
   });
 
-  // Baris kedua langsung menyusul cepat (f12)
+  // Baris kedua saat VO "biar makin jago closing?" (f28)
   const wQuestionLine2 = spring({
-    frame: frame - 12,
+    frame: frame - 28,
     fps,
     config: { damping: 14, stiffness: 170, mass: 0.5 },
   });
 
-  // Card & Tombol FOLLOW OTOSITE langsung muncul tanpa jeda lama (f22 & f24)
+  // Card CTA saat VO "Langsung aja" (f84)
   const pCtaCard = spring({
-    frame: frame - 22,
+    frame: frame - 84,
     fps,
     config: { damping: 14, stiffness: 170, mass: 0.5 },
   });
+
+  // Tombol FOLLOW OTOSITE! tepat saat VO "follow Otosite sekarang!" (f108)
   const wFollowBtn = spring({
-    frame: frame - 24,
+    frame: frame - 108,
     fps,
     config: { damping: 11, stiffness: 180, mass: 0.5 },
   });
@@ -59,7 +61,7 @@ export const Scene5CTA: React.FC = () => {
           zIndex: 10,
         }}
       >
-        {/* Question Header Card (f2 & f12) */}
+        {/* Question Header Card */}
         <div
           style={{
             borderRadius: 26,
@@ -84,7 +86,7 @@ export const Scene5CTA: React.FC = () => {
           >
             Mau Tips Jitu Lainnya
           </div>
-          {frame >= 10 && (
+          {frame >= 26 && (
             <div
               style={{
                 fontSize: 65,
@@ -102,7 +104,7 @@ export const Scene5CTA: React.FC = () => {
         </div>
 
         {/* CTA */}
-        {frame >= 20 && (
+        {frame >= 82 && (
           <div
             style={{
               borderRadius: 24,
@@ -117,8 +119,8 @@ export const Scene5CTA: React.FC = () => {
               opacity: pCtaCard,
             }}
           >
-            {/* Glowing & Moving Action Button (f24) */}
-            {frame >= 22 && (
+            {/* Action Button: FOLLOW OTOSITE! */}
+            {frame >= 106 && (
               <div
                 style={{
                   backgroundColor: COLORS.red,

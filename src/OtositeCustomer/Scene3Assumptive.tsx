@@ -32,8 +32,8 @@ const SCENE3_3D_ICONS_CONFIG: Custom3DIconItem[] = [
     x: 150,
     y: 1150,
     size: 165,
-    enterFrame: 96, 
-    exitFrame: 220,
+    enterFrame: 175, 
+    exitFrame: 285,
     baseTilt: -10,
     floatPhase: 0.4,
   },
@@ -43,8 +43,8 @@ const SCENE3_3D_ICONS_CONFIG: Custom3DIconItem[] = [
     right: 150,
     y: 1000,
     size: 165,
-    enterFrame: 102, 
-    exitFrame: 220,
+    enterFrame: 230, 
+    exitFrame: 285,
     baseTilt: 10,
     floatPhase: 2.6,
   },
@@ -199,76 +199,76 @@ export const Scene3Assumptive: React.FC = () => {
   const smoothPopConfig = { damping: 16, stiffness: 170, mass: 0.65 };
   const cardGlideConfig = { damping: 17, stiffness: 160, mass: 0.7 };
 
-  // TIMINGS CEPAT & MENGALIR TANPA DELAY LAMA 
-  // Badge Teknik 02 (f2) & Stabilo (f5)
-  const pBadgeText = spring({ frame: frame - 2, fps, config: smoothPopConfig });
-  const hTeknik2 = spring({ frame: frame - 5, fps, config: sweepConfig });
+  // TIMINGS TEPAT SESUAI VO (voice over(3).wav)
+  // Badge Teknik 02 (f6) & Stabilo (f10)
+  const pBadgeText = spring({ frame: frame - 6, fps, config: smoothPopConfig });
+  const hTeknik2 = spring({ frame: frame - 10, fps, config: sweepConfig });
 
-  // Kartu Assumptive Closing langsung menyusul (f14)
-  const wTitle = spring({ frame: frame - 14, fps, config: cardGlideConfig });
+  // Kartu Assumptive Closing menyusul saat VO "Assumptive Closing" (f26)
+  const wTitle = spring({ frame: frame - 26, fps, config: cardGlideConfig });
 
-  // Teks "Jangan Tanya..." langsung muncul setelah kartu (f28)
+  // Teks "Jangan Tanya 'Mau beli gak?'" tepat saat VO (f122)
   const wDontText = spring({
-    frame: frame - 28,
+    frame: frame - 122,
     fps,
     config: { damping: 14, stiffness: 175, mass: 0.65 },
   });
 
-  // Coretan silang (X) langsung menggores (f38 & f42)
+  // Coretan silang (X) tepat saat VO "mau beli gak?" (f144 & f150)
   const xStroke1 = spring({
-    frame: frame - 38,
+    frame: frame - 144,
     fps,
     config: { damping: 18, stiffness: 200, mass: 0.55 },
   });
   const xStroke2 = spring({
-    frame: frame - 42,
+    frame: frame - 150,
     fps,
     config: { damping: 18, stiffness: 200, mass: 0.55 },
   });
 
-  // Efek Bergetar "Salah Jawaban" tepat saat silang selesai (f42 - f60)
-  const shakeDecay = interpolate(frame, [42, 60], [1, 0], {
+  // Efek Bergetar "Salah Jawaban" tepat saat silang selesai (f150 - f170)
+  const shakeDecay = interpolate(frame, [150, 170], [1, 0], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
   });
   const errorShakeX =
-    frame >= 42 && frame <= 60 ? Math.sin((frame - 42) * 2.6) * 14 * shakeDecay : 0;
+    frame >= 150 && frame <= 170 ? Math.sin((frame - 150) * 2.6) * 14 * shakeDecay : 0;
   const errorShakeY =
-    frame >= 42 && frame <= 60 ? Math.cos((frame - 42) * 3.2) * 4 * shakeDecay : 0;
+    frame >= 150 && frame <= 170 ? Math.cos((frame - 150) * 3.2) * 4 * shakeDecay : 0;
   const errorShakeRot =
-    frame >= 42 && frame <= 60 ? Math.sin((frame - 42) * 2.6) * 3.5 * shakeDecay : 0;
+    frame >= 150 && frame <= 170 ? Math.sin((frame - 150) * 2.6) * 3.5 * shakeDecay : 0;
 
-  // Header "Langsung Kasih Pilihan:" langsung masuk setelah getaran selesai (f62)
-  const wChoiceHeader = spring({ frame: frame - 62, fps, config: smoothPopConfig });
+  // Header "Langsung Kasih Pilihan:" tepat saat VO "tapi langsung kasih pilihan:" (f172)
+  const wChoiceHeader = spring({ frame: frame - 172, fps, config: smoothPopConfig });
 
-  // Kotak 1: Mau dikirim Hari Ini? (f74) + Stabilo (f79)
-  const box1Spring = spring({ frame: frame - 74, fps, config: cardGlideConfig });
-  const hHariIniSweep = spring({ frame: frame - 79, fps, config: sweepConfig });
+  // Kotak 1: Mau dikirim Hari Ini? tepat saat VO (f224) + Stabilo (f232)
+  const box1Spring = spring({ frame: frame - 224, fps, config: cardGlideConfig });
+  const hHariIniSweep = spring({ frame: frame - 232, fps, config: sweepConfig });
 
-  // Kotak 2: Atau dikirim Besok? (f88) + Stabilo (f93)
-  const box2Spring = spring({ frame: frame - 88, fps, config: cardGlideConfig });
-  const hBesokSweep = spring({ frame: frame - 93, fps, config: sweepConfig });
+  // Kotak 2: Atau dikirim Besok? tepat saat VO (f246) + Stabilo (f254)
+  const box2Spring = spring({ frame: frame - 246, fps, config: cardGlideConfig });
+  const hBesokSweep = spring({ frame: frame - 254, fps, config: sweepConfig });
 
-  // Urutan Muncul Cepat: Character (f90) -> Mata Duitan (f96) -> Ide Cemerlang (f102)
+  // Character masuk dari frame 6
   const charEnter = spring({
-    frame: frame - 90,
+    frame: frame - 6,
     fps,
     config: { damping: 15, stiffness: 155, mass: 0.7 },
   });
 
-  const walkSpeed = Math.max(0, frame - 90) * 0.22;
+  const walkSpeed = Math.max(0, frame - 6) * 0.22;
   const walkBobY = Math.abs(Math.sin(walkSpeed)) * -12;
   const walkStrideX = Math.sin(walkSpeed * 0.5) * 14;
   const walkWobbleRot = Math.cos(walkSpeed * 0.5) * 2.2;
   const walkSlideInX = interpolate(charEnter, [0, 1], [-55, 0]);
 
-  // Outro transition for Scene 3 (f220 to f230)
+  // Outro transition for Scene 3 (f285 to f295)
   const exitProgress = spring({
-    frame: frame - 220,
+    frame: frame - 285,
     fps,
     config: { damping: 22, stiffness: 150, mass: 0.65 },
   });
-  const sceneExitOpacity = interpolate(frame, [220, 230], [1, 0], {
+  const sceneExitOpacity = interpolate(frame, [285, 295], [1, 0], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
   });
@@ -315,7 +315,7 @@ export const Scene3Assumptive: React.FC = () => {
           zIndex: 10,
         }}
       >
-        {/* Step Text dengan Sapuan Stabilo Merah (f2) */}
+        {/* Step Text dengan Sapuan Stabilo Merah */}
         <div
           style={{
             color: "#ffffff",
@@ -343,7 +343,7 @@ export const Scene3Assumptive: React.FC = () => {
           </MarkerHighlight>
         </div>
 
-        {/* Assumptive Closing Card (f14) */}
+        {/* Assumptive Closing Card */}
         <div
           style={{
             backgroundColor: COLORS.yellowMuda,
@@ -389,8 +389,8 @@ export const Scene3Assumptive: React.FC = () => {
           </div>
         </div>
 
-        {/* Kalimat Larangan (Langsung muncul cepat di f26) */}
-        {frame >= 26 && (
+        {/* Kalimat Larangan (Tepat di frame 120+) */}
+        {frame >= 120 && (
           <div
             style={{
               padding: "8px 20px",
@@ -418,7 +418,7 @@ export const Scene3Assumptive: React.FC = () => {
               Jangan Tanya &ldquo;Mau beli gak?&rdquo;
 
               {/* Coretan Tanda Silang (X) */}
-              {frame >= 36 && (
+              {frame >= 142 && (
                 <span
                   style={{
                     position: "absolute",
@@ -475,8 +475,8 @@ export const Scene3Assumptive: React.FC = () => {
           </div>
         )}
 
-        {/* Bagian Pilihan: Header + 2 Kotak Berdampingan (Langsung muncul di f60) */}
-        {frame >= 60 && (
+        {/* Bagian Pilihan: Header + 2 Kotak Berdampingan (Muncul di frame 170+) */}
+        {frame >= 170 && (
           <div
             style={{
               width: "88%",
@@ -514,7 +514,7 @@ export const Scene3Assumptive: React.FC = () => {
                 justifyContent: "center",
               }}
             >
-              {/* Kotak 1: Mau dikirim Hari Ini? (f74) */}
+              {/* Kotak 1: Mau dikirim Hari Ini? */}
               <div
                 style={{
                   flex: 1,
@@ -641,42 +641,40 @@ export const Scene3Assumptive: React.FC = () => {
       </div>
 
       {/* Character */}
-      {frame >= 88 && (
+      <div
+        style={{
+          position: "absolute",
+          top: 950,
+          left: 70,
+          right: 0,
+          height: 560,
+          display: "flex",
+          justifyContent: "center",
+          transform: "scale(1.1)",
+          alignItems: "flex-end",
+          zIndex: 5,
+        }}
+      >
         <div
           style={{
-            position: "absolute",
-            top: 950,
-            left: 70,
-            right: 0,
-            height: 560,
-            display: "flex",
-            justifyContent: "center",
-            transform: "scale(1.1)",
-            alignItems: "flex-end",
-            zIndex: 5,
+            position: "relative",
+            transform: `translateX(${walkSlideInX + walkStrideX}px) translateY(${interpolate(charEnter, [0, 1], [45, 0]) + walkBobY}px) scale(${interpolate(charEnter, [0, 1], [0.9, 1])}) rotate(${walkWobbleRot}deg)`,
+            transformOrigin: "bottom center",
+            opacity: interpolate(charEnter, [0, 0.3, 1], [0, 1, 1], {
+              extrapolateRight: "clamp",
+            }),
+            willChange: "transform, opacity",
           }}
         >
-          <div
-            style={{
-              position: "relative",
-              transform: `translateX(${walkSlideInX + walkStrideX}px) translateY(${interpolate(charEnter, [0, 1], [45, 0]) + walkBobY}px) scale(${interpolate(charEnter, [0, 1], [0.9, 1])}) rotate(${walkWobbleRot}deg)`,
-              transformOrigin: "bottom center",
-              opacity: interpolate(charEnter, [0, 0.3, 1], [0, 1, 1], {
-                extrapolateRight: "clamp",
-              }),
-              willChange: "transform, opacity",
-            }}
-          >
-            <Character
-              assetName="Scene3.png"
-              height={530}
-              enterFrom="none"
-              delay={0}
-              animationType="cool_thumbs"
-            />
-          </div>
+          <Character
+            assetName="Scene3.png"
+            height={530}
+            enterFrom="none"
+            delay={0}
+            animationType="cool_thumbs"
+          />
         </div>
-      )}
+      </div>
     </AbsoluteFill>
   );
 };
