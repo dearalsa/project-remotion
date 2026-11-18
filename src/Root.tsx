@@ -6,6 +6,8 @@ import { TOTAL_DURATION, VIDEO_FPS, VIDEO_HEIGHT, VIDEO_WIDTH } from "./Otosite/
 import { OtositeReels } from "./Otosite/OtositeReels";
 import { TOTAL_DURATION as FOLLOWUP_DURATION } from "./OtositeFollowUp/constants";
 import { OtositeFollowUpReels } from "./OtositeFollowUp/OtositeFollowUpReels";
+import { TOTAL_DURATION as CUSTOMER_DURATION } from "./OtositeCustomer/constants";
+import { OtositeCustomerReels } from "./OtositeCustomer/OtositeCustomerReels";
 
 // Each <Composition> is an entry in the sidebar!
 
@@ -27,6 +29,16 @@ export const RemotionRoot: React.FC = () => {
         id="OtositeFollowUpReels"
         component={OtositeFollowUpReels}
         durationInFrames={FOLLOWUP_DURATION}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+
+      {/* New Otosite Customer Education Reels Composition */}
+      <Composition
+        id="OtositeCustomer"
+        component={OtositeCustomerReels}
+        durationInFrames={CUSTOMER_DURATION}
         fps={30}
         width={1080}
         height={1920}
