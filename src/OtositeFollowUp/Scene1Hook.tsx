@@ -444,7 +444,6 @@ export const Scene1Hook: React.FC = () => {
                       textAlign: "center",
                       backgroundColor: "#FFFFFF",
                       border: "3px solid #FF3133",
-                      padding: "22px 20px",
                       boxShadow: "0 4px 0 #FF3133",
                       borderRadius: 20,
                       padding: "16px 20px",
