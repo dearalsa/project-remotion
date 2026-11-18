@@ -518,7 +518,7 @@ export const Scene3Assumptive: React.FC = () => {
               <div
                 style={{
                   flex: 1,
-                  backgroundColor: "rgba(59, 131, 246, 0.55)",
+                  backgroundColor: "rgba(255, 255, 255, 0.55)",
                   border: `4px solid ${COLORS.dark}`,
                   boxShadow: `0 6px 0 ${COLORS.dark}`,
                   borderRadius: 22,
@@ -579,7 +579,7 @@ export const Scene3Assumptive: React.FC = () => {
               <div
                 style={{
                   flex: 1,
-                  backgroundColor: "rgba(59, 131, 246, 0.69)",
+                  backgroundColor: "rgba(255, 255, 255, 0.69)",
                   border: `4px solid ${COLORS.dark}`,
                   boxShadow: `0 6px 0 ${COLORS.dark}`,
                   borderRadius: 22,

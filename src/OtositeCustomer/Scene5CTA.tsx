@@ -7,19 +7,38 @@ export const Scene5CTA: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  // Word-by-word kinetic springs matching VO:
-  // "Mau tips jitu lainnya (f10) biar makin jago closing? (f36)"
-  const pBadge = spring({ frame: frame - 8, fps, config: { damping: 14, mass: 0.5 } });
-  const wQuestionLine1 = spring({ frame: frame - 16, fps, config: { damping: 13, mass: 0.5 } });
-  const wQuestionLine2 = spring({ frame: frame - 36, fps, config: { damping: 13, mass: 0.5 } });
+  // TIMINGS CEPAT TANPA DELAY LAMA 
+  // Baris pertama langsung muncul di awal (f2)
+  const wQuestionLine1 = spring({
+    frame: frame - 2,
+    fps,
+    config: { damping: 14, stiffness: 170, mass: 0.5 },
+  });
 
-  // "Langsung aja (f78) follow Otosite sekarang! (f95)"
-  const pCtaCard = spring({ frame: frame - 78, fps, config: { damping: 14, mass: 0.5 } });
-  const wFollowBtn = spring({ frame: frame - 95, fps, config: { damping: 12, mass: 0.5 } });
-  const wCtaSub = spring({ frame: frame - 115, fps, config: { damping: 14, mass: 0.5 } });
+  // Baris kedua langsung menyusul cepat (f12)
+  const wQuestionLine2 = spring({
+    frame: frame - 12,
+    fps,
+    config: { damping: 14, stiffness: 170, mass: 0.5 },
+  });
 
-  const ctaPulse = 1 + Math.sin(frame * 0.22) * 0.04;
-  const starSpin = frame * 2.5;
+  // Card & Tombol FOLLOW OTOSITE langsung muncul tanpa jeda lama (f22 & f24)
+  const pCtaCard = spring({
+    frame: frame - 22,
+    fps,
+    config: { damping: 14, stiffness: 170, mass: 0.5 },
+  });
+  const wFollowBtn = spring({
+    frame: frame - 24,
+    fps,
+    config: { damping: 11, stiffness: 180, mass: 0.5 },
+  });
+
+  // Gerakan dinamis tombol FOLLOW OTOSITE! (Pulse + Wiggle + Float + Pointing Finger)
+  const ctaPulse = 1 + Math.sin(frame * 0.25) * 0.055;
+  const ctaWiggleRot = Math.sin(frame * 0.2) * 2.5 + Math.cos(frame * 0.35) * 1.2;
+  const ctaFloatY = Math.cos(frame * 0.18) * 6;
+  const fingerPokeX = Math.sin(frame * 0.38) * 9;
 
   return (
     <AbsoluteFill
@@ -28,9 +47,6 @@ export const Scene5CTA: React.FC = () => {
         pointerEvents: "none",
       }}
     >
-      {/* ============================================================ */}
-      {/* SECTION A: UPPER KINETIC TYPOGRAPHY & CTA HERO CARD          */}
-      {/* ============================================================ */}
       <div
         style={{
           position: "absolute",
@@ -43,32 +59,9 @@ export const Scene5CTA: React.FC = () => {
           zIndex: 10,
         }}
       >
-        {/* Top Category Pill (f8) */}
+        {/* Question Header Card (f2 & f12) */}
         <div
           style={{
-            backgroundColor: COLORS.blue,
-            color: COLORS.yellowMuda,
-            padding: "10px 32px",
-            borderRadius: 999,
-            fontSize: 26,
-            fontWeight: 800,
-            letterSpacing: 2,
-            border: `3px solid ${COLORS.dark}`,
-            boxShadow: `0 4px 0 ${COLORS.dark}`,
-            transform: `scale(${interpolate(pBadge, [0, 1], [0.8, 1])})`,
-            opacity: pBadge,
-            marginBottom: 14,
-          }}
-        >
-          TIPS SALES OTOMOTIF
-        </div>
-
-        {/* Question Header Card (f16 & f36) */}
-        <div
-          style={{
-            backgroundColor: COLORS.yellowMuda,
-            border: `5px solid ${COLORS.dark}`,
-            boxShadow: `0 8px 0 ${COLORS.dark}`,
             borderRadius: 26,
             padding: "18px 36px",
             textAlign: "center",
@@ -77,42 +70,41 @@ export const Scene5CTA: React.FC = () => {
             transform: `scale(${interpolate(wQuestionLine1, [0, 1], [0.85, 1])}) translateY(${interpolate(wQuestionLine1, [0, 1], [20, 0])}px)`,
             opacity: wQuestionLine1,
             marginBottom: 14,
+            marginTop: 30,
           }}
         >
           <div
             style={{
-              fontSize: 32,
+              fontSize: 60,
               fontWeight: 700,
+              letterSpacing: -5,
               color: COLORS.dark,
               marginBottom: 6,
             }}
           >
-            Mau Tips Jitu Lainnya...
+            Mau Tips Jitu Lainnya
           </div>
-          {frame >= 32 && (
+          {frame >= 10 && (
             <div
               style={{
-                fontSize: 46,
-                fontWeight: 900,
+                fontSize: 65,
+                fontWeight: 700,
                 color: COLORS.blue,
-                letterSpacing: -1,
+                letterSpacing: -5,
                 lineHeight: 1.2,
                 opacity: wQuestionLine2,
                 transform: `translateY(${interpolate(wQuestionLine2, [0, 1], [15, 0])}px)`,
               }}
             >
-              Biar Makin Jago Closing? 🚀
+              Biar Makin Jago Closing?
             </div>
           )}
         </div>
 
-        {/* CTA Hero Card (f78) */}
-        {frame >= 74 && (
+        {/* CTA */}
+        {frame >= 20 && (
           <div
             style={{
-              backgroundColor: COLORS.yellow,
-              border: `5px solid ${COLORS.dark}`,
-              boxShadow: `0 8px 0 ${COLORS.dark}`,
               borderRadius: 24,
               padding: "18px 28px",
               width: "88%",
@@ -125,23 +117,12 @@ export const Scene5CTA: React.FC = () => {
               opacity: pCtaCard,
             }}
           >
-            <div
-              style={{
-                fontSize: 20,
-                fontWeight: 800,
-                color: COLORS.blue,
-                letterSpacing: 1.5,
-              }}
-            >
-              LANGSUNG AJA
-            </div>
-
-            {/* Glowing Action Button (f95) */}
-            {frame >= 90 && (
+            {/* Glowing & Moving Action Button (f24) */}
+            {frame >= 22 && (
               <div
                 style={{
                   backgroundColor: COLORS.red,
-                  color: COLORS.yellowMuda,
+                  color: "#ffffff",
                   border: `4px solid ${COLORS.dark}`,
                   boxShadow: `0 6px 0 ${COLORS.dark}`,
                   borderRadius: 18,
@@ -149,47 +130,40 @@ export const Scene5CTA: React.FC = () => {
                   display: "flex",
                   alignItems: "center",
                   gap: 12,
-                  transform: `scale(${interpolate(wFollowBtn, [0, 1], [0.8, 1]) * ctaPulse})`,
+                  transform: `translateY(${ctaFloatY}px) scale(${interpolate(wFollowBtn, [0, 1], [0.8, 1]) * ctaPulse}) rotate(${ctaWiggleRot}deg)`,
                   opacity: wFollowBtn,
+                  willChange: "transform, opacity",
                 }}
               >
-                <span style={{ fontSize: 30 }}>👉</span>
                 <span
                   style={{
-                    fontSize: 36,
+                    fontSize: 55,
+                    display: "inline-block",
+                    transform: `translateX(${fingerPokeX}px)`,
+                  }}
+                >
+                  👉🏻
+                </span>
+                <span
+                  style={{
+                    fontSize: 55,
                     fontWeight: 900,
                     letterSpacing: 1,
                   }}
                 >
                   FOLLOW OTOSITE!
                 </span>
-                <span style={{ fontSize: 30 }}>✨</span>
-              </div>
-            )}
-
-            {frame >= 110 && (
-              <div
-                style={{
-                  fontSize: 20,
-                  fontWeight: 700,
-                  color: COLORS.dark,
-                  opacity: wCtaSub,
-                }}
-              >
-                Solusi Website & Tips Sales No. 1
               </div>
             )}
           </div>
         )}
       </div>
 
-      {/* ============================================================ */}
-      {/* SECTION B: GROUNDED CELEBRATING CHARACTER                    */}
-      {/* ============================================================ */}
       <div
         style={{
           position: "absolute",
-          top: 900,
+          top: 800,
+          transform: "scale(1.4)",
           left: 0,
           right: 0,
           height: 560,
@@ -199,43 +173,13 @@ export const Scene5CTA: React.FC = () => {
           zIndex: 5,
         }}
       >
-        <div style={{ position: "relative" }}>
-          {/* Confetti & star accents */}
-          <div
-            style={{
-              position: "absolute",
-              left: 40,
-              top: 50,
-              fontSize: 32,
-              color: COLORS.red,
-              transform: `rotate(${starSpin}deg)`,
-              zIndex: 8,
-            }}
-          >
-            ⭐
-          </div>
-          <div
-            style={{
-              position: "absolute",
-              right: 50,
-              top: 40,
-              fontSize: 34,
-              color: COLORS.yellowTua,
-              transform: `rotate(${-starSpin}deg)`,
-              zIndex: 8,
-            }}
-          >
-            ✨
-          </div>
-
-          <Character
-            assetName="Scene5.png"
-            height={530}
-            enterFrom="bottom"
-            delay={6}
-            animationType="jumping_joy"
-          />
-        </div>
+        <Character
+          assetName="Scene5.png"
+          height={530}
+          enterFrom="bottom"
+          delay={2}
+          animationType="jumping_joy"
+        />
       </div>
     </AbsoluteFill>
   );
